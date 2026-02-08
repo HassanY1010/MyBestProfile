@@ -1,0 +1,27 @@
+{
+  "name": "حسن محمد بارفعه - Portfolio",
+  "short_name": "حسن بارفعه",
+  "description": "Full Stack Web Developer | AI Developer - Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#9333ea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "myphoto.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "myphoto.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "ar",
+  "dir": "rtl"
+}
