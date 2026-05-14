@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+﻿<!DOCTYPE html><html lang="ar" dir="rtl"><head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="theme-color" content="#7c3aed"/>
@@ -401,294 +401,6 @@
   }
   .cert-item:hover { border-color: rgba(124,58,237,0.3); background: rgba(124,58,237,0.05); }
   .cert-item:hover::before { transform: scaleY(1); }
-  .cert-filter-panel {
-    max-width: 980px;
-    margin: -24px auto 44px;
-    padding: 18px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, rgba(124,58,237,0.09), rgba(6,182,212,0.035));
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(18px);
-  }
-  .cert-filter-heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 16px;
-    font-family: 'Cairo', sans-serif;
-  }
-  .cert-filter-heading strong {
-    color: #f1f5f9;
-    font-size: 0.95rem;
-  }
-  .cert-filter-heading span {
-    color: rgba(148,163,184,0.65);
-    font-size: 0.78rem;
-    font-family: 'JetBrains Mono', monospace;
-  }
-  .cert-filter-bar {
-    margin-bottom: 0;
-  }
-  .cert-group-empty {
-    display: none !important;
-  }
-  @media (max-width: 640px) {
-    .cert-filter-panel { margin-top: -18px; padding: 14px; border-radius: 16px; }
-    .cert-filter-heading { flex-direction: column; gap: 3px; }
-    .cert-filter-bar .filter-btn { width: 100%; justify-content: center; }
-  }
-  [data-theme='light'] .cert-filter-panel {
-    background: linear-gradient(135deg, rgba(255,255,255,0.82), rgba(236,253,245,0.62));
-    border-color: rgba(124,58,237,0.12);
-  }
-  [data-theme='light'] .cert-filter-heading strong {
-    color: #1e1b4b;
-  }
-
-  /* ===================== SERVICES ===================== */
-  .service-card {
-    position: relative;
-    overflow: hidden;
-    min-height: 100%;
-    border-radius: 18px;
-    padding: 26px;
-    background: rgba(255,255,255,0.025);
-    border: 1px solid rgba(255,255,255,0.07);
-    transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease, box-shadow 0.35s ease;
-  }
-  .service-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(6,182,212,0.04), transparent);
-    transition: opacity 0.35s ease;
-    pointer-events: none;
-  }
-  .service-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(168,85,247,0.32);
-    background: rgba(255,255,255,0.04);
-    box-shadow: 0 24px 60px rgba(124,58,237,0.14);
-  }
-  .service-card:hover::before { opacity: 1; }
-  .service-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 18px;
-    position: relative;
-    z-index: 1;
-  }
-  .service-card > * { position: relative; z-index: 1; }
-  .service-action {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 22px;
-    color: #c084fc;
-    font-family: 'Cairo', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 700;
-    transition: color 0.25s ease, transform 0.25s ease;
-  }
-  .service-action:hover {
-    color: #67e8f9;
-    transform: translateX(-4px);
-  }
-  [dir='ltr'] .service-action:hover { transform: translateX(4px); }
-  [data-theme='light'] .service-card {
-    background: rgba(255,255,255,0.88);
-    border-color: rgba(124,58,237,0.09);
-  }
-
-  /* ===================== TRUST / AVAILABILITY / PROCESS / FAQ ===================== */
-  .insight-card {
-    position: relative;
-    overflow: hidden;
-    min-height: 100%;
-    border-radius: 18px;
-    padding: 24px;
-    background: rgba(255,255,255,0.025);
-    border: 1px solid rgba(255,255,255,0.07);
-    transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease, box-shadow 0.35s ease;
-  }
-  .insight-card::after {
-    content: '';
-    position: absolute;
-    inset: auto -20% -55% -20%;
-    height: 120px;
-    background: radial-gradient(circle, rgba(124,58,237,0.16), transparent 65%);
-    opacity: 0;
-    transition: opacity 0.35s ease;
-    pointer-events: none;
-  }
-  .insight-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(168,85,247,0.28);
-    background: rgba(255,255,255,0.04);
-    box-shadow: 0 22px 55px rgba(6,182,212,0.1);
-  }
-  .insight-card:hover::after { opacity: 1; }
-  .insight-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-    background: rgba(124,58,237,0.12);
-    border: 1px solid rgba(124,58,237,0.25);
-  }
-  .availability-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 18px;
-    border-radius: 16px;
-    background: rgba(255,255,255,0.025);
-    border: 1px solid rgba(255,255,255,0.07);
-    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
-  }
-  .availability-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(6,182,212,0.28);
-    background: rgba(6,182,212,0.045);
-  }
-  .process-step {
-    position: relative;
-    padding: 24px;
-    border-radius: 18px;
-    background: rgba(255,255,255,0.025);
-    border: 1px solid rgba(255,255,255,0.07);
-    min-height: 100%;
-  }
-  .process-step-num {
-    width: 38px;
-    height: 38px;
-    border-radius: 12px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-    color: #fff;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    font-weight: 800;
-    background: linear-gradient(135deg,#7c3aed,#06b6d4);
-    box-shadow: 0 14px 34px rgba(124,58,237,0.22);
-  }
-  .faq-item {
-    border-radius: 16px;
-    background: rgba(255,255,255,0.025);
-    border: 1px solid rgba(255,255,255,0.07);
-    overflow: hidden;
-  }
-  .faq-question {
-    width: 100%;
-    min-height: 62px;
-    padding: 18px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    color: #e2e8f0;
-    font-family: 'Cairo', sans-serif;
-    font-weight: 800;
-    text-align: start;
-  }
-  .faq-question i {
-    color: #a855f7;
-    transition: transform 0.3s ease;
-  }
-  .faq-item.open .faq-question i { transform: rotate(180deg); }
-  .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease;
-  }
-  .faq-answer p {
-    padding: 0 20px 20px;
-    color: rgba(148,163,184,0.86);
-    font-family: 'Cairo', sans-serif;
-    line-height: 1.85;
-    font-size: 0.92rem;
-  }
-  .copy-action {
-    width: 36px;
-    height: 36px;
-    border-radius: 11px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    margin-inline-start: auto;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
-    color: rgba(203,213,225,0.74);
-    transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
-  }
-  .copy-action:hover {
-    color: #67e8f9;
-    border-color: rgba(6,182,212,0.34);
-    background: rgba(6,182,212,0.09);
-    transform: translateY(-2px);
-  }
-  #toast-stack {
-    position: fixed;
-    right: 24px;
-    bottom: 92px;
-    z-index: 10001;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    pointer-events: none;
-  }
-  .toast {
-    min-width: 230px;
-    max-width: min(360px, calc(100vw - 48px));
-    padding: 13px 15px;
-    border-radius: 14px;
-    background: rgba(7,7,15,0.94);
-    border: 1px solid rgba(255,255,255,0.1);
-    box-shadow: 0 18px 48px rgba(0,0,0,0.35);
-    color: #e2e8f0;
-    font-family: 'Cairo', sans-serif;
-    font-size: 0.86rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    opacity: 0;
-    transform: translateY(12px) scale(0.98);
-    transition: opacity 0.28s ease, transform 0.28s ease;
-  }
-  .toast.show {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  .toast i { color: #34d399; }
-  @media (max-width: 640px) {
-    #toast-stack { right: 16px; left: 16px; bottom: 84px; }
-    .toast { max-width: 100%; }
-  }
-  [data-theme='light'] .insight-card,
-  [data-theme='light'] .availability-card,
-  [data-theme='light'] .process-step,
-  [data-theme='light'] .faq-item {
-    background: rgba(255,255,255,0.86);
-    border-color: rgba(124,58,237,0.09);
-  }
-  [data-theme='light'] .faq-question { color: #1e1b4b; }
-  [data-theme='light'] .toast {
-    background: rgba(255,255,255,0.96);
-    color: #1e1b4b;
-    border-color: rgba(124,58,237,0.14);
-  }
 
   /* ===================== CONTACT ===================== */
   .contact-link {
@@ -702,102 +414,6 @@
     background: rgba(124,58,237,0.08);
     border-color: rgba(124,58,237,0.3);
     transform: translateX(-6px);
-  }
-  .contact-link-content {
-    min-width: 0;
-    flex: 1;
-  }
-  .vcard-panel {
-    margin-top: 18px;
-    padding: 18px;
-    border-radius: 18px;
-    background:
-      radial-gradient(circle at 15% 15%, rgba(6,182,212,0.16), transparent 34%),
-      rgba(255,255,255,0.025);
-    border: 1px solid rgba(255,255,255,0.08);
-    overflow: hidden;
-  }
-  .vcard-layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 132px;
-    gap: 18px;
-    align-items: center;
-  }
-  .vcard-title {
-    font-family: 'Cairo', sans-serif;
-    color: #f1f5f9;
-    font-weight: 800;
-    font-size: 1rem;
-    margin-bottom: 6px;
-  }
-  .vcard-meta {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 1px;
-    color: rgba(148,163,184,0.58);
-    margin-bottom: 14px;
-  }
-  .vcard-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .vcard-action {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-height: 40px;
-    padding: 0 14px;
-    border-radius: 12px;
-    font-family: 'Cairo', sans-serif;
-    font-size: 0.82rem;
-    font-weight: 700;
-    text-decoration: none;
-    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
-  }
-  .vcard-action.primary {
-    color: #fff;
-    background: linear-gradient(135deg, #0ea5e9, #7c3aed);
-    box-shadow: 0 12px 30px rgba(14,165,233,0.18);
-  }
-  .vcard-action.secondary {
-    color: #c084fc;
-    background: rgba(124,58,237,0.08);
-    border: 1px solid rgba(124,58,237,0.24);
-  }
-  .vcard-action:hover {
-    transform: translateY(-2px);
-  }
-  .qr-card {
-    width: 132px;
-    height: 132px;
-    padding: 10px;
-    border-radius: 18px;
-    background: #fff;
-    box-shadow: 0 18px 50px rgba(0,0,0,0.24);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .qr-card img {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-  @media (max-width: 560px) {
-    .vcard-layout { grid-template-columns: 1fr; }
-    .qr-card { width: 150px; height: 150px; justify-self: center; }
-    .vcard-action { width: 100%; }
-  }
-  [data-theme='light'] .vcard-panel {
-    background:
-      radial-gradient(circle at 15% 15%, rgba(6,182,212,0.14), transparent 34%),
-      rgba(255,255,255,0.78);
-    border-color: rgba(124,58,237,0.12);
-  }
-  [data-theme='light'] .vcard-title {
-    color: #1e1b4b;
   }
 
   /* ===================== TIMELINE (EXPERIENCE) ===================== */
@@ -1128,32 +744,6 @@
     border-color: rgba(245,158,11,0.35);
   }
 
-  /* ===================== LANGUAGE TOGGLE ===================== */
-  .lang-toggle {
-    min-width: 48px;
-    height: 32px;
-    border-radius: 999px;
-    background: rgba(6,182,212,0.1);
-    border: 1px solid rgba(6,182,212,0.3);
-    color: #67e8f9;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.72rem;
-    font-weight: 800;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
-  }
-  .lang-toggle:hover {
-    transform: translateY(-2px);
-    background: rgba(6,182,212,0.18);
-    border-color: rgba(6,182,212,0.55);
-  }
-  [data-theme='light'] .lang-toggle {
-    background: rgba(6,182,212,0.08);
-    color: #0369a1;
-  }
-
   /* ===================== FILTER BUTTONS ===================== */
   .filter-bar { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:48px; }
   .filter-btn {
@@ -1203,7 +793,6 @@
     opacity: 0 !important;
     transform: scale(0.88) translateY(16px) !important;
     pointer-events: none;
-    display: none !important;
   }
   .project-card.filter-visible {
     opacity: 1;
@@ -1219,88 +808,6 @@
     color: #4c1d95;
   }
   [data-theme='light'] .filter-btn.active { color: #fff; }
-
-  /* ===================== PORTFOLIO SEARCH ===================== */
-  .portfolio-search {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto auto;
-    gap: 10px;
-    align-items: center;
-    max-width: 900px;
-    margin: -26px auto 42px;
-    padding: 10px;
-    border-radius: 18px;
-    background: rgba(255,255,255,0.035);
-    border: 1px solid rgba(255,255,255,0.08);
-    backdrop-filter: blur(14px);
-  }
-  .portfolio-search-field {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    min-height: 44px;
-    padding: 0 14px;
-    border-radius: 13px;
-    background: rgba(0,0,0,0.22);
-    border: 1px solid rgba(255,255,255,0.07);
-  }
-  .portfolio-search input,
-  .portfolio-search select {
-    width: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #e2e8f0;
-    font-family: 'Cairo', sans-serif;
-    font-size: 0.9rem;
-  }
-  .portfolio-search select {
-    min-width: 150px;
-    padding: 0 12px;
-    min-height: 44px;
-    border-radius: 13px;
-    background: rgba(10,10,20,0.85);
-    border: 1px solid rgba(255,255,255,0.07);
-    cursor: pointer;
-  }
-  .search-reset-btn {
-    width: 44px;
-    height: 44px;
-    border-radius: 13px;
-    background: rgba(236,72,153,0.09);
-    border: 1px solid rgba(236,72,153,0.22);
-    color: #f9a8d4;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .search-meta {
-    max-width: 900px;
-    margin: -28px auto 36px;
-    text-align: center;
-    font-family: 'Cairo', sans-serif;
-    color: rgba(148,163,184,0.72);
-    font-size: 0.82rem;
-  }
-  .search-hidden { display: none !important; }
-  @media (max-width: 768px) {
-    .portfolio-search { grid-template-columns: 1fr; margin-top: -22px; }
-    .portfolio-search select { min-width: 100%; }
-    .search-reset-btn { width: 100%; }
-  }
-  [data-theme='light'] .portfolio-search {
-    background: rgba(255,255,255,0.78);
-    border-color: rgba(124,58,237,0.1);
-  }
-  [data-theme='light'] .portfolio-search-field,
-  [data-theme='light'] .portfolio-search select {
-    background: rgba(255,255,255,0.72);
-    border-color: rgba(124,58,237,0.12);
-  }
-  [data-theme='light'] .portfolio-search input,
-  [data-theme='light'] .portfolio-search select {
-    color: #1e1b4b;
-  }
 
   /* ===================== SCROLL TO TOP ===================== */
   #scroll-to-top {
@@ -1431,7 +938,6 @@
   <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">نبذة عني</a>
   <a href="#experience" class="mobile-nav-link" onclick="closeMobileMenu()">الخبرة</a>
   <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()">المهارات</a>
-  <a href="#services" class="mobile-nav-link" onclick="closeMobileMenu()">الخدمات</a>
   <a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">المشاريع</a>
   <a href="#certifications" class="mobile-nav-link" onclick="closeMobileMenu()">الشهادات</a>
   <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">تواصل</a>
@@ -1453,7 +959,6 @@
       <a href="#about" class="nav-link">نبذة عني</a>
       <a href="#experience" class="nav-link">الخبرة</a>
       <a href="#skills" class="nav-link">المهارات</a>
-      <a href="#services" class="nav-link">الخدمات</a>
       <a href="#projects" class="nav-link">المشاريع</a>
       <a href="#certifications" class="nav-link">الشهادات</a>
       <a href="#contact" class="nav-link">تواصل</a>
@@ -1464,10 +969,6 @@
       <!-- Theme Toggle -->
       <button id="theme-toggle" class="theme-toggle" aria-label="تبديل الوضع الليلي/النهاري" title="تبديل الوضع">
         <div class="theme-toggle-knob" id="theme-knob">🌙</div>
-      </button>
-
-      <button id="language-toggle" class="lang-toggle" aria-label="Switch language" title="Switch language">
-        <span id="language-label">EN</span>
       </button>
 
       <a href="#contact" class="hidden md:inline-flex items-center gap-2 px-5 py-2 rounded-full btn-gradient text-white text-sm font-semibold relative z-10">
@@ -1540,9 +1041,6 @@
           <a href="https://github.com/HassanY1010" target="_blank" class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-white transition-all hover:scale-110" style="border:1px solid rgba(255,255,255,0.08);" title="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/search/results/people/?keywords=Hassan%20Mohammed%20Barafah" target="_blank" class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-sky-400 transition-all hover:scale-110" style="border:1px solid rgba(255,255,255,0.08);" title="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
           <a href="mailto:hassanmohammedbarafah836@gmail.com" class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-pink-400 transition-all hover:scale-110" style="border:1px solid rgba(255,255,255,0.08);">
             <i class="fas fa-envelope"></i>
           </a>
@@ -1568,7 +1066,7 @@
       </div>
 
       <!-- RIGHT: Profile Visual -->
-      <div class="flex justify-center items-center" style="order:2;transition-delay:0.3s;" data-reveal="">
+      <div class="flex justify-center items-center" style="order:2;" data-reveal="" style="transition-delay:0.3s;">
         <div class="relative">
           <!-- Orbiting ring -->
           <div style="position:absolute;inset:-40px;border-radius:50%;border:1px solid rgba(124,58,237,0.2);animation:spin 12s linear infinite;pointer-events:none;">
@@ -1674,13 +1172,6 @@
               <a href="https://github.com/HassanY1010" target="_blank" class="text-slate-300 text-sm hover:text-violet-400 transition-colors">HassanY1010</a>
             </div>
           </div>
-          <div class="flex items-start gap-3">
-            <i class="fab fa-linkedin-in text-sky-400 mt-1 text-sm flex-shrink-0"></i>
-            <div>
-              <div style="font-size:0.7rem;color:rgba(148,163,184,0.5);font-family:&#39;JetBrains Mono&#39;,monospace;margin-bottom:2px;">LINKEDIN</div>
-              <a href="https://www.linkedin.com/search/results/people/?keywords=Hassan%20Mohammed%20Barafah" target="_blank" class="text-slate-300 text-sm hover:text-sky-400 transition-colors">Hassan Mohammed Barafah</a>
-            </div>
-          </div>
         </div>
 
         <!-- Languages -->
@@ -1783,10 +1274,6 @@
           <a href="project-videos/resume-en.pdf" target="_blank" class="flex items-center justify-between px-5 py-3 rounded-xl text-sm font-semibold transition-all" style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.3);color:#67e8f9;font-family:&#39;Cairo&#39;,sans-serif;" onmouseover="this.style.background=&#39;rgba(6,182,212,0.2)&#39;" onmouseout="this.style.background=&#39;rgba(6,182,212,0.1)&#39;">
             <span>Resume · English</span>
             <i class="fas fa-download"></i>
-          </a>
-          <a href="hassan-mohammed-barafah.vcf" download class="flex items-center justify-between px-5 py-3 rounded-xl text-sm font-semibold transition-all" style="background:rgba(14,165,233,0.1);border:1px solid rgba(14,165,233,0.3);color:#7dd3fc;font-family:&#39;Cairo&#39;,sans-serif;" onmouseover="this.style.background=&#39;rgba(14,165,233,0.2)&#39;" onmouseout="this.style.background=&#39;rgba(14,165,233,0.1)&#39;">
-            <span>حفظ جهة الاتصال · vCard</span>
-            <i class="fas fa-address-card"></i>
           </a>
         </div>
       </div>
@@ -2046,8 +1533,6 @@
         </ul>
       </div>
 
-    </div>
-
     <!-- Skills Progress Bars -->
     <div class="mt-16" data-reveal="">
       <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:rgba(148,163,184,0.4);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;text-align:center;">
@@ -2139,207 +1624,6 @@
 </section>
 
 <!-- ============================================================ -->
-<!-- ===================== SERVICES SECTION ===================== -->
-<!-- ============================================================ -->
-<section id="services" class="py-32 relative overflow-hidden" style="background:rgba(0,0,0,0.22);">
-  <div class="glow-orb" style="width:420px;height:420px;background:#06b6d4;top:-140px;right:-160px;opacity:0.28;"></div>
-  <div class="glow-orb" style="width:360px;height:360px;background:#ec4899;bottom:-160px;left:-120px;opacity:0.22;"></div>
-
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-20" data-reveal="">
-      <div class="section-label mb-4" data-i18n="servicesLabel">04 / SERVICES</div>
-      <h2 class="section-title text-gradient" style="font-family:'Sora',sans-serif;" data-i18n="servicesTitle">الخدمات</h2>
-      <div style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;"></div>
-      <p class="text-slate-500 mt-6 text-sm max-w-2xl mx-auto" style="font-family:'Cairo',sans-serif;line-height:1.9;" data-i18n="servicesIntro">
-        حلول عملية لبناء منتجات ويب سريعة، لوحات تحكم واضحة، وتجارب ذكية تساعد مشروعك على النمو بثقة.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <article class="service-card" data-reveal="">
-        <div class="service-icon" style="background:rgba(124,58,237,0.14);border:1px solid rgba(124,58,237,0.28);box-shadow:0 0 24px rgba(124,58,237,0.16);">
-          <i class="fas fa-code text-violet-400"></i>
-        </div>
-        <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;" data-i18n="serviceWebTitle">تطوير مواقع وتطبيقات ويب</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;" data-i18n="serviceWebDesc">واجهات احترافية وسريعة باستخدام React و Next.js و Tailwind مع تجربة مستخدم متجاوبة.</p>
-        <button class="service-action" onclick="prefillService('web')" type="button"><i class="fas fa-arrow-left text-xs"></i><span data-i18n="serviceAction">اطلب هذه الخدمة</span></button>
-      </article>
-
-      <article class="service-card" data-reveal="" style="transition-delay:0.05s;">
-        <div class="service-icon" style="background:rgba(6,182,212,0.13);border:1px solid rgba(6,182,212,0.28);box-shadow:0 0 24px rgba(6,182,212,0.14);">
-          <i class="fas fa-layer-group text-cyan-400"></i>
-        </div>
-        <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;" data-i18n="serviceDashTitle">لوحات تحكم وأنظمة إدارية</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;" data-i18n="serviceDashDesc">بناء Dashboards لإدارة البيانات، المستخدمين، التقارير، الصلاحيات، وسير العمل اليومي.</p>
-        <button class="service-action" onclick="prefillService('dashboard')" type="button"><i class="fas fa-arrow-left text-xs"></i><span data-i18n="serviceAction">اطلب هذه الخدمة</span></button>
-      </article>
-
-      <article class="service-card" data-reveal="" style="transition-delay:0.1s;">
-        <div class="service-icon" style="background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.26);box-shadow:0 0 24px rgba(239,68,68,0.13);">
-          <i class="fab fa-laravel text-red-400"></i>
-        </div>
-        <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;" data-i18n="serviceLaravelTitle">أنظمة Laravel وواجهات API</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;" data-i18n="serviceLaravelDesc">تطوير Back-end منظم وآمن مع قواعد بيانات، صلاحيات، مصادقة، وواجهات REST قابلة للتوسع.</p>
-        <button class="service-action" onclick="prefillService('laravel')" type="button"><i class="fas fa-arrow-left text-xs"></i><span data-i18n="serviceAction">اطلب هذه الخدمة</span></button>
-      </article>
-
-      <article class="service-card" data-reveal="" style="transition-delay:0.15s;">
-        <div class="service-icon" style="background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.26);box-shadow:0 0 24px rgba(16,185,129,0.13);">
-          <i class="fas fa-brain text-emerald-400"></i>
-        </div>
-        <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;" data-i18n="serviceAiTitle">دمج الذكاء الاصطناعي</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;" data-i18n="serviceAiDesc">إضافة مساعدين ذكيين، تحليل نصوص، توصيات، أو أتمتة قرارات داخل تطبيقات الويب.</p>
-        <button class="service-action" onclick="prefillService('ai')" type="button"><i class="fas fa-arrow-left text-xs"></i><span data-i18n="serviceAction">اطلب هذه الخدمة</span></button>
-      </article>
-
-      <article class="service-card" data-reveal="" style="transition-delay:0.2s;">
-        <div class="service-icon" style="background:rgba(236,72,153,0.12);border:1px solid rgba(236,72,153,0.26);box-shadow:0 0 24px rgba(236,72,153,0.13);">
-          <i class="fas fa-wand-magic-sparkles text-pink-400"></i>
-        </div>
-        <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;" data-i18n="serviceUiTitle">تحسين UI/UX وتجربة المستخدم</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;" data-i18n="serviceUiDesc">تحويل الواجهات المزدحمة إلى تجربة منظمة، جذابة، وسهلة الاستخدام على كل الشاشات.</p>
-        <button class="service-action" onclick="prefillService('uiux')" type="button"><i class="fas fa-arrow-left text-xs"></i><span data-i18n="serviceAction">اطلب هذه الخدمة</span></button>
-      </article>
-
-      <article class="service-card" data-reveal="" style="transition-delay:0.25s;">
-        <div class="service-icon" style="background:rgba(245,158,11,0.12);border:1px solid rgba(245,158,11,0.26);box-shadow:0 0 24px rgba(245,158,11,0.13);">
-          <i class="fas fa-shield-halved text-amber-400"></i>
-        </div>
-        <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;" data-i18n="serviceSecureTitle">تحسين الأداء والأمان</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;" data-i18n="serviceSecureDesc">مراجعة سرعة الموقع، حماية النماذج، تنظيم الصلاحيات، وتحسين قابلية الصيانة.</p>
-        <button class="service-action" onclick="prefillService('security')" type="button"><i class="fas fa-arrow-left text-xs"></i><span data-i18n="serviceAction">اطلب هذه الخدمة</span></button>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- ===================== WHY CHOOSE ME SECTION ================ -->
-<!-- ============================================================ -->
-<section id="why-me" class="py-32 relative overflow-hidden">
-  <div class="glow-orb" style="width:380px;height:380px;background:#7c3aed;top:10%;left:-140px;opacity:0.24;"></div>
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16" data-reveal="">
-      <div class="section-label mb-4">05 / WHY ME</div>
-      <h2 class="section-title text-gradient" style="font-family:'Sora',sans-serif;">لماذا تختارني؟</h2>
-      <div style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;"></div>
-      <p class="text-slate-500 mt-6 text-sm max-w-2xl mx-auto" style="font-family:'Cairo',sans-serif;line-height:1.9;">
-        أركز على بناء حلول مفهومة وسريعة وقابلة للتطوير، مع تجربة تواصل واضحة من أول رسالة حتى التسليم.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <article class="insight-card" data-reveal="">
-        <div class="insight-icon"><i class="fas fa-bolt text-violet-400"></i></div>
-        <h3 class="text-slate-100 font-bold mb-3" style="font-family:'Sora',sans-serif;">سرعة تنفيذ محسوبة</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">أقسم العمل إلى مراحل واضحة حتى ترى تقدماً حقيقياً بدون انتظار طويل أو غموض.</p>
-      </article>
-      <article class="insight-card" data-reveal="" style="transition-delay:0.05s;">
-        <div class="insight-icon" style="background:rgba(6,182,212,0.12);border-color:rgba(6,182,212,0.24);"><i class="fas fa-code-branch text-cyan-400"></i></div>
-        <h3 class="text-slate-100 font-bold mb-3" style="font-family:'Sora',sans-serif;">كود منظم وقابل للصيانة</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">أبني البنية بشكل مرتب، وأتجنب التعقيد غير الضروري حتى يسهل تطوير المشروع لاحقاً.</p>
-      </article>
-      <article class="insight-card" data-reveal="" style="transition-delay:0.1s;">
-        <div class="insight-icon" style="background:rgba(236,72,153,0.12);border-color:rgba(236,72,153,0.24);"><i class="fas fa-wand-magic-sparkles text-pink-400"></i></div>
-        <h3 class="text-slate-100 font-bold mb-3" style="font-family:'Sora',sans-serif;">اهتمام بتجربة المستخدم</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">لا أتعامل مع الواجهة كزينة فقط، بل كمسار يساعد المستخدم على الفهم والإنجاز بسرعة.</p>
-      </article>
-      <article class="insight-card" data-reveal="" style="transition-delay:0.15s;">
-        <div class="insight-icon" style="background:rgba(16,185,129,0.12);border-color:rgba(16,185,129,0.24);"><i class="fas fa-handshake text-emerald-400"></i></div>
-        <h3 class="text-slate-100 font-bold mb-3" style="font-family:'Sora',sans-serif;">تواصل واضح وتسليم مرتب</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">أوضح ما سيتم عمله، أشارك التحديثات المهمة، وأسلّم نتيجة قابلة للاستخدام لا مجرد ملفات.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- ===================== AVAILABILITY SECTION ================= -->
-<!-- ============================================================ -->
-<section id="availability" class="py-28 relative overflow-hidden" style="background:rgba(6,182,212,0.035);">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-[0.9fr_1.4fr] gap-10 items-start">
-      <div data-reveal="">
-        <div class="section-label mb-4">06 / AVAILABLE FOR</div>
-        <h2 class="section-title text-gradient" style="font-family:'Sora',sans-serif;">متاح حالياً لـ</h2>
-        <p class="text-slate-500 mt-6 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">
-          هذه أكثر أنواع المشاريع التي أستطيع تنفيذها أو تطويرها بسرعة وبجودة عالية حالياً.
-        </p>
-      </div>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div class="availability-card" data-reveal="">
-          <i class="fas fa-graduation-cap text-violet-400 mt-1"></i>
-          <div><h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">مشاريع تخرج</h3><p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">تحليل، تصميم، تطوير، عرض تقديمي، وتجهيز شرح المشروع.</p></div>
-        </div>
-        <div class="availability-card" data-reveal="" style="transition-delay:0.05s;">
-          <i class="fas fa-building text-cyan-400 mt-1"></i>
-          <div><h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">مواقع شركات وأعمال</h3><p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">صفحات تعريفية احترافية، خدمات، تواصل، وتحسين ظهور العلامة.</p></div>
-        </div>
-        <div class="availability-card" data-reveal="" style="transition-delay:0.1s;">
-          <i class="fab fa-laravel text-red-400 mt-1"></i>
-          <div><h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">أنظمة Laravel</h3><p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">لوحات تحكم، صلاحيات، قواعد بيانات، تقارير، وواجهات API.</p></div>
-        </div>
-        <div class="availability-card" data-reveal="" style="transition-delay:0.15s;">
-          <i class="fas fa-brain text-emerald-400 mt-1"></i>
-          <div><h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">تطبيقات AI</h3><p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">مساعدات ذكية، تحليل نصوص، توصيات، وأتمتة داخل المنتجات.</p></div>
-        </div>
-        <div class="availability-card" data-reveal="" style="transition-delay:0.2s;">
-          <i class="fas fa-chart-pie text-pink-400 mt-1"></i>
-          <div><h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">لوحات تحكم</h3><p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">إحصائيات، إدارة مستخدمين، فلاتر، تقارير، وتجربة استخدام عملية.</p></div>
-        </div>
-        <div class="availability-card" data-reveal="" style="transition-delay:0.25s;">
-          <i class="fas fa-screwdriver-wrench text-amber-400 mt-1"></i>
-          <div><h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">تحسين مشاريع موجودة</h3><p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">إصلاح مشاكل، تحسين واجهة، رفع أداء، وتنظيم الكود.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- ===================== PROCESS SECTION ====================== -->
-<!-- ============================================================ -->
-<section id="process" class="py-32 relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-16" data-reveal="">
-      <div class="section-label mb-4">07 / PROCESS</div>
-      <h2 class="section-title text-gradient" style="font-family:'Sora',sans-serif;">طريقة العمل</h2>
-      <div style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;"></div>
-      <p class="text-slate-500 mt-6 text-sm max-w-2xl mx-auto" style="font-family:'Cairo',sans-serif;line-height:1.9;">
-        مسار واضح يقلل المفاجآت، ويجعل كل مرحلة قابلة للمراجعة قبل الانتقال للمرحلة التالية.
-      </p>
-    </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
-      <article class="process-step" data-reveal="">
-        <span class="process-step-num">01</span>
-        <h3 class="text-slate-100 font-bold mb-2" style="font-family:'Cairo',sans-serif;">تحليل المتطلبات</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">نفهم الهدف، الجمهور، الصفحات، الصلاحيات، والمخرجات المطلوبة.</p>
-      </article>
-      <article class="process-step" data-reveal="" style="transition-delay:0.05s;">
-        <span class="process-step-num">02</span>
-        <h3 class="text-slate-100 font-bold mb-2" style="font-family:'Cairo',sans-serif;">تصميم التجربة</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">نرتب الواجهة والمسارات المهمة حتى تكون التجربة واضحة للمستخدم.</p>
-      </article>
-      <article class="process-step" data-reveal="" style="transition-delay:0.1s;">
-        <span class="process-step-num">03</span>
-        <h3 class="text-slate-100 font-bold mb-2" style="font-family:'Cairo',sans-serif;">التطوير</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">تنفيذ الواجهة والمنطق وقاعدة البيانات مع المحافظة على بنية قابلة للتوسع.</p>
-      </article>
-      <article class="process-step" data-reveal="" style="transition-delay:0.15s;">
-        <span class="process-step-num">04</span>
-        <h3 class="text-slate-100 font-bold mb-2" style="font-family:'Cairo',sans-serif;">الاختبار والتحسين</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">مراجعة التجاوب، الأخطاء، السرعة، وحالات الاستخدام الأساسية.</p>
-      </article>
-      <article class="process-step" data-reveal="" style="transition-delay:0.2s;">
-        <span class="process-step-num">05</span>
-        <h3 class="text-slate-100 font-bold mb-2" style="font-family:'Cairo',sans-serif;">التسليم والدعم</h3>
-        <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">تسليم الملفات والشرح اللازم، مع إمكانية متابعة التحسينات بعد الإطلاق.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================ -->
 <!-- ===================== TESTIMONIALS SECTION ================== -->
 <!-- ============================================================ -->
 <section id="testimonials" class="py-32 relative overflow-hidden" style="background:rgba(124,58,237,0.04);">
@@ -2348,7 +1632,7 @@
 
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-20" data-reveal="">
-      <div class="section-label mb-4">08 / TESTIMONIALS</div>
+      <div class="section-label mb-4">06 / TESTIMONIALS</div>
       <h2 class="section-title text-gradient" style="font-family:'Sora',sans-serif;">آراء العملاء</h2>
       <div style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;"></div>
       <p class="text-slate-500 mt-6 text-sm max-w-xl mx-auto" style="font-family:'Cairo',sans-serif;line-height:1.8;">
@@ -2465,7 +1749,7 @@
 
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center mb-20" data-reveal="">
-      <div class="section-label mb-4">09 / PROJECTS</div>
+      <div class="section-label mb-4">04 / PROJECTS</div>
       <h2 class="section-title text-gradient" style="font-family:&#39;Sora&#39;,sans-serif;">المشاريع</h2>
       <div style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;"></div>
       <p class="text-slate-500 mt-6 text-sm max-w-xl mx-auto" style="font-family:&#39;Cairo&#39;,sans-serif;">مجموعة من أبرز المشاريع التي طورتها — كل مشروع يمثل تحدياً تقنياً حقيقياً وحلاً مبتكراً.</p>
@@ -2492,23 +1776,6 @@
         <span><span class="filter-count" id="cnt-cli">0</span> CLI / DevOps</span>
       </button>
     </div>
-
-    <!-- Search Bar -->
-    <div class="portfolio-search" data-reveal="" style="transition-delay:0.1s;">
-      <label class="portfolio-search-field" for="portfolio-search">
-        <i class="fas fa-magnifying-glass text-cyan-400 text-sm"></i>
-        <input id="portfolio-search" type="search" autocomplete="off" placeholder="ابحث في المشاريع والشهادات..." data-i18n-placeholder="searchPlaceholder"/>
-      </label>
-      <select id="portfolio-search-scope" aria-label="نطاق البحث">
-        <option value="all" data-i18n="searchScopeAll">الكل</option>
-        <option value="projects" data-i18n="searchScopeProjects">المشاريع فقط</option>
-        <option value="certificates" data-i18n="searchScopeCerts">الشهادات فقط</option>
-      </select>
-      <button id="portfolio-search-clear" class="search-reset-btn" type="button" aria-label="مسح البحث" title="مسح البحث">
-        <i class="fas fa-xmark"></i>
-      </button>
-    </div>
-    <div id="portfolio-search-meta" class="search-meta" data-i18n="searchMetaDefault">اكتب كلمة مثل React أو Laravel أو AI للعثور بسرعة على الأعمال والشهادات.</div>
 
     <!-- Projects Grid -->
     <div class="grid md:grid-cols-2 gap-6">
@@ -2853,7 +2120,7 @@
 
   <div class="max-w-6xl mx-auto px-6">
     <div class="text-center mb-20" data-reveal="">
-      <div class="section-label mb-4">10 / CERTIFICATIONS</div>
+      <div class="section-label mb-4">05 / CERTIFICATIONS</div>
       <h2 class="section-title text-gradient" style="font-family:&#39;Sora&#39;,sans-serif;">الشهادات المعتمدة</h2>
       <div style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;"></div>
     </div>
@@ -2878,38 +2145,8 @@
       </div>
     </div>
 
-    <div class="cert-filter-panel" data-reveal="" style="transition-delay:0.05s;">
-      <div class="cert-filter-heading">
-        <strong>مسارات الشهادات</strong>
-        <span>حسب المجال</span>
-      </div>
-      <div class="filter-bar cert-filter-bar" id="cert-filter-bar">
-        <button class="filter-btn cert-filter-btn active" data-cert-filter="all" type="button">
-          <span>الكل</span><span class="filter-count" id="cert-cnt-all">0</span>
-        </button>
-        <button class="filter-btn cert-filter-btn" data-cert-filter="web" type="button">
-          <span>ويب</span><span class="filter-count" id="cert-cnt-web">0</span>
-        </button>
-        <button class="filter-btn cert-filter-btn" data-cert-filter="ai" type="button">
-          <span>ذكاء اصطناعي</span><span class="filter-count" id="cert-cnt-ai">0</span>
-        </button>
-        <button class="filter-btn cert-filter-btn" data-cert-filter="cyber" type="button">
-          <span>أمن سيبراني</span><span class="filter-count" id="cert-cnt-cyber">0</span>
-        </button>
-        <button class="filter-btn cert-filter-btn" data-cert-filter="databases" type="button">
-          <span>قواعد بيانات</span><span class="filter-count" id="cert-cnt-databases">0</span>
-        </button>
-        <button class="filter-btn cert-filter-btn" data-cert-filter="soft" type="button">
-          <span>مهارات مهنية</span><span class="filter-count" id="cert-cnt-soft">0</span>
-        </button>
-        <button class="filter-btn cert-filter-btn" data-cert-filter="programming" type="button">
-          <span>برمجة وبيانات</span><span class="filter-count" id="cert-cnt-programming">0</span>
-        </button>
-      </div>
-    </div>
-
     <!-- FreeCodeCamp -->
-    <div class="mb-12 cert-provider-group" data-reveal="">
+    <div class="mb-12" data-reveal="">
       <div class="flex items-center gap-3 mb-6">
         <div style="width:36px;height:36px;border-radius:10px;background:rgba(124,58,237,0.15);border:1px solid rgba(124,58,237,0.3);display:flex;align-items:center;justify-content:center;">
           <i class="fas fa-certificate text-violet-400 text-sm"></i>
@@ -2918,20 +2155,20 @@
         <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(124,58,237,0.3),transparent);"></div>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div class="cert-item" data-cert-category="web" onclick="openPDF(&#39;شهادة تصميم الويب المتجاوب.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Responsive Web Design</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="web" onclick="openPDF(&#39;شهادة تطوير الواجهة الأمامية.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Front-End Development Libraries</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="web" onclick="openPDF(&#39;شهادة تطوير الواجهة الخلفية وواجهات برمجة التطبيقات.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Back-End Development and APIs</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="web" onclick="openPDF(&#39;شهادة الواجهة الأمامية الموروثة.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Legacy Front-End</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="programming" onclick="openPDF(&#39;شهادة الحوسبة العلمية باستخدام بايثون.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Scientific Computing with Python</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="programming" onclick="openPDF(&#39;شهادة الجبر الجامعي باستخدام بايثون.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">College Algebra with Python</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="programming" onclick="openPDF(&#39;شهادة تصوّر البيانات.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Data Visualization</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="programming" onclick="openPDF(&#39;شهادة تصور البيانات القديم.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Legacy Data Visualization</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="programming web" onclick="openPDF(&#39;شهادة لخوارزميات وهياكل البيانات القديمة بلغة جافاسكريبت.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Legacy JS Algorithms &amp; Data Structures</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة تصميم الويب المتجاوب.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Responsive Web Design</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة تطوير الواجهة الأمامية.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Front-End Development Libraries</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة تطوير الواجهة الخلفية وواجهات برمجة التطبيقات.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Back-End Development and APIs</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة الواجهة الأمامية الموروثة.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Legacy Front-End</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة الحوسبة العلمية باستخدام بايثون.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Scientific Computing with Python</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة الجبر الجامعي باستخدام بايثون.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">College Algebra with Python</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة تصوّر البيانات.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Data Visualization</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة تصور البيانات القديم.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Legacy Data Visualization</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة لخوارزميات وهياكل البيانات القديمة بلغة جافاسكريبت.pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Legacy JS Algorithms &amp; Data Structures</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">300 ساعة</div></div><i class="fas fa-eye text-violet-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
       </div>
     </div>
 
     <!-- EDRAAK -->
-    <div class="mb-12 cert-provider-group" data-reveal="">
+    <div class="mb-12" data-reveal="">
       <div class="flex items-center gap-3 mb-6">
         <div style="width:36px;height:36px;border-radius:10px;background:rgba(6,182,212,0.15);border:1px solid rgba(6,182,212,0.3);display:flex;align-items:center;justify-content:center;">
           <i class="fas fa-graduation-cap text-cyan-400 text-sm"></i>
@@ -2940,20 +2177,20 @@
         <div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(6,182,212,0.3),transparent);"></div>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div class="cert-item" data-cert-category="web" onclick="openPDF(&#39;شهادة تصميم تجربة المستخدم ( باللغة الانجليزية ).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">UI/UX Principles &amp; Design</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">5 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="databases" onclick="openPDF(&#39;شهادة مقدمة في قواعد بيانات ميكروسوفت ( باللغة الانجليزية ).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Microsoft SQL Server Databases</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">4 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="soft" onclick="openPDF(&#39;شهادة الرخصة الدولية لقيادة الحاسوب ( باللغة الانجليزية).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">ICDL Certification</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">32 ساعة</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="soft" onclick="openPDF(&#39;شهادة تعزيز ادراك وفهم أساسيات العمل المهني ( باللغة الانجلزية ).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Business Essentials</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">6 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="soft" onclick="openPDF(&#39;شهادة في الإنجليزية لأغراض العمل( باللغة الانجليزية).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">English For the Workplace</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">5 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="ai" onclick="openPDF(&#39;شهادة مقدمة الى الذكاء الاصطناعي ( باللغة الانجليزية) .pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Introduction to AI</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">3 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
-        <div class="cert-item" data-cert-category="cyber" onclick="openPDF(&#39;شهادة مقدمة في الأمن السيبراني ( باللغة الانجليزية ).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Introduction to Cybersecurity</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">3 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة تصميم تجربة المستخدم ( باللغة الانجليزية ).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">UI/UX Principles &amp; Design</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">5 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة مقدمة في قواعد بيانات ميكروسوفت ( باللغة الانجليزية ).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Microsoft SQL Server Databases</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">4 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة الرخصة الدولية لقيادة الحاسوب ( باللغة الانجليزية).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">ICDL Certification</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">32 ساعة</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة تعزيز ادراك وفهم أساسيات العمل المهني ( باللغة الانجلزية ).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Business Essentials</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">6 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة في الإنجليزية لأغراض العمل( باللغة الانجليزية).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">English For the Workplace</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">5 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة مقدمة الى الذكاء الاصطناعي ( باللغة الانجليزية) .pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Introduction to AI</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">3 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
+        <div class="cert-item" onclick="openPDF(&#39;شهادة مقدمة في الأمن السيبراني ( باللغة الانجليزية ).pdf&#39;)" style="cursor:pointer;"><div class="flex items-center justify-between"><div><div class="text-sm font-semibold text-slate-200 mb-1" style="font-family:&#39;Cairo&#39;,sans-serif;">Introduction to Cybersecurity</div><div style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);">3 ساعات</div></div><i class="fas fa-eye text-cyan-400 text-sm opacity-60 hover:opacity-100 transition-opacity"></i></div></div>
       </div>
     </div>
 
     <!-- EVET + RWAQ + SASS Row -->
     <div class="grid md:grid-cols-3 gap-8" data-reveal="">
       <!-- EVET -->
-      <div class="cert-provider-group">
+      <div>
         <div class="flex items-center gap-3 mb-5">
           <div style="width:32px;height:32px;border-radius:9px;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.3);display:flex;align-items:center;justify-content:center;">
             <i class="fas fa-laptop-code text-emerald-400 text-xs"></i>
@@ -2961,15 +2198,15 @@
           <h3 class="font-bold text-slate-100 text-base" style="font-family:&#39;Sora&#39;,sans-serif;">EVET</h3>
         </div>
         <div class="space-y-2">
-          <div class="cert-item" data-cert-category="web" onclick="openPDF(&#39;جميع الشهادات منصة ايفت.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Blog Website Design</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">24 ساعة</div></div>
-          <div class="cert-item" data-cert-category="soft" onclick="openPDF(&#39;جميع الشهادات منصة ايفت.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Computer Maintenance</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">14 ساعة</div></div>
-          <div class="cert-item" data-cert-category="programming" onclick="openPDF(&#39;جميع الشهادات منصة ايفت.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Smartphone Programming</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">14 ساعة</div></div>
-          <div class="cert-item" data-cert-category="cyber" onclick="openPDF(&#39;جميع الشهادات منصة ايفت.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Cyber Security Basics</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">10 ساعات</div></div>
-          <div class="cert-item" data-cert-category="cyber" onclick="openPDF(&#39;شهادة الاختراق الاخلاقي.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Penetration Testing w/ Metasploit</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">10 ساعات</div></div>
+          <div class="cert-item" onclick="openPDF(&#39;جميع الشهادات منصة ايفت.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Blog Website Design</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">24 ساعة</div></div>
+          <div class="cert-item" onclick="openPDF(&#39;جميع الشهادات منصة ايفت.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Computer Maintenance</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">14 ساعة</div></div>
+          <div class="cert-item" onclick="openPDF(&#39;جميع الشهادات منصة ايفت.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Smartphone Programming</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">14 ساعة</div></div>
+          <div class="cert-item" onclick="openPDF(&#39;جميع الشهادات منصة ايفت.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Cyber Security Basics</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">10 ساعات</div></div>
+          <div class="cert-item" onclick="openPDF(&#39;شهادة الاختراق الاخلاقي.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Penetration Testing w/ Metasploit</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">10 ساعات</div></div>
         </div>
       </div>
       <!-- RWAQ -->
-      <div class="cert-provider-group">
+      <div>
         <div class="flex items-center gap-3 mb-5">
           <div style="width:32px;height:32px;border-radius:9px;background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.3);display:flex;align-items:center;justify-content:center;">
             <i class="fas fa-network-wired text-amber-400 text-xs"></i>
@@ -2977,12 +2214,12 @@
           <h3 class="font-bold text-slate-100 text-base" style="font-family:&#39;Sora&#39;,sans-serif;">RWAQ</h3>
         </div>
         <div class="space-y-2">
-          <div class="cert-item" data-cert-category="cyber" onclick="openPDF(&#39;شهادة مبادئ شبكات الحاسب الآلي .pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Computer Network Principles</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">3 ساعات</div></div>
-          <div class="cert-item" data-cert-category="programming" onclick="openPDF(&#39;شهادة التفكير الحاسوبي.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Computational Thinking</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">2 ساعة</div></div>
+          <div class="cert-item" onclick="openPDF(&#39;شهادة مبادئ شبكات الحاسب الآلي .pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Computer Network Principles</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">3 ساعات</div></div>
+          <div class="cert-item" onclick="openPDF(&#39;شهادة التفكير الحاسوبي.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Computational Thinking</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">2 ساعة</div></div>
         </div>
       </div>
       <!-- SASS -->
-      <div class="cert-provider-group">
+      <div>
         <div class="flex items-center gap-3 mb-5">
           <div style="width:32px;height:32px;border-radius:9px;background:rgba(239,68,68,0.15);border:1px solid rgba(239,68,68,0.3);display:flex;align-items:center;justify-content:center;">
             <i class="fas fa-shield-alt text-red-400 text-xs"></i>
@@ -2990,76 +2227,11 @@
           <h3 class="font-bold text-slate-100 text-base" style="font-family:&#39;Sora&#39;,sans-serif;">SASS</h3>
         </div>
         <div class="space-y-2">
-          <div class="cert-item" data-cert-category="cyber" onclick="openPDF(&#39;شهادة الهاكر الاخلاقي.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Ethical Hacking</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">50 ساعة</div></div>
+          <div class="cert-item" onclick="openPDF(&#39;شهادة الهاكر الاخلاقي.pdf&#39;)" style="cursor:pointer;"><div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">Ethical Hacking</div><div style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">50 ساعة</div></div>
         </div>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- =================== FAQ SECTION ============================ -->
-<!-- ============================================================ -->
-<section id="faq" class="py-32 relative overflow-hidden" style="background:rgba(124,58,237,0.035);">
-  <div class="glow-orb" style="width:360px;height:360px;background:#06b6d4;top:-120px;left:-120px;opacity:0.22;"></div>
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-16" data-reveal="">
-      <div class="section-label mb-4">11 / FAQ</div>
-      <h2 class="section-title text-gradient" style="font-family:'Sora',sans-serif;">الأسئلة الشائعة</h2>
-      <div style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;"></div>
-      <p class="text-slate-500 mt-6 text-sm max-w-2xl mx-auto" style="font-family:'Cairo',sans-serif;line-height:1.9;">
-        إجابات مختصرة على أكثر الأسئلة التي تساعدك قبل بدء المشروع.
-      </p>
-    </div>
-
-    <div class="space-y-4" data-reveal="">
-      <div class="faq-item open">
-        <button class="faq-question" type="button" onclick="toggleFAQ(this)" aria-expanded="true">
-          <span>كم مدة تنفيذ المشروع؟</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="faq-answer" style="max-height:140px;">
-          <p>تختلف المدة حسب الحجم، لكن أغلب الصفحات التعريفية تحتاج من 3 إلى 7 أيام، والأنظمة المتوسطة تحتاج غالباً من أسبوعين إلى شهر.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" type="button" onclick="toggleFAQ(this)" aria-expanded="false">
-          <span>هل تعمل عن بعد؟</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="faq-answer">
-          <p>نعم، أعمل عن بعد بشكل كامل، ويمكن تنسيق المتطلبات والمراجعات عبر واتساب أو البريد أو أي أداة تناسب العميل.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" type="button" onclick="toggleFAQ(this)" aria-expanded="false">
-          <span>هل توفر صيانة بعد التسليم؟</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="faq-answer">
-          <p>نعم، يمكن الاتفاق على فترة دعم بعد التسليم لإصلاح الملاحظات، إضافة تحسينات بسيطة، أو متابعة الإطلاق.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" type="button" onclick="toggleFAQ(this)" aria-expanded="false">
-          <span>ما التقنيات التي تستخدمها؟</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="faq-answer">
-          <p>أستخدم React و Next.js و Tailwind للواجهات، وLaravel وNode.js للأنظمة الخلفية، مع MySQL أو MongoDB حسب طبيعة المشروع.</p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" type="button" onclick="toggleFAQ(this)" aria-expanded="false">
-          <span>هل يمكن تطوير مشروع موجود مسبقاً؟</span>
-          <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="faq-answer">
-          <p>نعم، يمكنني مراجعة المشروع الحالي، إصلاح الأخطاء، تحسين الواجهة، إضافة مميزات، أو إعادة تنظيم أجزاء من الكود.</p>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -3072,7 +2244,7 @@
 
   <div class="max-w-5xl mx-auto px-6">
     <div class="text-center mb-20" data-reveal="">
-      <div class="section-label mb-4">12 / CONTACT</div>
+      <div class="section-label mb-4">06 / CONTACT</div>
       <h2 class="section-title text-gradient" style="font-family:&#39;Sora&#39;,sans-serif;">تواصل معي</h2>
       <div style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;"></div>
       <p class="text-slate-500 mt-6 max-w-lg mx-auto" style="font-family:&#39;Cairo&#39;,sans-serif;font-size:0.95rem;line-height:1.8;">
@@ -3083,7 +2255,7 @@
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Contact Links -->
       <div class="space-y-4" data-reveal="">
-        <div class="contact-link">
+        <a href="mailto:hassanmohammedbarafah836@gmail.com" class="contact-link">
           <div style="width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,#7c3aed,#a855f7);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 16px rgba(124,58,237,0.3);">
             <i class="fas fa-envelope text-white"></i>
           </div>
@@ -3091,11 +2263,10 @@
             <div style="font-size:0.7rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.5);letter-spacing:1px;margin-bottom:3px;">EMAIL</div>
             <div class="text-slate-200 text-sm font-medium break-all">hassanmohammedbarafah836@gmail.com</div>
           </div>
-          <button class="copy-action" type="button" onclick="copyContact('hassanmohammedbarafah836@gmail.com','email')" aria-label="نسخ البريد" title="نسخ البريد"><i class="fas fa-copy"></i></button>
-          <a href="mailto:hassanmohammedbarafah836@gmail.com" class="copy-action" aria-label="إرسال بريد" title="إرسال بريد"><i class="fas fa-arrow-left"></i></a>
-        </div>
+          <i class="fas fa-arrow-left text-violet-500 opacity-50 mr-auto"></i>
+        </a>
 
-        <div class="contact-link">
+        <a href="tel:+967776461892" class="contact-link">
           <div style="width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,#0891b2,#06b6d4);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 16px rgba(6,182,212,0.3);">
             <i class="fas fa-phone text-white"></i>
           </div>
@@ -3103,9 +2274,8 @@
             <div style="font-size:0.7rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.5);letter-spacing:1px;margin-bottom:3px;">PHONE</div>
             <div class="text-slate-200 text-sm font-medium">+967 776 461 892</div>
           </div>
-          <button class="copy-action" type="button" onclick="copyContact('+967776461892','phone')" aria-label="نسخ الرقم" title="نسخ الرقم"><i class="fas fa-copy"></i></button>
-          <a href="tel:+967776461892" class="copy-action" aria-label="اتصال" title="اتصال"><i class="fas fa-phone"></i></a>
-        </div>
+          <i class="fas fa-arrow-left text-cyan-500 opacity-50 mr-auto"></i>
+        </a>
 
         <a href="https://github.com/HassanY1010" target="_blank" class="contact-link">
           <div style="width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,#374151,#4b5563);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 16px rgba(75,85,99,0.3);">
@@ -3118,18 +2288,7 @@
           <i class="fas fa-arrow-left text-slate-500 opacity-50 mr-auto"></i>
         </a>
 
-        <a href="https://www.linkedin.com/search/results/people/?keywords=Hassan%20Mohammed%20Barafah" target="_blank" class="contact-link">
-          <div style="width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,#0369a1,#0ea5e9);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 16px rgba(14,165,233,0.3);">
-            <i class="fab fa-linkedin-in text-white"></i>
-          </div>
-          <div>
-            <div style="font-size:0.7rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.5);letter-spacing:1px;margin-bottom:3px;">LINKEDIN</div>
-            <div class="text-slate-200 text-sm font-medium">Hassan Mohammed Barafah</div>
-          </div>
-          <i class="fas fa-arrow-left text-slate-500 opacity-50 mr-auto"></i>
-        </a>
-
-        <div class="contact-link">
+        <a href="https://wa.me/967776461892" target="_blank" class="contact-link">
           <div style="width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,#065f46,#10b981);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 0 16px rgba(16,185,129,0.3);">
             <i class="fab fa-whatsapp text-white"></i>
           </div>
@@ -3137,31 +2296,8 @@
             <div style="font-size:0.7rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.5);letter-spacing:1px;margin-bottom:3px;">WHATSAPP</div>
             <div class="text-slate-200 text-sm font-medium">+967 776 461 892</div>
           </div>
-          <button class="copy-action" type="button" onclick="copyContact('+967776461892','whatsapp')" aria-label="نسخ واتساب" title="نسخ واتساب"><i class="fas fa-copy"></i></button>
-          <a href="https://wa.me/967776461892" target="_blank" class="copy-action" aria-label="فتح واتساب" title="فتح واتساب"><i class="fab fa-whatsapp"></i></a>
-        </div>
-
-        <div class="vcard-panel">
-          <div class="vcard-layout">
-            <div>
-              <div class="vcard-meta">VCARD + QR CODE</div>
-              <div class="vcard-title">بطاقة التواصل</div>
-              <div class="vcard-actions">
-                <a href="hassan-mohammed-barafah.vcf" download class="vcard-action primary">
-                  <i class="fas fa-address-card"></i>
-                  <span>تحميل vCard</span>
-                </a>
-                <a href="contact-qr.svg" target="_blank" class="vcard-action secondary">
-                  <i class="fas fa-qrcode"></i>
-                  <span>فتح QR</span>
-                </a>
-              </div>
-            </div>
-            <a href="hassan-mohammed-barafah.vcf" download class="qr-card" aria-label="تحميل vCard">
-              <img src="contact-qr.svg" alt="QR vCard"/>
-            </a>
-          </div>
-        </div>
+          <i class="fas fa-arrow-left text-emerald-500 opacity-50 mr-auto"></i>
+        </a>
       </div>
 
       <!-- Contact Form Card -->
@@ -3173,10 +2309,10 @@
             <div id="success-icon" style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#ec4899);display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px rgba(124,58,237,0.4);transform:scale(0);transition:transform 0.5s cubic-bezier(0.34,1.56,0.64,1);">
               <i class="fas fa-check text-white text-2xl"></i>
             </div>
-            <h3 style="font-family:&#39;Sora&#39;,sans-serif;font-size:1.3rem;font-weight:800;color:#f1f5f9;text-align:center;">تم تجهيز رسالة واتساب!</h3>
-            <p style="font-family:&#39;Cairo&#39;,sans-serif;font-size:0.9rem;color:rgba(148,163,184,0.7);text-align:center;max-width:260px;line-height:1.7;">سيتم فتح واتساب برسالة منسقة. راجعها ثم اضغط إرسال.</p>
+            <h3 style="font-family:&#39;Sora&#39;,sans-serif;font-size:1.3rem;font-weight:800;color:#f1f5f9;text-align:center;">تم الإرسال بنجاح!</h3>
+            <p style="font-family:&#39;Cairo&#39;,sans-serif;font-size:0.9rem;color:rgba(148,163,184,0.7);text-align:center;max-width:260px;line-height:1.7;">شكراً لتواصلك، سأرد عليك في أقرب وقت ممكن.</p>
             <button onclick="resetContactForm()" style="margin-top:8px;padding:10px 28px;border-radius:999px;background:rgba(124,58,237,0.15);border:1px solid rgba(124,58,237,0.4);color:#c084fc;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.85rem;cursor:pointer;" onmouseover="this.style.background=&#39;rgba(124,58,237,0.3)&#39;" onmouseout="this.style.background=&#39;rgba(124,58,237,0.15)&#39;">
-              <i class="fas fa-redo text-xs ml-1"></i> تجهيز رسالة أخرى
+              <i class="fas fa-redo text-xs ml-1"></i> إرسال رسالة أخرى
             </button>
           </div>
 
@@ -3198,7 +2334,7 @@
 
             <!-- Email -->
             <div style="margin-bottom:14px;">
-              <label for="cf-email" style="display:block;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.78rem;color:rgba(148,163,184,0.65);margin-bottom:6px;"><i class="fas fa-envelope text-xs ml-1" style="color:#ec4899;"></i> البريد الإلكتروني <span style="color:rgba(148,163,184,0.35);font-size:0.7rem;">(اختياري)</span></label>
+              <label for="cf-email" style="display:block;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.78rem;color:rgba(148,163,184,0.65);margin-bottom:6px;"><i class="fas fa-envelope text-xs ml-1" style="color:#ec4899;"></i> البريد الإلكتروني</label>
               <input type="email" id="cf-email" placeholder="example@email.com" maxlength="100" style="width:100%;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:11px 14px;color:#e2e8f0;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.88rem;outline:none;direction:ltr;text-align:right;" onfocus="cfFocus(this)" onblur="cfBlur(this)" oninput="cfClear(&#39;cf-email-err&#39;,this)"/>
               <div id="cf-email-err" style="display:none;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.7rem;color:#f87171;margin-top:4px;padding-right:2px;"></div>
             </div>
@@ -3215,20 +2351,6 @@
                 <option value="other" style="background:#07070f;">أخرى</option>
               </select>
               <div id="cf-subject-err" style="display:none;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.7rem;color:#f87171;margin-top:4px;padding-right:2px;"></div>
-            </div>
-
-            <!-- Budget -->
-            <div style="margin-bottom:14px;">
-              <label for="cf-budget" style="display:block;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.78rem;color:rgba(148,163,184,0.65);margin-bottom:6px;"><i class="fas fa-coins text-xs ml-1" style="color:#f59e0b;"></i> الميزانية المتوقعة</label>
-              <select id="cf-budget" style="width:100%;background:rgba(10,10,20,0.9);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:11px 14px;color:#e2e8f0;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.88rem;outline:none;cursor:pointer;" onfocus="cfFocus(this)" onblur="cfBlur(this)" onchange="cfClear(&#39;cf-budget-err&#39;,this)">
-                <option value="" disabled="" selected="" style="background:#07070f;">اختر النطاق الأقرب...</option>
-                <option value="Less than $300" style="background:#07070f;">أقل من 300$</option>
-                <option value="$300 - $800" style="background:#07070f;">300$ - 800$</option>
-                <option value="$800 - $1500" style="background:#07070f;">800$ - 1500$</option>
-                <option value="$1500+" style="background:#07070f;">أكثر من 1500$</option>
-                <option value="Need consultation" style="background:#07070f;">أحتاج استشارة لتحديدها</option>
-              </select>
-              <div id="cf-budget-err" style="display:none;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.7rem;color:#f87171;margin-top:4px;padding-right:2px;"></div>
             </div>
 
             <!-- Message -->
@@ -3249,7 +2371,7 @@
             <!-- Submit -->
             <button type="submit" id="cf-submit" class="btn-gradient" style="width:100%;padding:13px;border-radius:12px;color:white;font-family:&#39;Cairo&#39;,sans-serif;font-weight:700;font-size:0.95rem;border:none;cursor:pointer;position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:8px;">
               <i class="fas fa-paper-plane text-sm" id="cf-submit-icon"></i>
-              <span id="cf-submit-text">فتح واتساب بالرسالة</span>
+              <span id="cf-submit-text">إرسال الرسالة</span>
             </button>
           </form>
         </div>
@@ -3268,9 +2390,6 @@
   <i class="fab fa-whatsapp" style="font-size:1.25rem;"></i>
 </a>
 
-<!-- ============ TOAST NOTIFICATIONS ============ -->
-<div id="toast-stack" aria-live="polite" aria-atomic="true"></div>
-
 <!-- ============ FOOTER ============ -->
 <footer class="py-12 px-6">
   <div class="max-w-7xl mx-auto">
@@ -3284,10 +2403,8 @@
       </div>
       <div class="flex items-center gap-4">
         <a href="https://github.com/HassanY1010" target="_blank" class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-500 hover:text-white transition-colors text-sm" style="border:1px solid rgba(255,255,255,0.06);"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/search/results/people/?keywords=Hassan%20Mohammed%20Barafah" target="_blank" class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-500 hover:text-sky-400 transition-colors text-sm" style="border:1px solid rgba(255,255,255,0.06);"><i class="fab fa-linkedin-in"></i></a>
         <a href="mailto:hassanmohammedbarafah836@gmail.com" class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-500 hover:text-pink-400 transition-colors text-sm" style="border:1px solid rgba(255,255,255,0.06);"><i class="fas fa-envelope"></i></a>
         <a href="https://wa.me/967776461892" target="_blank" class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-500 hover:text-green-400 transition-colors text-sm" style="border:1px solid rgba(255,255,255,0.06);"><i class="fab fa-whatsapp"></i></a>
-        <a href="hassan-mohammed-barafah.vcf" download class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-500 hover:text-cyan-400 transition-colors text-sm" style="border:1px solid rgba(255,255,255,0.06);"><i class="fas fa-address-card"></i></a>
       </div>
     </div>
   </div>
@@ -3298,7 +2415,7 @@
 <div id="pdfModal" class="modal-backdrop">
   <div style="width:90%;max-width:900px;height:85vh;background:#07070f;border-radius:20px;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,0.08);">
     <button class="modal-close-btn" onclick="closePDF()"><i class="fas fa-times"></i></button>
-    <iframe id="pdfFrame" src="about:blank" width="100%" height="100%" frameborder="0"></iframe>
+    <iframe id="pdfFrame" src="" width="100%" height="100%" frameborder="0"></iframe>
   </div>
 </div>
 
@@ -3306,7 +2423,9 @@
 <div id="videoModal" class="modal-backdrop">
   <div style="width:90%;max-width:900px;aspect-ratio:16/9;background:#000;border-radius:20px;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,0.08);">
     <button class="modal-close-btn" onclick="closeProjectVideo()"><i class="fas fa-times"></i></button>
-    <video id="projectVideoFrame" class="w-full h-full object-contain" controls="" controlslist="nodownload"></video>
+    <video id="projectVideoFrame" class="w-full h-full object-contain" controls="" controlslist="nodownload">
+      <source src="" type="video/mp4"/>
+    </video>
   </div>
 </div>
 
@@ -3511,49 +2630,28 @@ window.addEventListener('scroll', checkReveal, { passive: true });
 checkReveal();
 
 /* ===================== TYPING ANIMATION ===================== */
-const phraseSets = {
-  ar: [
-    'مطور ويب متكامل',
-    'مطور تطبيقات ذكاء اصطناعي',
-    'خبير React و Next.js',
-    'Laravel و Node.js',
-    'مهتم بتجربة المستخدم'
-  ],
-  en: [
-    'Full Stack Web Developer',
-    'AI Application Developer',
-    'React & Next.js Expert',
-    'Laravel & Node.js Builder',
-    'UI/UX Enthusiast'
-  ]
-};
-let phrases = phraseSets.ar.slice();
+const phrases = [
+  'Full Stack Web Developer',
+  'AI Application Developer',
+  'React & Next.js Expert',
+  'Laravel & Node.js Builder',
+  'UI/UX Enthusiast'
+];
 let pIndex = 0, cIndex = 0, deleting = false;
 const typingEl = document.getElementById('typing-text');
-let typingTimer = null;
 
 function type() {
-  if (!typingEl || !phrases.length) return;
   const phrase = phrases[pIndex];
   if (!deleting) {
     typingEl.textContent = phrase.slice(0, ++cIndex);
-    if (cIndex === phrase.length) { deleting = true; typingTimer = setTimeout(type, 2000); return; }
+    if (cIndex === phrase.length) { deleting = true; setTimeout(type, 2000); return; }
   } else {
     typingEl.textContent = phrase.slice(0, --cIndex);
     if (cIndex === 0) { deleting = false; pIndex = (pIndex + 1) % phrases.length; }
   }
-  typingTimer = setTimeout(type, deleting ? 50 : 80);
+  setTimeout(type, deleting ? 50 : 80);
 }
-function resetTyping(lang) {
-  phrases = (phraseSets[lang] || phraseSets.ar).slice();
-  pIndex = 0;
-  cIndex = 0;
-  deleting = false;
-  if (typingTimer) clearTimeout(typingTimer);
-  if (typingEl) typingEl.textContent = '';
-  typingTimer = setTimeout(type, 500);
-}
-typingTimer = setTimeout(type, 1200);
+setTimeout(type, 1200);
 
 /* ===================== LOADER ===================== */
 let loadPct = 0;
@@ -3599,7 +2697,7 @@ function openPDF(file) {
 }
 function closePDF() {
   document.getElementById('pdfModal').classList.remove('open');
-  document.getElementById('pdfFrame').src = 'about:blank';
+  document.getElementById('pdfFrame').src = '';
   document.body.style.overflow = '';
 }
 
@@ -3722,92 +2820,9 @@ const projectsData = {
   }
 };
 
-const projectCaseStudies = {
-  performanceSystem: {
-    role: 'Full-stack Developer',
-    timeline: 'Graduation build',
-    service: 'laravel',
-    challenge: 'تنظيم مراجعات الأداء بين HR والمديرين والموظفين بدون تضارب في الصلاحيات أو ضياع في دورة التقييم.',
-    solution: 'بناء تدفق أدوار واضح، نماذج تقييم ديناميكية، ولوحات تقارير تساعد الإدارة على قراءة النتائج بسرعة.',
-    result: 'نظام قابل للعرض والتطوير يوضح قيمة Laravel/Vue في إدارة عمليات مؤسسية حقيقية.'
-  },
-  aiExecutiveBoard: {
-    role: 'AI Product Builder',
-    timeline: 'Advanced prototype',
-    service: 'ai',
-    challenge: 'تحويل فكرة مجلس استشاري ذكي إلى تجربة يمكن لصاحب المشروع استخدامها لاتخاذ قرارات أوضح.',
-    solution: 'تقسيم الشخصيات، تنظيم أنماط الحوار، وتجهيز مخرجات قابلة للقراءة مثل SWOT وخطة 90 يوماً.',
-    result: 'تجربة AI عملية تعرض القدرة على بناء منتجات ذكاء اصطناعي وليست مجرد واجهة محادثة.'
-  },
-  chatApp: {
-    role: 'Real-time Developer',
-    timeline: 'Interactive app',
-    service: 'web',
-    challenge: 'تقديم مراسلة لحظية سلسة مع حالة اتصال واضحة وتجربة قريبة من التطبيقات اليومية.',
-    solution: 'استخدام Socket.io مع واجهة خفيفة، دعم الرسائل الصوتية، وتنظيم حالات Online/Offline.',
-    result: 'تطبيق يبرز فهم تدفق البيانات اللحظي وتجربة المستخدم في تطبيقات التواصل.'
-  },
-  firebaseEnvManager: {
-    role: 'CLI Package Author',
-    timeline: 'Published tool',
-    service: 'security',
-    challenge: 'تقليل أخطاء تبديل بيئات Firebase في مشاريع Flutter متعددة المنصات.',
-    solution: 'أداة Dart CLI تنسخ الإعدادات، تتحقق من الملفات، وتدعم الرجوع السريع عند الحاجة.',
-    result: 'حزمة قابلة للاستخدام تعكس قدرة على بناء أدوات إنتاجية للمطورين وعمليات CI/CD.'
-  },
-  cryptoProject: {
-    role: 'Frontend Developer',
-    timeline: 'UI build',
-    service: 'uiux',
-    challenge: 'بناء واجهة Web3 حديثة تعرض بيانات وأسعار بطريقة سهلة القراءة وسريعة الاستجابة.',
-    solution: 'استخدام Next.js و TypeScript مع مكونات منظمة وحركات خفيفة لتحسين الإحساس بالتفاعل.',
-    result: 'قالب واجهة قابل للتخصيص لمنصات مالية أو منتجات Web3.'
-  },
-  schoolSystem: {
-    role: 'Laravel System Developer',
-    timeline: 'System concept',
-    service: 'laravel',
-    challenge: 'تجميع عمليات المدرسة الإدارية والتعليمية داخل نظام واحد بصلاحيات متعددة.',
-    solution: 'تصميم وحدات للطلاب والمعلمين والحضور والدرجات والتقارير مع فصل واضح للأدوار.',
-    result: 'تصور عملي لنظام تعليمي قابل للتوسع حسب احتياج المدرسة أو المؤسسة.'
-  },
-  medAI: {
-    role: 'AI Web Developer',
-    timeline: 'Health AI prototype',
-    service: 'ai',
-    challenge: 'تقديم تجربة استشارة صحية أولية تكون مفهومة ومتعاطفة بدون تعقيد طبي زائد.',
-    solution: 'واجهة محادثة ذكية مع أدوات متابعة صحية وحسابات مثل BMI و BMR ولوحة تقدم.',
-    result: 'نموذج يوضح إمكانات AI في التطبيقات الصحية مع مراعاة الخصوصية وتجربة المستخدم.'
-  },
-  pmpSystem: {
-    role: 'Productivity App Developer',
-    timeline: 'PWA concept',
-    service: 'dashboard',
-    challenge: 'تنظيم المشاريع والمهام بطريقة تجمع Kanban والتعاون والتحليلات في مكان واحد.',
-    solution: 'تصميم تجربة إدارة مهام قابلة للتوسع مع تعليقات، أدوار، ولوحة مؤشرات للفريق.',
-    result: 'منتج إنتاجية واضح القيمة ويمكن تطويره لفرق العمل الصغيرة والمتوسطة.'
-  },
-  narStore: {
-    role: 'E-commerce Frontend',
-    timeline: 'Storefront build',
-    service: 'web',
-    challenge: 'تقديم متجر بطاقات رقمية سريع وبسيط يوجه المستخدم للشراء بدون احتكاك.',
-    solution: 'واجهة متجر خفيفة مع سلة محلية، عروض واضحة، وتواصل مباشر لإتمام الطلب.',
-    result: 'تجربة بيع رقمية مناسبة للمنتجات السريعة والمتاجر الصغيرة.'
-  }
-};
-
 function openProjectModal(id) {
   const p = projectsData[id];
   if (!p) return;
-  const c = projectCaseStudies[id] || {
-    role: 'Developer',
-    timeline: 'Project build',
-    service: 'web',
-    challenge: 'تحويل الفكرة إلى تجربة واضحة قابلة للاستخدام.',
-    solution: 'تنظيم الواجهة والمنطق والتقنيات بطريقة عملية.',
-    result: 'مشروع يعرض قدرة تنفيذ كاملة من الفكرة إلى العرض.'
-  };
   const content = `
     <div style="border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:24px;margin-bottom:28px;display:flex;align-items:center;gap:16px;">
       <div style="width:52px;height:52px;border-radius:14px;background:${p.bgColor};border:1px solid ${p.borderColor};display:flex;align-items:center;justify-content:center;flex-shrink:0;">
@@ -3816,36 +2831,6 @@ function openProjectModal(id) {
       <div>
         <h2 style="font-family:'Sora',sans-serif;font-size:1.3rem;font-weight:800;color:#f1f5f9;margin-bottom:6px;">${p.title}</h2>
         <span style="background:${p.bgColor};border:1px solid ${p.borderColor};border-radius:999px;padding:2px 12px;font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:${p.badgeColor};">${p.badge}</span>
-      </div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:20px;">
-      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px;">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;color:rgba(148,163,184,0.45);letter-spacing:1.5px;margin-bottom:6px;">ROLE</div>
-        <div style="font-family:'Cairo',sans-serif;font-size:0.86rem;color:#e2e8f0;font-weight:700;">${c.role}</div>
-      </div>
-      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px;">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;color:rgba(148,163,184,0.45);letter-spacing:1.5px;margin-bottom:6px;">TIMELINE</div>
-        <div style="font-family:'Cairo',sans-serif;font-size:0.86rem;color:#e2e8f0;font-weight:700;">${c.timeline}</div>
-      </div>
-      <div style="background:${p.bgColor};border:1px solid ${p.borderColor};border-radius:12px;padding:14px;">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;color:${p.badgeColor};letter-spacing:1.5px;margin-bottom:6px;">FOCUS</div>
-        <div style="font-family:'Cairo',sans-serif;font-size:0.86rem;color:#e2e8f0;font-weight:700;">${p.badge}</div>
-      </div>
-    </div>
-
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:20px;">
-      <div style="background:rgba(239,68,68,0.045);border:1px solid rgba(239,68,68,0.14);border-radius:14px;padding:18px;">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.62rem;color:#f87171;letter-spacing:2px;margin-bottom:10px;">CHALLENGE</div>
-        <p style="font-family:'Cairo',sans-serif;font-size:0.84rem;color:rgba(226,232,240,0.82);line-height:1.75;">${c.challenge}</p>
-      </div>
-      <div style="background:rgba(6,182,212,0.045);border:1px solid rgba(6,182,212,0.14);border-radius:14px;padding:18px;">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.62rem;color:#67e8f9;letter-spacing:2px;margin-bottom:10px;">SOLUTION</div>
-        <p style="font-family:'Cairo',sans-serif;font-size:0.84rem;color:rgba(226,232,240,0.82);line-height:1.75;">${c.solution}</p>
-      </div>
-      <div style="background:rgba(16,185,129,0.045);border:1px solid rgba(16,185,129,0.14);border-radius:14px;padding:18px;">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.62rem;color:#34d399;letter-spacing:2px;margin-bottom:10px;">RESULT</div>
-        <p style="font-family:'Cairo',sans-serif;font-size:0.84rem;color:rgba(226,232,240,0.82);line-height:1.75;">${c.result}</p>
       </div>
     </div>
 
@@ -3880,136 +2865,15 @@ function openProjectModal(id) {
         </div>
       </div>
     </div>
-
-    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;">
-      <button type="button" onclick="closeProjectModal(); prefillService('${c.service}')" class="btn-gradient" style="padding:11px 18px;border-radius:12px;color:white;font-family:'Cairo',sans-serif;font-weight:800;font-size:0.88rem;border:none;display:inline-flex;align-items:center;gap:8px;">
-        <i class="fas fa-paper-plane text-xs"></i> أريد مشروعاً مشابهاً
-      </button>
-      <a href="#contact" onclick="closeProjectModal()" style="padding:11px 18px;border-radius:12px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#cbd5e1;font-family:'Cairo',sans-serif;font-weight:700;font-size:0.88rem;display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
-        <i class="fas fa-message text-xs"></i> تواصل للاستفسار
-      </a>
-    </div>
   `;
-  const modalContent = document.getElementById('projectModalContent');
-  modalContent.innerHTML = content;
-  if (window.currentLang === 'en' && typeof window.translateSubtree === 'function') {
-    window.translateSubtree(modalContent, 'en');
-  }
+  document.getElementById('projectModalContent').innerHTML = content;
   document.getElementById('projectModal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 
-/* ===================== FAQ / TOAST / COPY HELPERS ===================== */
-function localizedToast(arMessage, enMessage, type = 'success') {
-  const message = window.currentLang === 'en' ? enMessage : arMessage;
-  showToast(message, type);
-}
-
-function showToast(message, type = 'success') {
-  const stack = document.getElementById('toast-stack');
-  if (!stack) return;
-  const toast = document.createElement('div');
-  toast.className = `toast ${type}`;
-  const icon = type === 'error' ? 'fa-circle-exclamation' : type === 'info' ? 'fa-circle-info' : 'fa-circle-check';
-  const iconEl = document.createElement('i');
-  iconEl.className = `fas ${icon}`;
-  const textEl = document.createElement('span');
-  textEl.textContent = message;
-  toast.append(iconEl, textEl);
-  stack.appendChild(toast);
-  requestAnimationFrame(() => toast.classList.add('show'));
-  setTimeout(() => {
-    toast.classList.remove('show');
-    setTimeout(() => toast.remove(), 240);
-  }, 2600);
-}
-
-function toggleFAQ(button) {
-  const item = button?.closest('.faq-item');
-  const answer = item?.querySelector('.faq-answer');
-  if (!item || !answer) return;
-  const isOpen = item.classList.toggle('open');
-  button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  answer.style.maxHeight = isOpen ? answer.scrollHeight + 'px' : '0px';
-}
-
-function refreshOpenFAQHeights() {
-  document.querySelectorAll('.faq-item.open .faq-answer').forEach(answer => {
-    answer.style.maxHeight = answer.scrollHeight + 'px';
-  });
-}
-
-requestAnimationFrame(refreshOpenFAQHeights);
-
-async function copyContact(value, kind) {
-  const labels = {
-    email: ['تم نسخ البريد الإلكتروني', 'Email copied'],
-    phone: ['تم نسخ رقم الهاتف', 'Phone number copied'],
-    whatsapp: ['تم نسخ رقم واتساب', 'WhatsApp number copied']
-  };
-  try {
-    if (navigator.clipboard && window.isSecureContext) {
-      await navigator.clipboard.writeText(value);
-    } else {
-      const input = document.createElement('textarea');
-      input.value = value;
-      input.setAttribute('readonly', '');
-      input.style.position = 'fixed';
-      input.style.opacity = '0';
-      document.body.appendChild(input);
-      input.select();
-      document.execCommand('copy');
-      input.remove();
-    }
-    const [ar, en] = labels[kind] || ['تم النسخ', 'Copied'];
-    localizedToast(ar, en);
-  } catch (error) {
-    localizedToast('تعذر النسخ، حاول يدوياً', 'Could not copy. Please copy manually.', 'error');
-  }
-}
-
 /* ===================== CONTACT FORM LOGIC ===================== */
-function prefillService(type) {
-  const templates = {
-    ar: {
-      web: 'أرغب في تطوير موقع أو تطبيق ويب. أحتاج واجهة احترافية وسريعة ومتجاوبة، مع تنظيم واضح للأقسام وتجربة مستخدم ممتازة.',
-      dashboard: 'أرغب في بناء لوحة تحكم أو نظام إداري لإدارة البيانات والمستخدمين والتقارير والصلاحيات.',
-      laravel: 'أحتاج تطوير نظام Laravel أو API منظم وآمن مع قاعدة بيانات وصلاحيات ومصادقة.',
-      ai: 'أرغب في دمج الذكاء الاصطناعي داخل تطبيقي، مثل مساعد ذكي أو تحليل نصوص أو توصيات.',
-      uiux: 'أريد تحسين واجهة وتجربة المستخدم لموقع أو تطبيق موجود حتى يصبح أوضح وأجمل وأسهل استخداماً.',
-      security: 'أحتاج مراجعة أداء وأمان لموقع أو نظام، مع تحسين السرعة والصلاحيات وحماية النماذج.'
-    },
-    en: {
-      web: 'I want to build a website or web app with a professional, fast, responsive interface and a clear user experience.',
-      dashboard: 'I want to build a dashboard or admin system for data, users, reports, and permissions.',
-      laravel: 'I need a secure Laravel system or API with database, roles, and authentication.',
-      ai: 'I want to integrate AI into my app, such as a smart assistant, text analysis, or recommendations.',
-      uiux: 'I want to improve the UI/UX of an existing site or app so it becomes clearer, cleaner, and easier to use.',
-      security: 'I need a performance and security review with speed improvements, permission cleanup, and safer forms.'
-    }
-  };
-  const lang = window.currentLang === 'en' ? 'en' : 'ar';
-  const subject = document.getElementById('cf-subject');
-  const budget = document.getElementById('cf-budget');
-  const message = document.getElementById('cf-message');
-  if (subject) {
-    subject.value = 'project';
-    cfClear('cf-subject-err', subject);
-  }
-  if (budget) {
-    budget.value = 'Need consultation';
-    cfClear('cf-budget-err', budget);
-  }
-  if (message) {
-    message.value = templates[lang][type] || templates[lang].web;
-    cfMsgCount(message);
-    message.focus({ preventScroll: true });
-  }
-  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-  const FIELDS = ['cf-name','cf-email','cf-subject','cf-budget','cf-message'];
+  const FIELDS = ['cf-name','cf-email','cf-subject','cf-message'];
   const DRAFT_KEY = 'hassan-contact-draft';
 
   // Restore draft
@@ -4076,10 +2940,7 @@ function cfClear(errId, el) {
 function cfError(fieldId, errId, msg) {
   const err = document.getElementById(errId);
   const field = document.getElementById(fieldId);
-  const displayMsg = typeof window.translateText === 'function' && window.currentLang === 'en'
-    ? window.translateText(msg)
-    : msg;
-  if (err) { err.textContent = '⚠ ' + displayMsg; err.style.display = 'block'; }
+  if (err) { err.textContent = '⚠ ' + msg; err.style.display = 'block'; }
   if (field) {
     field.dataset.hasError = '1';
     field.style.borderColor = 'rgba(239,68,68,0.6)';
@@ -4096,12 +2957,10 @@ function validateCF() {
   const name = (document.getElementById('cf-name')?.value || '').trim();
   const email = (document.getElementById('cf-email')?.value || '').trim();
   const subject = document.getElementById('cf-subject')?.value || '';
-  const budget = document.getElementById('cf-budget')?.value || '';
   const message = (document.getElementById('cf-message')?.value || '').trim();
   if (name.length < 2) { cfError('cf-name','cf-name-err','الرجاء إدخال الاسم (حرفين على الأقل)'); ok=false; }
-  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { cfError('cf-email','cf-email-err','الرجاء إدخال بريد إلكتروني صحيح أو اتركه فارغاً'); ok=false; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { cfError('cf-email','cf-email-err','الرجاء إدخال بريد إلكتروني صحيح'); ok=false; }
   if (!subject) { cfError('cf-subject','cf-subject-err','الرجاء اختيار موضوع التواصل'); ok=false; }
-  if (!budget) { cfError('cf-budget','cf-budget-err','الرجاء اختيار نطاق الميزانية الأقرب'); ok=false; }
   if (message.length < 10) { cfError('cf-message','cf-message-err','الرجاء كتابة رسالة لا تقل عن 10 أحرف'); ok=false; }
   return ok;
 }
@@ -4111,48 +2970,16 @@ function submitCF() {
   const text = document.getElementById('cf-submit-text');
   btn.disabled = true; btn.style.opacity = '0.75';
   icon.className = 'fas fa-spinner fa-spin text-sm';
-  text.textContent = window.currentLang === 'en' ? 'Opening WhatsApp...' : 'جاري فتح واتساب...';
-  const subjectEl = document.getElementById('cf-subject');
-  const budgetEl = document.getElementById('cf-budget');
-  const submission = {
-    name: document.getElementById('cf-name').value.trim(),
-    email: document.getElementById('cf-email').value.trim(),
-    subject: subjectEl?.value || '',
-    subjectText: subjectEl?.selectedOptions?.[0]?.textContent || '',
-    budget: budgetEl?.value || '',
-    budgetText: budgetEl?.selectedOptions?.[0]?.textContent || '',
-    message: document.getElementById('cf-message').value.trim(),
-    timestamp: new Date().toISOString()
-  };
-  const whatsappText = window.currentLang === 'en'
-    ? [
-        'Hello Hassan,',
-        '',
-        'I have a new project request:',
-        `Name: ${submission.name}`,
-        `Email: ${submission.email || 'Not specified'}`,
-        `Request type: ${submission.subjectText}`,
-        `Estimated budget: ${submission.budgetText}`,
-        '',
-        'Project details:',
-        submission.message
-      ].join('\n')
-    : [
-        'السلام عليكم حسن،',
-        '',
-        'لدي طلب مشروع جديد:',
-        `الاسم: ${submission.name}`,
-        `البريد: ${submission.email || 'غير محدد'}`,
-        `نوع الطلب: ${submission.subjectText}`,
-        `الميزانية المتوقعة: ${submission.budgetText}`,
-        '',
-        'تفاصيل المشروع:',
-        submission.message
-      ].join('\n');
-  window.open('https://wa.me/967776461892?text=' + encodeURIComponent(whatsappText), '_blank', 'noopener');
-  localizedToast('تم تجهيز رسالة واتساب', 'WhatsApp message is ready', 'info');
+  text.textContent = 'جاري الإرسال...';
   // Save submission history
   try {
+    const submission = {
+      name: document.getElementById('cf-name').value.trim(),
+      email: document.getElementById('cf-email').value.trim(),
+      subject: document.getElementById('cf-subject').value,
+      message: document.getElementById('cf-message').value.trim(),
+      timestamp: new Date().toISOString()
+    };
     const hist = JSON.parse(localStorage.getItem('hassan-contact-history') || '[]');
     hist.unshift(submission);
     localStorage.setItem('hassan-contact-history', JSON.stringify(hist.slice(0,10)));
@@ -4165,7 +2992,7 @@ function submitCF() {
     setTimeout(function() { if(successIcon) successIcon.style.transform = 'scale(1)'; }, 80);
     btn.disabled = false; btn.style.opacity = '1';
     icon.className = 'fas fa-paper-plane text-sm';
-    text.textContent = window.currentLang === 'en' ? 'Open WhatsApp With Message' : 'فتح واتساب بالرسالة';
+    text.textContent = 'إرسال الرسالة';
   }, 1600);
 }
 function resetContactForm() {
@@ -4173,7 +3000,7 @@ function resetContactForm() {
   const successIcon = document.getElementById('success-icon');
   if (successEl) { successEl.style.opacity = '0'; successEl.style.pointerEvents = 'none'; }
   if (successIcon) successIcon.style.transform = 'scale(0)';
-  ['cf-name','cf-email','cf-subject','cf-budget','cf-message'].forEach(id => {
+  ['cf-name','cf-email','cf-subject','cf-message'].forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
     el.value = '';
@@ -4184,7 +3011,7 @@ function resetContactForm() {
   });
   const c = document.getElementById('cf-msg-count'); if(c) c.textContent='0/500';
   const n = document.getElementById('cf-draft-notice'); if(n) n.style.display='none';
-  ['cf-name-err','cf-email-err','cf-subject-err','cf-budget-err','cf-message-err'].forEach(id => {
+  ['cf-name-err','cf-email-err','cf-subject-err','cf-message-err'].forEach(id => {
     const e = document.getElementById(id); if(e){e.style.display='none';e.textContent='';}
   });
 }
@@ -4204,7 +3031,6 @@ function resetContactForm() {
     const next = current === 'dark' ? 'light' : 'dark';
     applyTheme(next);
     localStorage.setItem('hassan-theme', next);
-    localizedToast('تم تغيير الوضع وحفظه', 'Theme changed and saved', 'info');
   });
 
   function applyTheme(theme) {
@@ -4217,555 +3043,6 @@ function resetContactForm() {
       document.body.style.background = '#030305';
     }
   }
-})();
-
-/* ===================== LANGUAGE TOGGLE ===================== */
-(function() {
-  const html = document.documentElement;
-  const btn = document.getElementById('language-toggle');
-  const label = document.getElementById('language-label');
-  if (!btn) return;
-
-  const translations = new Map([
-    [`الرئيسية`, `Home`],
-    [`نبذة عني`, `About`],
-    [`الخبرة`, `Experience`],
-    [`المهارات`, `Skills`],
-    [`الخدمات`, `Services`],
-    [`المشاريع`, `Projects`],
-    [`الشهادات`, `Certificates`],
-    [`تواصل`, `Contact`],
-    [`تواصل معي`, `Contact Me`],
-    [`متاح للعمل • Available for work`, `Available for work • Remote friendly`],
-    [`مرحباً، أنا`, `Hello, I am`],
-    [`حسن`, `Hassan`],
-    [`بارفعه`, `Barafah`],
-    [`حسن محمد بارفعه — Full Stack & AI Developer`, `Hassan Mohammed Barafah — Full Stack & AI Developer`],
-    [`خريج`, `Graduate in`],
-    [`تكنولوجيا المعلومات`, `Information Technology`],
-    [`بـ`, `with`],
-    [`GPA 3.8 · مرتبة الشرف`, `GPA 3.8 · Honors`],
-    [`مرتبة الشرف`, `Honors`],
-    [`— أبني تجارب ويب استثنائية تدمج بين الجمال والأداء والذكاء الاصطناعي.`, `— building polished web experiences that combine beauty, performance, and AI.`],
-    [`عرض المشاريع`, `View Projects`],
-    [`السيرة الذاتية`, `Resume`],
-    [`السيرة الذاتية · عربي`, `Resume · Arabic`],
-    [`سنوات خبرة`, `Years Experience`],
-    [`شهادة`, `Certificates`],
-    [`مطور ويب متكامل`, `Full Stack Web Developer`],
-    [`مطور تطبيقات ذكاء اصطناعي`, `AI Application Developer`],
-    [`خبير React و Next.js`, `React & Next.js Expert`],
-    [`Laravel و Node.js`, `Laravel & Node.js Builder`],
-    [`مهتم بتجربة المستخدم`, `UI/UX Enthusiast`],
-    [`01 / WHO AM I`, `01 / WHO AM I`],
-    [`المعلومات الشخصية`, `Personal Info`],
-    [`ملخص احترافي`, `Professional Summary`],
-    [`أتخصص في بناء تجارب رقمية متكاملة تجمع بين`, `I specialize in building complete digital experiences that combine`],
-    [`واجهات أمامية مبهرة`, `polished front-end interfaces`],
-    [`، وأنظمة خلفية موثوقة، وتطبيقات مدعومة بـ`, `, reliable back-end systems, and applications powered by`],
-    [`الذكاء الاصطناعي`, `Artificial Intelligence`],
-    [`متكامل، أبني منتجات ويب رقمية عالية الجودة من الصفر وحتى الإطلاق — من أنظمة الذكاء الاصطناعي إلى منصات التجارة الإلكترونية والرعاية الصحية والتعليم.`, `end-to-end. I build high-quality digital web products from scratch to launch, from AI systems to e-commerce, healthcare, and education platforms.`],
-    [`التعليم`, `Education`],
-    [`بكالوريوس تكنولوجيا المعلومات`, `Bachelor of Information Technology`],
-    [`جامعة الريان · اليمن`, `Al-Rayan University · Yemen`],
-    [`✦ مرتبة الشرف · Honors`, `✦ Honors`],
-    [`اليمن · حضرموت · غيل باوزير`, `Yemen · Hadramout · Ghayl Ba Wazir`],
-    [`العربية`, `Arabic`],
-    [`الإنجليزية`, `English`],
-    [`تحميل العرض التقديمي`, `Download Presentation`],
-    [`الخبرة العملية`, `Work Experience`],
-    [`2023 – حتى الآن`, `2023 – Present`],
-    [`تطوير الواجهات الأمامية`, `Front-end Development`],
-    [`تصميم UI/UX احترافي مع Tailwind & Figma`, `Professional UI/UX design with Tailwind & Figma`],
-    [`تطوير الأنظمة الخلفية`, `Back-end Development`],
-    [`Node.js, Express, Laravel مع MySQL وMongoDB`, `Node.js, Express, Laravel with MySQL and MongoDB`],
-    [`تكامل الذكاء الاصطناعي في تطبيقات الويب`, `AI integration in web applications`],
-    [`OpenAI GPT, Chatbots, ML Models في تطبيقات الويب`, `OpenAI GPT, chatbots, and ML models in web apps`],
-    [`النشر السحابي`, `Cloud Deployment`],
-    [`نشر على AWS، Vercel، Netlify`, `Deployment on AWS, Vercel, and Netlify`],
-    [`AWS, Vercel, Netlify مع CI/CD وDocker`, `AWS, Vercel, Netlify with CI/CD and Docker`],
-    [`أمان التطبيقات`, `Application Security`],
-    [`أمان تطبيقات، JWT، RBAC، OWASP`, `Application security, JWT, RBAC, OWASP`],
-    [`تعاون مع العملاء`, `Client Collaboration`],
-    [`من التحليل وصياغة المتطلبات إلى التسليم والصيانة`, `From analysis and requirements to delivery and maintenance`],
-    [`02 / EXPERIENCE`, `02 / EXPERIENCE`],
-    [`مطوّر`, `Developer`],
-    [`تنفيذ وتطوير مشروعات ويب احترافية متكاملة لعملاء من مختلف القطاعات، مع ضمان تقديم حلول رقمية مبتكرة تلبي احتياجات كل مشروع من التحليل وحتى الإطلاق.`, `Building complete professional web projects for clients across sectors, delivering practical digital solutions from analysis through launch.`],
-    [`تطوير مواقع وتطبيقات ويب`, `Websites & Web Apps`],
-    [`واجهات احترافية وسريعة باستخدام React و Next.js و Tailwind مع تجربة مستخدم متجاوبة.`, `Modern responsive interfaces with React, Next.js, and Tailwind, shaped around real user journeys.`],
-    [`لوحات تحكم وأنظمة إدارية`, `Dashboards & Admin Systems`],
-    [`بناء Dashboards لإدارة البيانات، المستخدمين، التقارير، الصلاحيات، وسير العمل اليومي.`, `Dashboards for data, users, reporting, permissions, and day-to-day workflows.`],
-    [`أنظمة Laravel وواجهات API`, `Laravel Systems & APIs`],
-    [`تطوير Back-end منظم وآمن مع قواعد بيانات، صلاحيات، مصادقة، وواجهات REST قابلة للتوسع.`, `Secure, structured back-end work with databases, roles, authentication, and scalable REST APIs.`],
-    [`دمج الذكاء الاصطناعي`, `AI Integration`],
-    [`إضافة مساعدين ذكيين، تحليل نصوص، توصيات، أو أتمتة قرارات داخل تطبيقات الويب.`, `Smart assistants, text analysis, recommendations, and workflow automation inside web products.`],
-    [`تحسين UI/UX وتجربة المستخدم`, `UI/UX Improvement`],
-    [`تحويل الواجهات المزدحمة إلى تجربة منظمة، جذابة، وسهلة الاستخدام على كل الشاشات.`, `Turn crowded screens into organized, polished, and easy-to-use interfaces across devices.`],
-    [`تحسين الأداء والأمان`, `Performance & Security`],
-    [`مراجعة سرعة الموقع، حماية النماذج، تنظيم الصلاحيات، وتحسين قابلية الصيانة.`, `Speed reviews, safer forms, permission cleanup, and maintainable implementation patterns.`],
-    [`بناء أنظمة واسعة النطاق ومتعددة الأدوار`, `Build scalable, multi-role systems`],
-    [`اطلب هذه الخدمة`, `Request this service`],
-    [`حلول عملية لبناء منتجات ويب سريعة، لوحات تحكم واضحة، وتجارب ذكية تساعد مشروعك على النمو بثقة.`, `Practical help for building fast web products, clear dashboards, and smart experiences that move your project forward.`],
-    [`03 / SKILLS`, `03 / SKILLS`],
-    [`المهارات التقنية`, `Technical Skills`],
-    [`الواجهات الأمامية`, `Front-end`],
-    [`الأنظمة الخلفية`, `Back-end`],
-    [`قواعد البيانات`, `Databases`],
-    [`الأمن السيبراني`, `Cybersecurity`],
-    [`أدوات التطوير`, `Development Tools`],
-    [`Progress bars تظهر أنيميشن عند الوصول للقسم.`, `Progress bars animate when this section enters the viewport.`],
-    [`React.js, Next.js, Tailwind CSS مع أفضل معايير UI/UX`, `React.js, Next.js, and Tailwind CSS with strong UI/UX standards`],
-    [`JWT, RBAC, OWASP, Secure APIs وبرمجة نظيفة`, `JWT, RBAC, OWASP, secure APIs, and clean code`],
-    [`05 / TESTIMONIALS`, `05 / TESTIMONIALS`],
-    [`آراء العملاء`, `Client Feedback`],
-    [`شهادات مختصرة عن تجربة العمل وتحقيق النتائج.`, `Short testimonials about collaboration, delivery, and results.`],
-    [`أحمد`, `Ahmed`],
-    [`سارة`, `Sarah`],
-    [`خالد`, `Khaled`],
-    [`ريم`, `Reem`],
-    [`يوسف`, `Yousef`],
-    [`نورة`, `Noura`],
-    [`تنفيذ سريع وبجودة عالية، مع اهتمام واضح بالتفاصيل. المشروع وصل للمرحلة النهائية دون أي تعثرات.`, `Fast, high-quality delivery with clear attention to detail. The project reached the final stage smoothly.`],
-    [`تواصل ممتاز وفهم عميق للمتطلبات. التصميم كان أنيق وسهل الاستخدام، والنتيجة ممتازة.`, `Excellent communication and deep understanding of the requirements. The design was elegant, usable, and successful.`],
-    [`دمج AI في التطبيق كان واضحاً وعملياً. اهتم بالتوثيق والتسليم المنظم، وسرعة الإنجاز كانت ملفتة.`, `The AI integration was clear and practical, with strong documentation, organized delivery, and impressive speed.`],
-    [`التزام قوي بالأمان، وتطبيق RBAC و JWT بشكل احترافي. تم اكتشاف الأخطاء قبل الإطلاق وإصلاحها بسرعة.`, `Strong security focus and professional RBAC/JWT implementation. Issues were caught and fixed before launch.`],
-    [`إعدادات النشر و CI/CD كانت مرتبة وواضحة، وتوافق جيد مع بيئات التشغيل المختلفة.`, `Deployment and CI/CD setup were organized, clear, and worked well across environments.`],
-    [`عمل احترافي مع سرعة في الرد والمتابعة. النتيجة كانت أفضل مما كنا نتوقع.`, `Professional work with fast replies and follow-up. The result exceeded our expectations.`],
-    [`ابدأ مشروعك الآن`, `Start Your Project`],
-    [`06 / PROJECTS`, `06 / PROJECTS`],
-    [`مجموعة من أبرز المشاريع التي طورتها — كل مشروع يمثل تحدياً تقنياً حقيقياً وحلاً مبتكراً.`, `A selection of featured projects, each shaped around a real technical challenge and a practical solution.`],
-    [`الكل`, `All`],
-    [`AI / ذكاء اصطناعي`, `AI`],
-    [`ابحث في المشاريع والشهادات...`, `Search projects and certificates...`],
-    [`المشاريع فقط`, `Projects only`],
-    [`الشهادات فقط`, `Certificates only`],
-    [`اكتب كلمة مثل React أو Laravel أو AI للعثور بسرعة على الأعمال والشهادات.`, `Try React, Laravel, AI, cybersecurity, or any certificate name.`],
-    [`تفاصيل`, `Details`],
-    [`عرض`, `Slides`],
-    [`فيديو`, `Video`],
-    [`نظام مراجعة أداء الموظفين`, `Employee Performance Review System`],
-    [`نظام متكامل لإدارة وتقييم أداء الموظفين، يربط الموارد البشرية والمديرين والموظفين في منصة واحدة شفافة.`, `A complete employee performance review system connecting HR, managers, and employees in one transparent platform.`],
-    [`منصة دردشة فورية`, `Real-time Chat Platform`],
-    [`تطبيق محادثة متكامل يحاكي واتساب، يدعم الرسائل الصوتية والتراسل اللحظي مع واجهة عصرية.`, `A WhatsApp-like chat app with voice messages, real-time messaging, and a modern interface.`],
-    [`منصة العملات الرقمية`, `Crypto Platform`],
-    [`قالب واجهة أمامية احترافي لمنصات الكريبتو، بتصميم عصري مع Next.js 15.`, `A professional front-end template for crypto platforms, built with a modern Next.js 15 interface.`],
-    [`نظام إدارة المدارس`, `School Management System`],
-    [`نظام متكامل لرقمنة المدارس، يربط الإدارة والمعلمين والطلاب وأولياء الأمور.`, `A complete school digitization system connecting administration, teachers, students, and parents.`],
-    [`مستشارك الطبي الذكي (MedAI)`, `MedAI Smart Medical Advisor`],
-    [`منصة استشارات طبية ذكية تعتمد على AI لتقديم نصائح صحية وتشخيص مبدئي.`, `An AI-powered medical consultation platform for health advice and initial guidance.`],
-    [`منصة إدارة المشاريع`, `Project Management Platform`],
-    [`منصة كـ Jira/Trello، تدعم Kanban والعمل الجماعي والتحليلات.`, `A Jira/Trello-style platform supporting Kanban, team collaboration, and analytics.`],
-    [`متجر نار (Nar Store)`, `Nar Store`],
-    [`متجر إلكتروني لبيع البطاقات الرقمية بتصميم عصري وتجربة شراء فورية.`, `An e-commerce store for digital cards with a modern design and fast purchase flow.`],
-    [`CLI tool بـ Dart لأتمتة إدارة بيئات Firebase المتعددة في مشاريع Flutter.`, `A Dart CLI tool for automating multi-environment Firebase management in Flutter projects.`],
-    [`07 / CERTIFICATIONS`, `07 / CERTIFICATIONS`],
-    [`الشهادات المعتمدة`, `Certified Training`],
-    [`ساعة تدريب`, `Training Hours`],
-    [`شهادات أخرى`, `Other Certificates`],
-    [`300 ساعة`, `300 hrs`],
-    [`50 ساعة`, `50 hrs`],
-    [`32 ساعة`, `32 hrs`],
-    [`24 ساعة`, `24 hrs`],
-    [`14 ساعة`, `14 hrs`],
-    [`10 ساعات`, `10 hrs`],
-    [`6 ساعات`, `6 hrs`],
-    [`5 ساعات`, `5 hrs`],
-    [`4 ساعات`, `4 hrs`],
-    [`3 ساعات`, `3 hrs`],
-    [`2 ساعة`, `2 hrs`],
-    [`08 / CONTACT`, `08 / CONTACT`],
-    [`أنا دائماً متحمس للعمل على`, `I am always excited to work on`],
-    [`مشاريع جديدة ومثيرة`, `new and exciting projects`],
-    [`. إذا كان لديك فكرة تود تنفيذها، فلا تتردد في التواصل.`, `. If you have an idea you want to build, feel free to reach out.`],
-    [`أرسل رسالة`, `Send a Message`],
-    [`مباشرة`, `Directly`],
-    [`تم تجهيز رسالة واتساب!`, `WhatsApp Message Ready!`],
-    [`سيتم فتح واتساب برسالة منسقة. راجعها ثم اضغط إرسال.`, `WhatsApp will open with a formatted message. Review it, then send.`],
-    [`تجهيز رسالة أخرى`, `Prepare Another Message`],
-    [`الاسم الكامل`, `Full Name`],
-    [`البريد الإلكتروني`, `Email`],
-    [`(اختياري)`, `(optional)`],
-    [`الموضوع`, `Subject`],
-    [`اختر موضوع التواصل...`, `Choose a contact topic...`],
-    [`طلب تطوير مشروع`, `Project Development Request`],
-    [`عمل حر (Freelance)`, `Freelance Work`],
-    [`تعاون مشترك`, `Collaboration`],
-    [`استفسار عام`, `General Inquiry`],
-    [`أخرى`, `Other`],
-    [`الميزانية المتوقعة`, `Estimated Budget`],
-    [`اختر النطاق الأقرب...`, `Choose the closest range...`],
-    [`أقل من 300$`, `Less than $300`],
-    [`أكثر من 1500$`, `$1500+`],
-    [`أحتاج استشارة لتحديدها`, `Need consultation to define it`],
-    [`الرسالة`, `Message`],
-    [`تم حفظ المسودة`, `Draft saved`],
-    [`فتح واتساب بالرسالة`, `Open WhatsApp With Message`],
-    [`جاري فتح واتساب...`, `Opening WhatsApp...`],
-    [`جارٍ التحميل...`, `Loading...`],
-    [`© 2026 حسن محمد بارفعه · All rights reserved`, `© 2026 Hassan Mohammed Barafah · All rights reserved`],
-    [`عرض تقديمي PowerPoint`, `PowerPoint Presentation`],
-    [`لِعرض العرض التقديمي، يرجى تحميل الملف وفتحه في Microsoft PowerPoint.`, `To view this presentation, download it and open it in Microsoft PowerPoint.`],
-    [`لعرض العرض التقديمي، يرجى تحميل الملف وفتحه في Microsoft PowerPoint.`, `To view this presentation, download it and open it in Microsoft PowerPoint.`],
-    [`لتحميل العرض التقديمي`, `Download the presentation`],
-    [`للعرض العرض التقديمي، يرجى تحميل الملف وفتحه في Microsoft PowerPoint.`, `To view this presentation, download it and open it in Microsoft PowerPoint.`],
-    [`للعرض التقديمي، يرجى تحميل الملف وفتحه في Microsoft PowerPoint.`, `To view this presentation, download it and open it in Microsoft PowerPoint.`],
-    [`تحميل العرض التقديمي`, `Download Presentation`],
-    [`العودة لأعلى`, `Back to Top`],
-    [`العودة لأعلى الصفحة`, `Back to Top`],
-    [`تبديل الوضع`, `Toggle Theme`],
-    [`تبديل الوضع الليلي/النهاري`, `Toggle dark/light mode`],
-    [`تبديل اللغة`, `Switch language`],
-    [`نطاق البحث`, `Search scope`],
-    [`مسح البحث`, `Clear search`],
-    [`واتساب`, `WhatsApp`],
-    [`حسن محمد...`, `Hassan Mohammed...`],
-    [`أخبرني عن مشروعك أو فكرتك...`, `Tell me about your project or idea...`],
-    [`الرجاء إدخال الاسم (حرفين على الأقل)`, `Please enter your name, at least two characters.`],
-    [`الرجاء إدخال بريد إلكتروني صحيح أو اتركه فارغاً`, `Enter a valid email address or leave it empty.`],
-    [`الرجاء اختيار موضوع التواصل`, `Please choose a contact topic.`],
-    [`الرجاء اختيار نطاق الميزانية الأقرب`, `Please choose the closest budget range.`],
-    [`الرجاء كتابة رسالة لا تقل عن 10 أحرف`, `Please write a message of at least 10 characters.`],
-    [`السلام عليكم حسن،`, `Hello Hassan,`],
-    [`لدي طلب مشروع جديد:`, `I have a new project request:`],
-    [`تفاصيل المشروع:`, `Project details:`],
-    [`غير محدد`, `Not specified`],
-    [`أرغب في تطوير موقع أو تطبيق ويب. أحتاج واجهة احترافية وسريعة ومتجاوبة، مع تنظيم واضح للأقسام وتجربة مستخدم ممتازة.`, `I want to build a website or web app with a professional, fast, responsive interface and a clear user experience.`],
-    [`أرغب في بناء لوحة تحكم أو نظام إداري لإدارة البيانات والمستخدمين والتقارير والصلاحيات.`, `I want to build a dashboard or admin system for data, users, reports, and permissions.`],
-    [`أحتاج تطوير نظام Laravel أو API منظم وآمن مع قاعدة بيانات وصلاحيات ومصادقة.`, `I need a secure Laravel system or API with database, roles, and authentication.`],
-    [`أرغب في دمج الذكاء الاصطناعي داخل تطبيقي، مثل مساعد ذكي أو تحليل نصوص أو توصيات.`, `I want to integrate AI into my app, such as a smart assistant, text analysis, or recommendations.`],
-    [`أريد تحسين واجهة وتجربة المستخدم لموقع أو تطبيق موجود حتى يصبح أوضح وأجمل وأسهل استخداماً.`, `I want to improve the UI/UX of an existing site or app so it becomes clearer, cleaner, and easier to use.`],
-    [`أحتاج مراجعة أداء وأمان لموقع أو نظام، مع تحسين السرعة والصلاحيات وحماية النماذج.`, `I need a performance and security review with speed improvements, permission cleanup, and safer forms.`],
-    [`Full Stack Web Developer`, `Full Stack Web Developer`],
-    [`AI Application Developer`, `AI Application Developer`],
-    [`React & Next.js Expert`, `React & Next.js Expert`],
-    [`Laravel & Node.js Builder`, `Laravel & Node.js Builder`],
-    [`UI/UX Enthusiast`, `UI/UX Enthusiast`],
-    [`AI / ذكاء اصطناعي`, `AI`],
-    [`أريد مشروعاً مشابهاً`, `I want a similar project`],
-    [`تواصل للاستفسار`, `Contact for details`],
-    [`CHALLENGE`, `CHALLENGE`],
-    [`SOLUTION`, `SOLUTION`],
-    [`RESULT`, `RESULT`],
-    [`ROLE`, `ROLE`],
-    [`TIMELINE`, `TIMELINE`],
-    [`FOCUS`, `FOCUS`],
-    [`مطور`, `Developer`],
-    [`Full-stack Developer`, `Full-stack Developer`],
-    [`AI Product Builder`, `AI Product Builder`],
-    [`Real-time Developer`, `Real-time Developer`],
-    [`CLI Package Author`, `CLI Package Author`],
-    [`Frontend Developer`, `Frontend Developer`],
-    [`Laravel System Developer`, `Laravel System Developer`],
-    [`AI Web Developer`, `AI Web Developer`],
-    [`Productivity App Developer`, `Productivity App Developer`],
-    [`E-commerce Frontend`, `E-commerce Frontend`],
-    [`05 / WHY ME`, `05 / WHY ME`],
-    [`لماذا تختارني؟`, `Why Choose Me?`],
-    [`أركز على بناء حلول مفهومة وسريعة وقابلة للتطوير، مع تجربة تواصل واضحة من أول رسالة حتى التسليم.`, `I focus on building clear, fast, scalable solutions with transparent communication from the first message to delivery.`],
-    [`سرعة تنفيذ محسوبة`, `Measured Delivery Speed`],
-    [`أقسم العمل إلى مراحل واضحة حتى ترى تقدماً حقيقياً بدون انتظار طويل أو غموض.`, `I split work into clear stages so you see real progress without long waits or ambiguity.`],
-    [`كود منظم وقابل للصيانة`, `Clean, Maintainable Code`],
-    [`أبني البنية بشكل مرتب، وأتجنب التعقيد غير الضروري حتى يسهل تطوير المشروع لاحقاً.`, `I keep the structure organized and avoid needless complexity so the project stays easy to extend.`],
-    [`اهتمام بتجربة المستخدم`, `User Experience Focus`],
-    [`لا أتعامل مع الواجهة كزينة فقط، بل كمسار يساعد المستخدم على الفهم والإنجاز بسرعة.`, `I treat the interface as a path that helps users understand and complete tasks quickly, not just decoration.`],
-    [`تواصل واضح وتسليم مرتب`, `Clear Communication and Handoff`],
-    [`أوضح ما سيتم عمله، أشارك التحديثات المهمة، وأسلّم نتيجة قابلة للاستخدام لا مجرد ملفات.`, `I clarify the work, share important updates, and deliver something usable, not just loose files.`],
-    [`06 / AVAILABLE FOR`, `06 / AVAILABLE FOR`],
-    [`متاح حالياً لـ`, `Currently Available For`],
-    [`هذه أكثر أنواع المشاريع التي أستطيع تنفيذها أو تطويرها بسرعة وبجودة عالية حالياً.`, `These are the project types I can currently build or improve quickly and with high quality.`],
-    [`مشاريع تخرج`, `Graduation Projects`],
-    [`تحليل، تصميم، تطوير، عرض تقديمي، وتجهيز شرح المشروع.`, `Analysis, design, development, presentation, and project walkthrough preparation.`],
-    [`مواقع شركات وأعمال`, `Business Websites`],
-    [`صفحات تعريفية احترافية، خدمات، تواصل، وتحسين ظهور العلامة.`, `Professional profile pages, services, contact flows, and stronger brand presence.`],
-    [`أنظمة Laravel`, `Laravel Systems`],
-    [`لوحات تحكم، صلاحيات، قواعد بيانات، تقارير، وواجهات API.`, `Dashboards, permissions, databases, reports, and APIs.`],
-    [`تطبيقات AI`, `AI Applications`],
-    [`مساعدات ذكية، تحليل نصوص، توصيات، وأتمتة داخل المنتجات.`, `Smart assistants, text analysis, recommendations, and product automation.`],
-    [`لوحات تحكم`, `Dashboards`],
-    [`إحصائيات، إدارة مستخدمين، فلاتر، تقارير، وتجربة استخدام عملية.`, `Analytics, user management, filters, reports, and practical workflows.`],
-    [`تحسين مشاريع موجودة`, `Existing Project Improvements`],
-    [`إصلاح مشاكل، تحسين واجهة، رفع أداء، وتنظيم الكود.`, `Bug fixes, UI improvements, performance upgrades, and code organization.`],
-    [`07 / PROCESS`, `07 / PROCESS`],
-    [`طريقة العمل`, `Work Process`],
-    [`مسار واضح يقلل المفاجآت، ويجعل كل مرحلة قابلة للمراجعة قبل الانتقال للمرحلة التالية.`, `A clear path that reduces surprises and makes each stage reviewable before moving forward.`],
-    [`تحليل المتطلبات`, `Requirements Analysis`],
-    [`نفهم الهدف، الجمهور، الصفحات، الصلاحيات، والمخرجات المطلوبة.`, `We clarify the goal, audience, pages, permissions, and required outputs.`],
-    [`تصميم التجربة`, `Experience Design`],
-    [`نرتب الواجهة والمسارات المهمة حتى تكون التجربة واضحة للمستخدم.`, `We organize the interface and key flows so the experience feels clear to users.`],
-    [`التطوير`, `Development`],
-    [`تنفيذ الواجهة والمنطق وقاعدة البيانات مع المحافظة على بنية قابلة للتوسع.`, `Building the interface, logic, and database while keeping the structure scalable.`],
-    [`الاختبار والتحسين`, `Testing and Refinement`],
-    [`مراجعة التجاوب، الأخطاء، السرعة، وحالات الاستخدام الأساسية.`, `Reviewing responsiveness, errors, speed, and the core usage scenarios.`],
-    [`التسليم والدعم`, `Delivery and Support`],
-    [`تسليم الملفات والشرح اللازم، مع إمكانية متابعة التحسينات بعد الإطلاق.`, `Delivering the files and needed explanation, with room for improvements after launch.`],
-    [`08 / TESTIMONIALS`, `08 / TESTIMONIALS`],
-    [`09 / PROJECTS`, `09 / PROJECTS`],
-    [`10 / CERTIFICATIONS`, `10 / CERTIFICATIONS`],
-    [`11 / FAQ`, `11 / FAQ`],
-    [`الأسئلة الشائعة`, `Frequently Asked Questions`],
-    [`إجابات مختصرة على أكثر الأسئلة التي تساعدك قبل بدء المشروع.`, `Short answers to the questions that help before starting a project.`],
-    [`كم مدة تنفيذ المشروع؟`, `How long does a project take?`],
-    [`تختلف المدة حسب الحجم، لكن أغلب الصفحات التعريفية تحتاج من 3 إلى 7 أيام، والأنظمة المتوسطة تحتاج غالباً من أسبوعين إلى شهر.`, `Timing depends on scope, but most landing websites take 3 to 7 days, while medium systems often take two weeks to a month.`],
-    [`هل تعمل عن بعد؟`, `Do you work remotely?`],
-    [`نعم، أعمل عن بعد بشكل كامل، ويمكن تنسيق المتطلبات والمراجعات عبر واتساب أو البريد أو أي أداة تناسب العميل.`, `Yes. I work fully remotely, and requirements and reviews can be coordinated through WhatsApp, email, or any tool that suits the client.`],
-    [`هل توفر صيانة بعد التسليم؟`, `Do you provide maintenance after delivery?`],
-    [`نعم، يمكن الاتفاق على فترة دعم بعد التسليم لإصلاح الملاحظات، إضافة تحسينات بسيطة، أو متابعة الإطلاق.`, `Yes. We can agree on a support period after delivery for fixes, small improvements, or launch follow-up.`],
-    [`ما التقنيات التي تستخدمها؟`, `What technologies do you use?`],
-    [`أستخدم React و Next.js و Tailwind للواجهات، وLaravel وNode.js للأنظمة الخلفية، مع MySQL أو MongoDB حسب طبيعة المشروع.`, `I use React, Next.js, and Tailwind for interfaces, Laravel and Node.js for back-end systems, and MySQL or MongoDB depending on the project.`],
-    [`هل يمكن تطوير مشروع موجود مسبقاً؟`, `Can you improve an existing project?`],
-    [`نعم، يمكنني مراجعة المشروع الحالي، إصلاح الأخطاء، تحسين الواجهة، إضافة مميزات، أو إعادة تنظيم أجزاء من الكود.`, `Yes. I can review the current project, fix bugs, improve the UI, add features, or reorganize parts of the code.`],
-    [`12 / CONTACT`, `12 / CONTACT`],
-    [`نسخ البريد`, `Copy email`],
-    [`إرسال بريد`, `Send email`],
-    [`نسخ الرقم`, `Copy number`],
-    [`اتصال`, `Call`],
-    [`نسخ واتساب`, `Copy WhatsApp`],
-    [`فتح واتساب`, `Open WhatsApp`],
-    [`تم نسخ البريد الإلكتروني`, `Email copied`],
-    [`تم نسخ رقم الهاتف`, `Phone number copied`],
-    [`تم نسخ رقم واتساب`, `WhatsApp number copied`],
-    [`تم النسخ`, `Copied`],
-    [`تعذر النسخ، حاول يدوياً`, `Could not copy. Please copy manually.`],
-    [`تم تجهيز رسالة واتساب`, `WhatsApp message is ready`],
-    [`تم تغيير الوضع وحفظه`, `Theme changed and saved`],
-    [`تم التبديل إلى العربية وحفظها`, `Switched to Arabic and saved`],
-    [`مسارات الشهادات`, `Certificate Tracks`],
-    [`حسب المجال`, `By Specialty`],
-    [`ويب`, `Web`],
-    [`ذكاء اصطناعي`, `AI`],
-    [`أمن سيبراني`, `Cybersecurity`],
-    [`قواعد بيانات`, `Databases`],
-    [`مهارات مهنية`, `Professional Skills`],
-    [`برمجة وبيانات`, `Programming & Data`],
-    [`حفظ جهة الاتصال · vCard`, `Save Contact · vCard`],
-    [`بطاقة التواصل`, `Contact Card`],
-    [`تحميل vCard`, `Download vCard`],
-    [`فتح QR`, `Open QR`],
-    [`تم مسح البحث والفلاتر`, `Search and filters cleared`]
-  ]);
-
-  const projectTranslations = new Map([
-    [`Firebase Multi-Env Manager هو أداة سطر أوامر (CLI) مكتوبة بـ Dart، تعمل كـ "مدير عمليات" آلي لتبديل إعدادات Firebase بين بيئات التطوير والإنتاج بضغطة زر.`, `Firebase Multi-Env Manager is a Dart CLI tool that acts as an automated operations manager for switching Firebase settings between development and production environments.`],
-    [`أتمتة تبديل ملفات Firebase وتغيير Application ID و Bundle ID آلياً، لضمان الدقة والسرعة ومنع الأخطاء البشرية.`, `Automate Firebase file switching and Application ID/Bundle ID changes to improve accuracy, speed, and reliability.`],
-    [`دعم كامل لـ Android · iOS · Web · macOS · Windows`, `Full support for Android, iOS, Web, macOS, and Windows`],
-    [`تغيير Application ID و Bundle ID تلقائياً`, `Automatic Application ID and Bundle ID changes`],
-    [`نسخ احتياطي وتراجع (Rollback) فوري`, `Instant backup and rollback`],
-    [`حقن متغيرات .env آلياً`, `Automatic .env variable injection`],
-    [`تكامل مع Flutterfire Configure`, `Flutterfire Configure integration`],
-    [`تحقق عميق من ملفات Firebase`, `Deep Firebase file validation`],
-    [`توافق تام مع CI/CD`, `CI/CD ready`],
-    [`نظام متكامل لإدارة وتقييم أداء الموظفين، يربط الموارد البشرية والمديرين والموظفين في منصة واحدة شفافة وفعالة.`, `A complete system for managing and reviewing employee performance, connecting HR, managers, and employees in one transparent platform.`],
-    [`توفير إطار عمل منظم لعملية مراجعة الأداء مع ضمان تقييمات عادلة وشفافة، ومواءمة الأهداف الفردية مع أهداف المؤسسة.`, `Provide a structured performance review workflow with fair, transparent evaluations aligned with company goals.`],
-    [`نظام أدوار متعدد (HR, مدير, موظف)`, `Multi-role system (HR, manager, employee)`],
-    [`لوحة تحكم تحليلية شاملة`, `Comprehensive analytics dashboard`],
-    [`تقارير الأداء وكشوف الدرجات`, `Performance reports and score sheets`],
-    [`إشعارات المهام والمواعيد`, `Task and deadline notifications`],
-    [`نماذج تقييم ديناميكية`, `Dynamic evaluation forms`],
-    [`RBAC بصلاحيات دقيقة`, `Precise RBAC permissions`],
-    [`مصادقة آمنة مع Laravel Breeze`, `Secure authentication with Laravel Breeze`],
-    [`منصة دردشة فورية (Real-time Chat)`, `Real-time Chat Platform`],
-    [`منصة محادثة متكاملة تهدف لإعادة تعريف تجربة التواصل الفوري، مستوحاة من كبرى التطبيقات العالمية، مع تركيز كامل على الخصوصية والسرعة.`, `A complete chat platform inspired by leading messaging apps, focused on privacy, speed, and real-time communication.`],
-    [`توفير بيئة تواصل سريعة وموثوقة بدون تأخير مع تجربة مستخدم سلسة وجميلة.`, `Provide a fast, reliable communication environment with a smooth user experience.`],
-    [`مراسلة فورية (Real-time) بدون تأخير`, `Real-time messaging with minimal latency`],
-    [`رسائل صوتية مع مشغل مدمج`, `Voice messages with a built-in player`],
-    [`واجهة Responsive لجميع الأجهزة`, `Responsive interface for all devices`],
-    [`نظام Online/Offline Status دقيق`, `Accurate online/offline status`],
-    [`تخزين دائم في MongoDB`, `Persistent MongoDB storage`],
-    [`دعم Emojis`, `Emoji support`],
-    [`تنبيهات صوتية ومرئية`, `Audio and visual notifications`],
-    [`منصة استشارية متقدمة تعتمد على الذكاء الاصطناعي لمحاكاة مجلس إدارة متكامل (20+ شخصية AI) لمساعدة رواد الأعمال.`, `An advanced AI advisory platform that simulates a full executive board with 20+ AI personas for entrepreneurs.`],
-    [`منصة استشارية متقدّمة تعتمد على الذكاء الاصطناعي لمحاكاة مجلس إدارة لمساعدة رواد الأعمال.`, `An advanced AI advisory platform that simulates an executive board for entrepreneurs.`],
-    [`توفير مستشارين افتراضيين بخبرات CEO, CTO, CFO, CMO لتقييم الأفكار التجارية وتقليل مخاطر الفشل.`, `Provide virtual advisors with CEO, CTO, CFO, and CMO perspectives to evaluate business ideas and reduce risk.`],
-    [`20+ AI Personas بتخصصات متنوعة`, `20+ specialized AI personas`],
-    [`تفاعل حي عبر WebSockets`, `Live WebSocket interaction`],
-    [`تقارير SWOT وخطط 90 يوماً`, `SWOT reports and 90-day plans`],
-    [`نظام تسجيل درجات احترافي`, `Professional scoring system`],
-    [`إدارة طوابير Redis & BullMQ`, `Redis and BullMQ queue management`],
-    [`دعم JSON منظم ودقيق`, `Structured JSON output support`],
-    [`منصة العملات الرقمية (Crypto UI)`, `Crypto Platform UI`],
-    [`قالب واجهة أمامية احترافي لمنصات العملات الرقمية بتصميم عصري وتقنيات Next.js 15 الحديثة.`, `A professional front-end template for crypto platforms with modern Next.js 15 technology.`],
-    [`تسريع التطوير وتوفير واجهة جاهزة وتفاعلية لمشاريع Web3 والتمويل اللامركزي.`, `Speed up development with a ready, interactive interface for Web3 and DeFi projects.`],
-    [`تصميم بـ Next.js 15 + React 19`, `Built with Next.js 15 and React 19`],
-    [`جدول أسعار العملات حي`, `Live cryptocurrency price table`],
-    [`رسوم متحركة مع Framer Motion`, `Framer Motion animations`],
-    [`دعم NextAuth.js`, `NextAuth.js support`],
-    [`وضع Dark Mode كامل`, `Full dark mode`],
-    [`صفحات مصادقة جاهزة`, `Ready authentication pages`],
-    [`تصميم Responsive 100%`, `Fully responsive design`],
-    [`تصميم Responsive لجميع الأجهزة`, `Responsive design for all devices`],
-    [`متجر إلكتروني متخصص في بيع البطاقات الرقمية (PlayStation, iTunes, Google Play) بتصميم عصري وتجربة شراء فورية.`, `An e-commerce store for digital cards such as PlayStation, iTunes, and Google Play, with a modern fast purchase flow.`],
-    [`تسهيل شراء البطاقات الرقمية مع تسليم فوري للكود وتجربة مستخدم ممتازة.`, `Make digital card purchasing simple with instant code delivery and a strong user experience.`],
-    [`سلة مشتريات مع حفظ تلقائي LocalStorage`, `Cart with automatic LocalStorage saving`],
-    [`تسليم فوري للأكواد`, `Instant code delivery`],
-    [`سلايدر تفاعلي للعروض`, `Interactive offers slider`],
-    [`دعم Dark Mode`, `Dark mode support`],
-    [`تواصل واتساب/تليجرام مباشر`, `Direct WhatsApp/Telegram contact`],
-    [`تأثيرات Animations جذابة`, `Attractive animations`],
-    [`نظام إدارة المدارس الذكي`, `Smart School Management System`],
-    [`نظام إدارة مدارس شامل لرقمنة العمليات الإدارية والتعليمية، يربط الإدارة والمعلمين والطلاب وأولياء الأمور.`, `A complete school management system for digitizing administrative and educational operations.`],
-    [`تحويل المدرسة إلى بيئة رقمية كاملة مع مراقبة الأداء لحظياً عبر لوحة تحكم مركزية.`, `Turn the school into a fully digital environment with real-time performance monitoring.`],
-    [`لوحة تحكم شاملة مع إحصائيات حية`, `Comprehensive dashboard with live stats`],
-    [`نظام أدوار متعدد بصلاحيات دقيقة`, `Multi-role system with precise permissions`],
-    [`إدارة الفصول والمواد والامتحانات`, `Manage classes, subjects, and exams`],
-    [`رصد الدرجات والحضور إلكترونياً`, `Digital grades and attendance tracking`],
-    [`توليد شهادات PDF تلقائياً`, `Automatic PDF certificate generation`],
-    [`دعم Multi-tenancy`, `Multi-tenancy support`],
-    [`تجربة SPA-like سريعة`, `Fast SPA-like experience`],
-    [`منصة إدارة المشاريع (PMP)`, `Project Management Platform (PMP)`],
-    [`منصة متكاملة لإدارة المشاريع والمهام (مثل Jira/Trello)، تدعم العمل الجماعي وKanban والتحليلات.`, `A full project and task management platform similar to Jira/Trello, supporting Kanban, teamwork, and analytics.`],
-    [`تحسين الإنتاجية وتنظيم سير العمل عبر تجميع أدوات الإدارة في مكان واحد.`, `Improve productivity by bringing project management tools into one place.`],
-    [`Kanban Board مع Drag & Drop`, `Kanban board with drag and drop`],
-    [`إدارة المهام الفرعية والقوائم`, `Manage subtasks and lists`],
-    [`تعاون الفريق بأدوار وصلاحيات`, `Team collaboration with roles and permissions`],
-    [`تعليقات وحوارات سياقية`, `Contextual comments and discussions`],
-    [`لوحة قيادة مع Recharts`, `Dashboard with Recharts`],
-    [`PWA يدعم Offline Sync`, `PWA with offline sync`],
-    [`Dark Mode وتصميم Glassmorphism`, `Dark mode and glassmorphism design`],
-    [`منصة استشارات طبية ذكية تعتمد على AI لتقديم نصائح صحية، تشخيص مبدئي، وتوعية طبية.`, `An AI-powered medical consultation platform for health advice, initial assessment, and education.`],
-    [`توفير استشارات طبية فورية وذكية مع تمكين المستخدمين من متابعة حالتهم الصحية.`, `Provide instant smart medical guidance while helping users track their health.`],
-    [`AI Chatbot يحاكي الحوار الطبي`, `AI chatbot for medical-style conversations`],
-    [`أطباء افتراضيون بتخصصات متعددة`, `Virtual doctors across specialties`],
-    [`تحليل المشاعر لردود متعاطفة`, `Sentiment analysis for empathetic replies`],
-    [`حاسبات BMI, BMR, Water Intake`, `BMI, BMR, and water intake calculators`],
-    [`Health Dashboard مع Recharts`, `Health dashboard with Recharts`],
-    [`نظام Gamification و XP`, `Gamification and XP system`],
-    [`تشفير محلي للخصوصية`, `Local privacy encryption`],
-    [`تنظيم مراجعات الأداء بين HR والمديرين والموظفين بدون تضارب في الصلاحيات أو ضياع في دورة التقييم.`, `Organize performance reviews between HR, managers, and employees without permission conflicts or lost evaluation steps.`],
-    [`بناء تدفق أدوار واضح، نماذج تقييم ديناميكية، ولوحات تقارير تساعد الإدارة على قراءة النتائج بسرعة.`, `Build clear role flows, dynamic evaluation forms, and reporting dashboards for quick management insight.`],
-    [`نظام قابل للعرض والتطوير يوضح قيمة Laravel/Vue في إدارة عمليات مؤسسية حقيقية.`, `A presentable, extensible system showing the value of Laravel/Vue in real business operations.`],
-    [`تحويل فكرة مجلس استشاري ذكي إلى تجربة يمكن لصاحب المشروع استخدامها لاتخاذ قرارات أوضح.`, `Turn an AI advisory-board idea into a usable decision-support experience for founders.`],
-    [`تقسيم الشخصيات، تنظيم أنماط الحوار، وتجهيز مخرجات قابلة للقراءة مثل SWOT وخطة 90 يوماً.`, `Structure personas, conversation modes, and readable outputs such as SWOT and 90-day plans.`],
-    [`تجربة AI عملية تعرض القدرة على بناء منتجات ذكاء اصطناعي وليست مجرد واجهة محادثة.`, `A practical AI product experience, not just a chat interface.`],
-    [`تقديم مراسلة لحظية سلسة مع حالة اتصال واضحة وتجربة قريبة من التطبيقات اليومية.`, `Deliver smooth real-time messaging with clear connection status and a familiar app-like experience.`],
-    [`استخدام Socket.io مع واجهة خفيفة، دعم الرسائل الصوتية، وتنظيم حالات Online/Offline.`, `Use Socket.io with a lightweight UI, voice-message support, and clear online/offline states.`],
-    [`تطبيق يبرز فهم تدفق البيانات اللحظي وتجربة المستخدم في تطبيقات التواصل.`, `An app that demonstrates real-time data flow and messaging UX.`],
-    [`تقليل أخطاء تبديل بيئات Firebase في مشاريع Flutter متعددة المنصات.`, `Reduce Firebase environment-switching errors in multi-platform Flutter projects.`],
-    [`أداة Dart CLI تنسخ الإعدادات، تتحقق من الملفات، وتدعم الرجوع السريع عند الحاجة.`, `A Dart CLI tool that copies settings, validates files, and supports quick rollback.`],
-    [`حزمة قابلة للاستخدام تعكس قدرة على بناء أدوات إنتاجية للمطورين وعمليات CI/CD.`, `A usable package that demonstrates developer productivity tooling and CI/CD thinking.`],
-    [`بناء واجهة Web3 حديثة تعرض بيانات وأسعار بطريقة سهلة القراءة وسريعة الاستجابة.`, `Build a modern Web3 interface that presents data and prices clearly and responsively.`],
-    [`استخدام Next.js و TypeScript مع مكونات منظمة وحركات خفيفة لتحسين الإحساس بالتفاعل.`, `Use Next.js and TypeScript with organized components and subtle motion for better interaction.`],
-    [`قالب واجهة قابل للتخصيص لمنصات مالية أو منتجات Web3.`, `A customizable UI template for finance platforms or Web3 products.`],
-    [`تجميع عمليات المدرسة الإدارية والتعليمية داخل نظام واحد بصلاحيات متعددة.`, `Bring school administrative and educational workflows into one multi-role system.`],
-    [`تصميم وحدات للطلاب والمعلمين والحضور والدرجات والتقارير مع فصل واضح للأدوار.`, `Design modules for students, teachers, attendance, grades, and reports with clear role separation.`],
-    [`تصور عملي لنظام تعليمي قابل للتوسع حسب احتياج المدرسة أو المؤسسة.`, `A practical, scalable education-system concept for schools or institutions.`],
-    [`تقديم تجربة استشارة صحية أولية تكون مفهومة ومتعاطفة بدون تعقيد طبي زائد.`, `Provide an understandable, empathetic initial health-advice experience without unnecessary complexity.`],
-    [`واجهة محادثة ذكية مع أدوات متابعة صحية وحسابات مثل BMI و BMR ولوحة تقدم.`, `A smart chat interface with health tracking tools, BMI/BMR calculators, and progress dashboards.`],
-    [`نموذج يوضح إمكانات AI في التطبيقات الصحية مع مراعاة الخصوصية وتجربة المستخدم.`, `A prototype showing AI potential in health apps while respecting privacy and UX.`],
-    [`تنظيم المشاريع والمهام بطريقة تجمع Kanban والتعاون والتحليلات في مكان واحد.`, `Organize projects and tasks by combining Kanban, collaboration, and analytics in one place.`],
-    [`تصميم تجربة إدارة مهام قابلة للتوسع مع تعليقات، أدوار، ولوحة مؤشرات للفريق.`, `Design a scalable task-management experience with comments, roles, and team metrics.`],
-    [`منتج إنتاجية واضح القيمة ويمكن تطويره لفرق العمل الصغيرة والمتوسطة.`, `A clear productivity product concept for small and mid-sized teams.`],
-    [`تقديم متجر بطاقات رقمية سريع وبسيط يوجه المستخدم للشراء بدون احتكاك.`, `Offer a fast, simple digital-card store that guides users to purchase smoothly.`],
-    [`واجهة متجر خفيفة مع سلة محلية، عروض واضحة، وتواصل مباشر لإتمام الطلب.`, `A lightweight storefront with local cart storage, clear offers, and direct purchase contact.`],
-    [`تجربة بيع رقمية مناسبة للمنتجات السريعة والمتاجر الصغيرة.`, `A digital sales experience suited to fast-moving products and small stores.`],
-    [`تحويل الفكرة إلى تجربة واضحة قابلة للاستخدام.`, `Turn the idea into a clear, usable experience.`],
-    [`تنظيم الواجهة والمنطق والتقنيات بطريقة عملية.`, `Organize interface, logic, and technology in a practical way.`],
-    [`مشروع يعرض قدرة تنفيذ كاملة من الفكرة إلى العرض.`, `A project that demonstrates full execution from idea to presentation.`]
-  ]);
-
-  projectTranslations.forEach((value, key) => translations.set(key, value));
-  const reverseTranslations = new Map();
-  translations.forEach((value, key) => reverseTranslations.set(value, key));
-
-  const translatedAttrs = ['placeholder', 'title', 'aria-label'];
-  const skippedTags = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'IFRAME', 'CANVAS']);
-
-  function translateText(value) {
-    const key = (value || '').replace(/\s+/g, ' ').trim();
-    return translations.get(key) || value;
-  }
-
-  function applyTextNode(node, lang) {
-    if (!node.datasetOriginal) node.datasetOriginal = node.nodeValue;
-    if (lang === 'ar') {
-      node.nodeValue = node.datasetOriginal;
-      return;
-    }
-    const original = node.datasetOriginal;
-    const trimmed = original.replace(/\s+/g, ' ').trim();
-    if (!trimmed) return;
-    const translated = translateText(trimmed);
-    if (translated === trimmed) return;
-    const leading = original.match(/^\s*/)[0];
-    const trailing = original.match(/\s*$/)[0];
-    node.nodeValue = leading + translated + trailing;
-  }
-
-  function applyAttributes(el, lang) {
-    translatedAttrs.forEach(attr => {
-      if (!el.hasAttribute(attr)) return;
-      const key = `i18nOriginal${attr.replace(/-([a-z])/g, (_, c) => c.toUpperCase())}`;
-      if (!el.dataset[key]) el.dataset[key] = el.getAttribute(attr);
-      if (lang === 'ar') {
-        el.setAttribute(attr, el.dataset[key]);
-      } else {
-        el.setAttribute(attr, translateText(el.dataset[key]));
-      }
-    });
-  }
-
-  function translateSubtree(root, lang = window.currentLang || 'ar') {
-    if (!root) return;
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-      acceptNode(node) {
-        const parent = node.parentElement;
-        if (!parent || skippedTags.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
-        return node.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
-      }
-    });
-    const nodes = [];
-    while (walker.nextNode()) nodes.push(walker.currentNode);
-    nodes.forEach(node => applyTextNode(node, lang));
-    if (root.nodeType === 1) applyAttributes(root, lang);
-    root.querySelectorAll?.('*').forEach(el => applyAttributes(el, lang));
-  }
-
-  window.translateText = translateText;
-  window.translateSubtree = translateSubtree;
-
-  function syncKnownFieldValue(id, lang) {
-    const el = document.getElementById(id);
-    if (!el || !el.value) return;
-    const value = el.value.trim();
-    if (lang === 'en' && translations.has(value)) {
-      el.value = translations.get(value);
-    } else if (lang === 'ar' && reverseTranslations.has(value)) {
-      el.value = reverseTranslations.get(value);
-    }
-    if (id === 'cf-message' && typeof cfMsgCount === 'function') cfMsgCount(el);
-  }
-
-  function applyLanguage(lang) {
-    window.currentLang = lang;
-    html.lang = lang;
-    html.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    document.title = lang === 'ar'
-      ? 'حسن محمد بارفعه — Full Stack & AI Developer'
-      : 'Hassan Mohammed Barafah — Full Stack & AI Developer';
-    localStorage.setItem('hassan-language', lang);
-    if (label) label.textContent = lang === 'ar' ? 'EN' : 'AR';
-    translateSubtree(document.body, lang);
-    refreshOpenFAQHeights();
-    syncKnownFieldValue('cf-message', lang);
-    btn.setAttribute('aria-label', lang === 'ar' ? 'تبديل اللغة' : 'Switch language');
-    btn.setAttribute('title', lang === 'ar' ? 'تبديل اللغة' : 'Switch language');
-    resetTyping(lang);
-    if (window.portfolioSearchReady && typeof updatePortfolioSearchMeta === 'function') {
-      updatePortfolioSearchMeta();
-    } else {
-      const meta = document.getElementById('portfolio-search-meta');
-      if (meta) meta.textContent = lang === 'ar'
-        ? 'اكتب كلمة مثل React أو Laravel أو AI للعثور بسرعة على الأعمال والشهادات.'
-        : 'Try React, Laravel, AI, cybersecurity, or any certificate name.';
-    }
-  }
-
-  const savedLang = localStorage.getItem('hassan-language') || 'ar';
-  applyLanguage(savedLang);
-  btn.addEventListener('click', () => {
-    const nextLang = (window.currentLang || 'ar') === 'ar' ? 'en' : 'ar';
-    applyLanguage(nextLang);
-    localizedToast('تم التبديل إلى العربية وحفظها', 'Switched to English and saved', 'info');
-  });
 })();
 
 /* ===================== SCROLL TO TOP LOGIC ===================== */
@@ -4786,164 +3063,57 @@ function resetContactForm() {
   });
 })();
 
-/* ===================== PROJECT / CERTIFICATE FILTERS ===================== */
-let portfolioSearchState = { projects: 0, certificates: 0, query: '', scope: 'all', category: 'all', certCategory: 'all' };
-function updatePortfolioSearchMeta() {
-  const meta = document.getElementById('portfolio-search-meta');
-  if (!meta) return;
-  const lang = window.currentLang || 'ar';
-  const state = portfolioSearchState || { projects: 0, certificates: 0, query: '', scope: 'all', category: 'all', certCategory: 'all' };
-  if (!state.query && state.scope === 'all' && state.category === 'all' && state.certCategory === 'all') {
-    meta.textContent = lang === 'ar'
-      ? 'اكتب كلمة مثل React أو Laravel أو AI للعثور بسرعة على الأعمال والشهادات.'
-      : 'Try React, Laravel, AI, cybersecurity, or any certificate name.';
-    return;
-  }
-  meta.textContent = lang === 'ar'
-    ? `تم العثور على ${state.projects} مشروع و ${state.certificates} شهادة.`
-    : `Found ${state.projects} projects and ${state.certificates} certificates.`;
-}
-
+/* ===================== PROJECT FILTER ===================== */
 (function() {
-  const SEARCH_STATE_KEY = 'hassan-portfolio-search';
   const catCounts = { react: 0, laravel: 0, ai: 0, flutter: 0, cli: 0 };
-  const certCategoryCounts = { web: 0, ai: 0, cyber: 0, databases: 0, soft: 0, programming: 0 };
-  const cards = Array.from(document.querySelectorAll('.project-card[data-category]'));
-  const certItems = Array.from(document.querySelectorAll('#certifications .cert-item'));
-  const certGroups = Array.from(document.querySelectorAll('#certifications .cert-provider-group'));
-  const searchInput = document.getElementById('portfolio-search');
-  const scopeSelect = document.getElementById('portfolio-search-scope');
-  const clearBtn = document.getElementById('portfolio-search-clear');
-  const filterBtns = document.querySelectorAll('.filter-btn[data-filter]');
-  const certFilterBtns = document.querySelectorAll('.cert-filter-btn[data-cert-filter]');
-  let activeCategory = 'all';
-  let activeCertCategory = 'all';
+  const cards = document.querySelectorAll('.project-card[data-category]');
+  let totalAll = cards.length;
 
+  // Count categories
   cards.forEach(card => {
     const cats = (card.getAttribute('data-category') || '').trim().split(/\s+/).filter(Boolean);
     cats.forEach(c => { if (catCounts[c] !== undefined) catCounts[c]++; });
   });
-  certItems.forEach(item => {
-    const cats = (item.getAttribute('data-cert-category') || '').trim().split(/\s+/).filter(Boolean);
-    cats.forEach(c => { if (certCategoryCounts[c] !== undefined) certCategoryCounts[c]++; });
-  });
 
+  // Update counts in buttons
   const el = id => document.getElementById(id);
-  if (el('cnt-all')) el('cnt-all').textContent = cards.length;
+  if (el('cnt-all')) el('cnt-all').textContent = totalAll;
   Object.keys(catCounts).forEach(k => { if (el('cnt-' + k)) el('cnt-' + k).textContent = catCounts[k]; });
-  if (el('cert-cnt-all')) el('cert-cnt-all').textContent = certItems.length;
-  Object.keys(certCategoryCounts).forEach(k => { if (el('cert-cnt-' + k)) el('cert-cnt-' + k).textContent = certCategoryCounts[k]; });
 
-  try {
-    const savedSearch = JSON.parse(localStorage.getItem(SEARCH_STATE_KEY) || '{}');
-    if (searchInput && typeof savedSearch.query === 'string') searchInput.value = savedSearch.query;
-    if (scopeSelect && ['all','projects','certificates'].includes(savedSearch.scope)) scopeSelect.value = savedSearch.scope;
-    if (savedSearch.category && Array.from(filterBtns).some(btn => btn.getAttribute('data-filter') === savedSearch.category)) {
-      activeCategory = savedSearch.category;
-    }
-    filterBtns.forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-filter') === activeCategory));
-    if (savedSearch.certCategory && Array.from(certFilterBtns).some(btn => btn.getAttribute('data-cert-filter') === savedSearch.certCategory)) {
-      activeCertCategory = savedSearch.certCategory;
-    }
-    certFilterBtns.forEach(btn => btn.classList.toggle('active', btn.getAttribute('data-cert-filter') === activeCertCategory));
-  } catch(e) {}
-
-  function normalize(value) {
-    return (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
-  }
-
-  function matchesSearch(node, query, extra = '') {
-    if (!query) return true;
-    return normalize(node.textContent + ' ' + extra).includes(query);
-  }
-
-  function applyPortfolioFilters() {
-    const query = normalize(searchInput?.value || '');
-    const scope = scopeSelect?.value || 'all';
-    let visibleProjects = 0;
-    let visibleCerts = 0;
+  // Filter logic
+  function filterCards(category) {
     let delay = 0;
-
     cards.forEach(card => {
       const cats = (card.getAttribute('data-category') || '').trim().split(/\s+/).filter(Boolean);
-      const categoryMatch = activeCategory === 'all' || cats.includes(activeCategory);
-      const scopeMatch = scope === 'all' || scope === 'projects';
-      const searchMatch = matchesSearch(card, query, cats.join(' '));
-      const show = scopeMatch && categoryMatch && searchMatch;
+      const show = category === 'all' || cats.includes(category);
 
-      card.style.transitionDelay = show ? delay * 45 + 'ms' : '0ms';
-      card.classList.toggle('filter-visible', show);
-      card.classList.toggle('filter-hidden', !show);
-      if (show) { visibleProjects++; delay++; }
+      if (show) {
+        // Show: remove hidden, add visible with staggered delay
+        card.style.transitionDelay = delay * 60 + 'ms';
+        card.classList.remove('filter-hidden');
+        card.classList.add('filter-visible');
+        delay++;
+      } else {
+        card.style.transitionDelay = '0ms';
+        card.classList.remove('filter-visible');
+        card.classList.add('filter-hidden');
+      }
     });
-
-    certItems.forEach(item => {
-      const certCats = (item.getAttribute('data-cert-category') || '').trim().split(/\s+/).filter(Boolean);
-      const scopeMatch = scope === 'all' || scope === 'certificates';
-      const categoryMatch = activeCertCategory === 'all' || certCats.includes(activeCertCategory);
-      const show = scopeMatch && categoryMatch && matchesSearch(item, query, certCats.join(' '));
-      item.classList.toggle('search-hidden', !show);
-      if (show) visibleCerts++;
-    });
-
-    certGroups.forEach(group => {
-      const hasVisibleCert = Array.from(group.querySelectorAll('.cert-item')).some(item => !item.classList.contains('search-hidden'));
-      group.classList.toggle('cert-group-empty', !hasVisibleCert);
-    });
-
-    portfolioSearchState = { projects: visibleProjects, certificates: visibleCerts, query, scope, category: activeCategory, certCategory: activeCertCategory };
-    try {
-      localStorage.setItem(SEARCH_STATE_KEY, JSON.stringify({
-        query: searchInput?.value || '',
-        scope,
-        category: activeCategory,
-        certCategory: activeCertCategory
-      }));
-    } catch(e) {}
-    updatePortfolioSearchMeta();
   }
 
+  // Bind filter buttons
+  const filterBtns = document.querySelectorAll('.filter-btn[data-filter]');
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      activeCategory = btn.getAttribute('data-filter') || 'all';
+      // Micro-bounce on active button
       btn.animate([
         {transform:'scale(1)'},{transform:'scale(0.93)'},{transform:'scale(1.05)'},{transform:'scale(1)'}
       ], {duration:300, easing:'cubic-bezier(0.34,1.56,0.64,1)'});
-      applyPortfolioFilters();
+      filterCards(btn.getAttribute('data-filter'));
     });
   });
-
-  certFilterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      certFilterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeCertCategory = btn.getAttribute('data-cert-filter') || 'all';
-      if (scopeSelect && scopeSelect.value === 'projects') scopeSelect.value = 'certificates';
-      btn.animate([
-        {transform:'scale(1)'},{transform:'scale(0.93)'},{transform:'scale(1.05)'},{transform:'scale(1)'}
-      ], {duration:300, easing:'cubic-bezier(0.34,1.56,0.64,1)'});
-      applyPortfolioFilters();
-    });
-  });
-
-  if (searchInput) searchInput.addEventListener('input', applyPortfolioFilters);
-  if (scopeSelect) scopeSelect.addEventListener('change', applyPortfolioFilters);
-  if (clearBtn) clearBtn.addEventListener('click', () => {
-    if (searchInput) searchInput.value = '';
-    if (scopeSelect) scopeSelect.value = 'all';
-    activeCategory = 'all';
-    activeCertCategory = 'all';
-    filterBtns.forEach(b => b.classList.toggle('active', b.getAttribute('data-filter') === 'all'));
-    certFilterBtns.forEach(b => b.classList.toggle('active', b.getAttribute('data-cert-filter') === 'all'));
-    try { localStorage.removeItem(SEARCH_STATE_KEY); } catch(e) {}
-    applyPortfolioFilters();
-    localizedToast('تم مسح البحث والفلاتر', 'Search and filters cleared', 'info');
-  });
-
-  window.portfolioSearchReady = true;
-  applyPortfolioFilters();
 })();
 
 /* ===================== AOS INIT ===================== */
