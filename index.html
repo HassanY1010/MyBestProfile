@@ -2474,7 +2474,7 @@
     <!-- Filter Bar -->
     <div class="filter-bar" id="project-filter-bar" data-reveal="">
       <button class="filter-btn active" data-filter="all">
-        <span><span class="filter-count" id="cnt-all">9</span> الكل</span>
+        <span><span class="filter-count" id="cnt-all">10</span> الكل</span>
       </button>
       <button class="filter-btn" data-filter="react">
         <span><span class="filter-count" id="cnt-react">0</span> React / Next.js</span>
@@ -2568,6 +2568,7 @@
         <div class="p-6">
           <div class="flex items-center justify-between mb-3">
             <h3 class="font-bold text-slate-100 text-lg" style="font-family:&#39;Sora&#39;,sans-serif;">AI Executive Board</h3>
+            <!-- TEST COMMENT -->
             <span style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:999px;padding:2px 10px;color:#34d399;">Advanced AI</span>
           </div>
           <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة استشارية متقدّمة تعتمد على الذكاء الاصطناعي لمحاكاة مجلس إدارة لمساعدة رواد الأعمال.</p>
@@ -2581,6 +2582,43 @@
               <i class="fas fa-eye text-xs"></i> تفاصيل
             </button>
             <button onclick="openProjectVideo(&#39;project-videos/project8-AI-Executive-Board.mp4&#39;)" class="flex-1 py-2 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 glass" style="border:1px solid rgba(16,185,129,0.3);color:#34d399;transition:all 0.3s;" onmouseover="this.style.background=&#39;rgba(16,185,129,0.1)&#39;" onmouseout="this.style.background=&#39;&#39;">
+              <i class="fas fa-play text-xs"></i> فيديو
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT: OBSIDIAN -->
+      <div class="project-card filter-visible" data-reveal="" style="transition-delay:0.15s;" data-category="react ai">
+        <div style="background:linear-gradient(135deg,rgba(236,72,153,0.06),rgba(0,0,0,0));position:absolute;inset:0;pointer-events:none;" class="card-glow"></div>
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a001a,#0a000a);">
+          <div style="position:absolute;inset:0;opacity:0.07;background-image:radial-gradient(rgba(255,255,255,0.4) 1px,transparent 1px);background-size:24px 24px;"></div>
+          <div style="width:72px;height:72px;border-radius:20px;background:rgba(236,72,153,0.15);border:1px solid rgba(236,72,153,0.3);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;">
+            <i class="fas fa-gem text-3xl text-pink-400" style="filter:drop-shadow(0 0 12px rgba(236,72,153,0.5));"></i>
+          </div>
+          <div class="thumb-overlay">
+            <button onclick="openProjectModal(&#39;obsidianStore&#39;)" class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-pink-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
+            <button onclick="openProjectVideo(&#39;project-videos/project9-e-commerce-platform.mp4&#39;)" class="w-14 h-14 rounded-full bg-pink-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-bold text-slate-100 text-lg" style="font-family:&#39;Sora&#39;,sans-serif;">OBSIDIAN</h3>
+            <span style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.3);border-radius:999px;padding:2px 10px;color:#f472b6;">Luxury E-commerce</span>
+          </div>
+          <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة متجر إلكتروني فاخر تركز على تقديم منتجات عالية الجودة وذات قيمة عالية مع تجربة تسوق فريدة.</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="tag-pill" style="background:rgba(0,0,0,0.3);border-color:rgba(255,255,255,0.15);color:#fff;">React</span>
+            <span class="tag-pill" style="background:rgba(49,120,198,0.08);border-color:rgba(49,120,198,0.25);color:#60a5fa;">TypeScript</span>
+            <span class="tag-pill" style="background:rgba(236,72,153,0.08);border-color:rgba(236,72,153,0.25);color:#f472b6;">Tailwind</span>
+          </div>
+          <div class="flex gap-3">
+            <button onclick="openProjectModal(&#39;obsidianStore&#39;)" class="flex-1 py-2 rounded-xl text-sm font-semibold btn-gradient text-white relative z-10 flex items-center justify-center gap-2">
+              <i class="fas fa-eye text-xs"></i> تفاصيل
+            </button>
+            <button onclick="openProjectVideo(&#39;project-videos/project9-e-commerce-platform.mp4&#39;)" class="flex-1 py-2 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 glass" style="border:1px solid rgba(236,72,153,0.3);color:#f472b6;transition:all 0.3s;" onmouseover="this.style.background=&#39;rgba(236,72,153,0.1)&#39;" onmouseout="this.style.background=&#39;&#39;">
               <i class="fas fa-play text-xs"></i> فيديو
             </button>
           </div>
@@ -3719,6 +3757,13 @@ const projectsData = {
     features:['AI Chatbot يحاكي الحوار الطبي','أطباء افتراضيون بتخصصات متعددة','تحليل المشاعر لردود متعاطفة','حاسبات BMI, BMR, Water Intake','Health Dashboard مع Recharts','نظام Gamification و XP','تشفير محلي للخصوصية'],
     backend:[{n:'Node.js',c:'text-green-400'},{n:'MySQL',c:'text-red-400'},{n:'Encryption',c:'text-amber-400'}],
     frontend:[{n:'React 19',c:'text-cyan-400'},{n:'TypeScript',c:'text-blue-500'},{n:'Tailwind v4',c:'text-teal-400'},{n:'shadcn/ui',c:'text-gray-200'},{n:'Framer Motion',c:'text-pink-400'}]
+  },
+  obsidianStore: { title:'OBSIDIAN', badge:'Luxury E-Commerce', badgeColor:'#f472b6', bgColor:'rgba(236,72,153,0.1)', borderColor:'rgba(236,72,153,0.3)', icon:'fa-gem', iconColor:'text-pink-400',
+    concept:'المشروع عبارة عن منصة متجر إلكتروني فاخر تحمل اسم "OBSIDIAN". يركز المتجر على تقديم منتجات عالية الجودة وذات قيمة عالية، مثل الأزياء الفاخرة والمصنوعات اليدوية.',
+    goal:'تقديم تجربة تسوق فاخرة تبرز الحرفية والجودة العالية وتبني هوية بصرية قوية.',
+    features:['تصميم فاخر ومتحرك (Custom Cursor, Scroll Animations)','نظام عرض المنتجات بشكل جذاب','نظام السلة والمشتريات متكامل مع Stripe','إدارة الحساب والطلبات','قائمة الرغبات (Wishlist)','أقسام مخصصة للهوية (Brand Philosophy)'],
+    backend:[{n:'Supabase',c:'text-emerald-400'},{n:'Stripe',c:'text-blue-400'},{n:'Google AI',c:'text-purple-400'}],
+    frontend:[{n:'React (Vite)',c:'text-cyan-400'},{n:'TypeScript',c:'text-blue-500'},{n:'Tailwind CSS',c:'text-cyan-400'},{n:'Shadcn UI',c:'text-gray-200'},{n:'Framer Motion',c:'text-pink-400'},{n:'Three.js',c:'text-white'},{n:'R3F',c:'text-yellow-400'}]
   }
 };
 
@@ -3794,6 +3839,14 @@ const projectCaseStudies = {
     challenge: 'تقديم متجر بطاقات رقمية سريع وبسيط يوجه المستخدم للشراء بدون احتكاك.',
     solution: 'واجهة متجر خفيفة مع سلة محلية، عروض واضحة، وتواصل مباشر لإتمام الطلب.',
     result: 'تجربة بيع رقمية مناسبة للمنتجات السريعة والمتاجر الصغيرة.'
+  },
+  obsidianStore: {
+    role: 'Full-stack Developer',
+    timeline: 'Luxury build',
+    service: 'web',
+    challenge: 'تقديم تجربة تسوق فاخرة تختلف عن المتاجر التقليدية وتبرز جودة المنتجات والحرفية.',
+    solution: 'استخدام تأثيرات بصرية متقدمة، حركات ناعمة، وتصميم داكن فاخر مع دمج تقنيات حديثة مثل Three.js.',
+    result: 'متجر إلكتروني فاخر يعكس الهوية البصرية للعلامة ويقدم تجربة مستخدم متميزة.'
   }
 };
 
@@ -4659,7 +4712,22 @@ function resetContactForm() {
     [`تجربة بيع رقمية مناسبة للمنتجات السريعة والمتاجر الصغيرة.`, `A digital sales experience suited to fast-moving products and small stores.`],
     [`تحويل الفكرة إلى تجربة واضحة قابلة للاستخدام.`, `Turn the idea into a clear, usable experience.`],
     [`تنظيم الواجهة والمنطق والتقنيات بطريقة عملية.`, `Organize interface, logic, and technology in a practical way.`],
-    [`مشروع يعرض قدرة تنفيذ كاملة من الفكرة إلى العرض.`, `A project that demonstrates full execution from idea to presentation.`]
+    [`مشروع يعرض قدرة تنفيذ كاملة من الفكرة إلى العرض.`, `A project that demonstrates full execution from idea to presentation.`],
+    [`المشروع عبارة عن منصة متجر إلكتروني فاخر تحمل اسم "OBSIDIAN". يركز المتجر على تقديم منتجات عالية الجودة وذات قيمة عالية، مثل الأزياء الفاخرة والمصنوعات اليدوية.`, `The project is a luxury e-commerce platform named "OBSIDIAN". The store focuses on offering high-quality and high-value products, such as luxury fashion and handcrafts.`],
+    [`تقديم تجربة تسوق فاخرة تبرز الحرفية والجودة العالية وتبني هوية بصرية قوية.`, `Provide a luxury shopping experience that highlights craftsmanship and high quality, and builds a strong visual identity.`],
+    [`تقديم تجربة تسوق فاخرة تختلف عن المتاجر التقليدية وتبرز جودة المنتجات والحرفية.`, `Provide a luxury shopping experience that differs from traditional stores and highlights product quality and craftsmanship.`],
+    [`استخدام تأثيرات بصرية متقدمة، حركات ناعمة، وتصميم داكن فاخر مع دمج تقنيات حديثة مثل Three.js.`, `Use advanced visual effects, smooth motions, and a luxury dark theme with integration of modern technologies like Three.js.`],
+    [`متجر إلكتروني فاخر يعكس الهوية البصرية للعلامة ويقدم تجربة مستخدم متميزة.`, `A luxury e-commerce store that reflects the brand's visual identity and offers an outstanding user experience.`],
+    [`تفاصيل`, `Details`],
+    [`فيديو`, `Video`],
+    [`الكل`, `All`],
+    [`منصة متجر إلكتروني فاخر تركز على تقديم منتجات عالية الجودة وذات قيمة عالية مع تجربة تسوق فريدة.`, `A luxury e-commerce platform focusing on delivering high-quality and high-value products with a unique shopping experience.`],
+    [`تصميم فاخر ومتحرك (Custom Cursor, Scroll Animations)`, `Luxury animated design (Custom Cursor, Scroll Animations)`],
+    [`نظام عرض المنتجات بشكل جذاب`, `Attractive product display system`],
+    [`نظام السلة والمشتريات متكامل مع Stripe`, `Integrated cart and checkout system with Stripe`],
+    [`إدارة الحساب والطلبات`, `Account and order management`],
+    [`قائمة الرغبات (Wishlist)`, `Wishlist`],
+    [`أقسام مخصصة للهوية (Brand Philosophy)`, `Custom brand philosophy sections (Brand Philosophy)`]
   ]);
 
   projectTranslations.forEach((value, key) => translations.set(key, value));
