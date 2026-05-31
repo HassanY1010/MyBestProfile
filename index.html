@@ -1459,7 +1459,7 @@
     }
 
     [data-theme='light'] .mobile-nav-link {
-      color: rgba(30, 27, 75, 0.5);
+      color: rgba(30, 27, 75, 0.8) !important;
     }
 
     [data-theme='light'] .mobile-nav-link:hover {
@@ -1474,12 +1474,12 @@
     }
 
     [data-theme='light'] .nav-link {
-      color: rgba(30, 27, 75, 0.55);
+      color: rgba(30, 27, 75, 0.78) !important;
     }
 
     [data-theme='light'] .nav-link:hover,
     [data-theme='light'] .nav-link.active {
-      color: #7c3aed;
+      color: #7c3aed !important;
     }
 
     [data-theme='light'] .glass {
@@ -1594,7 +1594,7 @@
     }
 
     [data-theme='light'] .tag-pill {
-      filter: brightness(0.9) saturate(1.2);
+      filter: brightness(0.75) saturate(1.4);
     }
 
     [data-theme='light'] #projectModal>div,
@@ -1635,6 +1635,34 @@
 
     [data-theme='light'] #projectModalContent {
       background: transparent;
+    }
+
+    /* Light Theme Premium Text and Gradient Contrast Overrides */
+    [data-theme='light'] .text-slate-100,
+    [data-theme='light'] .text-slate-50 {
+      color: #1e1b4b !important;
+    }
+
+    [data-theme='light'] .text-gradient {
+      background: linear-gradient(135deg, #3730a3 0%, #6d28d9 45%, #be185d 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+    }
+
+    [data-theme='light'] .text-gradient-2 {
+      background: linear-gradient(135deg, #6d28d9 0%, #be185d 50%, #0369a1 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      background-clip: text !important;
+    }
+
+    /* Automatically override fainted grey inline text colors to rich dark navy */
+    [data-theme='light'] [style*="color:rgba(148,163,184"] {
+      color: rgba(30, 27, 75, 0.8) !important;
+    }
+    [data-theme='light'] [style*="color:rgba(226,232,240"] {
+      color: rgba(30, 27, 75, 0.88) !important;
     }
 
     /* ===================== THEME TOGGLE BUTTON ===================== */
