@@ -6716,8 +6716,53 @@
     /* ===================== AOS INIT ===================== */
     AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 60 });
 
-    /* ===================== SKILL BARS INIT ===================== */
-    setTimeout(() => { checkReveal(); }, 500);
+    /* ===================== HASH ROUTING FOR PROJECTS ===================== */
+    function handleProjectHashRoute() {
+      const hash = window.location.hash;
+      if (!hash) return;
+      
+      let projectId = '';
+      if (hash.startsWith('#project-')) {
+        projectId = hash.replace('#project-', '');
+      } else if (hash.startsWith('#Projects-')) {
+        const projectNum = parseInt(hash.replace('#Projects-', ''), 10);
+        const keys = [
+          'performanceSystem',
+          'aiExecutiveBoard',
+          'eduPlatform',
+          'obsidianStore',
+          'medAI'
+        ];
+        if (projectNum >= 1 && projectNum <= keys.length) {
+          projectId = keys[projectNum - 1];
+        }
+      }
+      
+      if (projectId) {
+        let attempts = 0;
+        const interval = setInterval(() => {
+          attempts++;
+          const loader = document.getElementById('loader');
+          const isLoaderHidden = loader ? loader.classList.contains('hidden') : true;
+          
+          if (typeof openProjectModal === 'function' && document.getElementById('projectModal') && isLoaderHidden) {
+            openProjectModal(projectId);
+            const projectsSection = document.getElementById('projects');
+            if (projectsSection) {
+              projectsSection.scrollIntoView({ behavior: 'instant' });
+            }
+            clearInterval(interval);
+          } else if (attempts > 50) { // Try up to 5 seconds
+            clearInterval(interval);
+          }
+        }, 100);
+      }
+    }
+    window.addEventListener('load', handleProjectHashRoute);
+    window.addEventListener('hashchange', handleProjectHashRoute);
+    
+    // Run immediately if loaded
+    handleProjectHashRoute();
 
   </script>
   <script>window.onload = function () { var d = document.createElement("div"); d.id = "appLoadFinished"; document.body.appendChild(d); };</script>
