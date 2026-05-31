@@ -2096,13 +2096,11 @@
       style="position:absolute;top:24px;left:24px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;">
       <i class="fas fa-times"></i>
     </button>
-    <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">الرئيسية</a>
     <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">نبذة عني</a>
+    <a href="#why-me" class="mobile-nav-link" onclick="closeMobileMenu()">لماذا تختارني؟</a>
     <a href="#experience" class="mobile-nav-link" onclick="closeMobileMenu()">الخبرة</a>
-    <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()">المهارات</a>
-    <a href="#services" class="mobile-nav-link" onclick="closeMobileMenu()">الخدمات</a>
     <a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">المشاريع</a>
-    <a href="#certifications" class="mobile-nav-link" onclick="closeMobileMenu()">الشهادات</a>
+    <a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()">المهارات</a>
     <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">تواصل</a>
   </div>
 
@@ -2112,7 +2110,7 @@
       <!-- Logo -->
       <a href="#home" class="flex items-center gap-3 group">
         <div
-          style="width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#ec4899);display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:800;font-family:&#39;JetBrains Mono&#39;,monospace;box-shadow:0 0 16px rgba(124,58,237,0.4);">
+          style="width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#ec4899);display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:800;font-family:'JetBrains Mono',monospace;box-shadow:0 0 16px rgba(124,58,237,0.4);">
           H
         </div>
         <span style="font-size:0.9rem;font-weight:700;letter-spacing:-0.5px;" class="text-gradient">Hassan.dev</span>
@@ -2121,11 +2119,10 @@
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-8 font-[Cairo]">
         <a href="#about" class="nav-link">نبذة عني</a>
+        <a href="#why-me" class="nav-link">لماذا تختارني؟</a>
         <a href="#experience" class="nav-link">الخبرة</a>
-        <a href="#skills" class="nav-link">المهارات</a>
-        <a href="#services" class="nav-link">الخدمات</a>
         <a href="#projects" class="nav-link">المشاريع</a>
-        <a href="#certifications" class="nav-link">الشهادات</a>
+        <a href="#skills" class="nav-link">المهارات</a>
         <a href="#contact" class="nav-link">تواصل</a>
       </div>
 
@@ -2135,7 +2132,7 @@
         <button id="theme-toggle" class="theme-toggle" aria-label="تبديل الوضع الليلي/النهاري" title="تبديل الوضع">
           <div class="theme-toggle-knob" id="theme-knob">🌙</div>
         </button>
-
+  
         <button id="language-toggle" class="lang-toggle" aria-label="Switch language" title="Switch language">
           <span id="language-label">EN</span>
         </button>
@@ -2597,6 +2594,16 @@
           </div>
         </div>
       </div>
+
+      <!-- Header for Experience -->
+      <div id="experience" class="text-center mb-20 mt-32" data-reveal="">
+        <div class="section-label mb-4">02 / EXPERIENCE</div>
+        <h2 class="section-title text-gradient mb-4" style="font-family:'Sora',sans-serif;">الخبرة العملية</h2>
+        <div
+          style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:0 auto;border-radius:999px;">
+        </div>
+      </div>
+
       <div
         style="background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.3);border-radius:999px;padding:8px 20px;display:inline-flex;align-items:center;gap:8px;white-space:nowrap;">
         <div
@@ -2693,13 +2700,23 @@
         <span class="tag-pill"
           style="background:rgba(51,153,51,0.08);border-color:rgba(51,153,51,0.25);color:#4ade80;">Node.js</span>
         <span class="tag-pill"
+          style="background:rgba(224,35,78,0.08);border-color:rgba(224,35,78,0.25);color:#ea2845;">NestJS</span>
+        <span class="tag-pill"
           style="background:rgba(255,45,32,0.08);border-color:rgba(255,45,32,0.25);color:#f87171;">Laravel</span>
         <span class="tag-pill"
           style="background:rgba(64,208,253,0.08);border-color:rgba(64,208,253,0.25);color:#40D0FD;">Flutter</span>
         <span class="tag-pill"
           style="background:rgba(0,59,87,0.3);border-color:rgba(0,117,143,0.3);color:#00b4d8;">MySQL</span>
         <span class="tag-pill"
+          style="background:rgba(51,103,145,0.08);border-color:rgba(51,103,145,0.25);color:#60a5fa;">PostgreSQL</span>
+        <span class="tag-pill"
           style="background:rgba(0,59,87,0.3);border-color:rgba(0,117,143,0.3);color:#67e8f9;">MongoDB</span>
+        <span class="tag-pill"
+          style="background:rgba(216,44,32,0.08);border-color:rgba(216,44,32,0.25);color:#ef4444;">Redis</span>
+        <span class="tag-pill"
+          style="background:rgba(225,0,152,0.08);border-color:rgba(225,0,152,0.25);color:#ec4899;">REST API + GraphQL</span>
+        <span class="tag-pill"
+          style="background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.25);color:#fbbf24;">WebSockets</span>
         <span class="tag-pill"
           style="background:rgba(99,102,241,0.08);border-color:rgba(99,102,241,0.25);color:#a5b4fc;">AWS</span>
         <span class="tag-pill"
@@ -2875,13 +2892,13 @@
           </div>
           <ul class="space-y-3">
             <li class="flex items-start gap-2 text-sm text-slate-400" style="font-family:&#39;Cairo&#39;,sans-serif;"><i
-                class="fas fa-chevron-right text-pink-500 text-xs mt-1"></i>Scikit-learn · Pandas · TF-IDF</li>
+                class="fas fa-chevron-right text-pink-500 text-xs mt-1"></i>Scikit-learn · Pandas · NumPy</li>
             <li class="flex items-start gap-2 text-sm text-slate-400" style="font-family:&#39;Cairo&#39;,sans-serif;"><i
-                class="fas fa-chevron-right text-pink-500 text-xs mt-1"></i>ChatGPT · GitHub Copilot · Cursor AI</li>
+                class="fas fa-chevron-right text-pink-500 text-xs mt-1"></i>OpenAI API · Prompt Engineering</li>
             <li class="flex items-start gap-2 text-sm text-slate-400" style="font-family:&#39;Cairo&#39;,sans-serif;"><i
-                class="fas fa-chevron-right text-pink-500 text-xs mt-1"></i>AI Integration in Web Apps · OpenAI API</li>
+                class="fas fa-chevron-right text-pink-500 text-xs mt-1"></i>AI Integration in Web Apps</li>
             <li class="flex items-start gap-2 text-sm text-slate-400" style="font-family:&#39;Cairo&#39;,sans-serif;"><i
-                class="fas fa-chevron-right text-pink-500 text-xs mt-1"></i>Chatbots · Recommendation Systems</li>
+                class="fas fa-chevron-right text-pink-500 text-xs mt-1"></i>Chatbots · Recommendation Systems · NLP Basics</li>
           </ul>
         </div>
 
