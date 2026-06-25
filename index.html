@@ -6838,6 +6838,52 @@
       const hash = window.location.hash;
       if (!hash) return;
       
+      // Video Hash Routing
+      if (hash.startsWith('#video-')) {
+        const videoName = hash.replace('#video-', '');
+        let videoPath = '';
+        if (videoName === 'erpSaaS' || videoName === 'project11') {
+          videoPath = 'project-videos/project11-ERP%20SaaS.mp4';
+        } else if (videoName === 'eduPlatform' || videoName === 'project10') {
+          videoPath = 'project-videos/project10-EduPlatform.mp4';
+        } else if (videoName === 'aiExecutiveBoard' || videoName === 'project8') {
+          videoPath = 'project-videos/project8-AI-Executive-Board.mp4';
+        } else if (videoName === 'chat' || videoName === 'project1') {
+          videoPath = 'project-videos/project1-chat.mp4';
+        } else if (videoName === 'crypto' || videoName === 'project2') {
+          videoPath = 'project-videos/project2-crypto.mp4';
+        } else if (videoName === 'shop' || videoName === 'project3') {
+          videoPath = 'project-videos/project3-shop.mp4';
+        } else if (videoName === 'school' || videoName === 'project4') {
+          videoPath = 'project-videos/project4-school.mp4';
+        } else if (videoName === 'projects' || videoName === 'project5') {
+          videoPath = 'project-videos/project5-projects.mp4';
+        } else if (videoName === 'medAI' || videoName === 'project6') {
+          videoPath = 'project-videos/project6-medai-consult.mp4';
+        } else if (videoName === 'adminDashboard' || videoName === 'project7') {
+          videoPath = 'project-videos/project7-admin-dashboard.mp4';
+        } else if (videoName === 'ecommerce' || videoName === 'project9') {
+          videoPath = 'project-videos/project9-e-commerce-platform.mp4';
+        }
+        
+        if (videoPath) {
+          let attempts = 0;
+          const interval = setInterval(() => {
+            attempts++;
+            const loader = document.getElementById('loader');
+            const isLoaderHidden = loader ? loader.classList.contains('hidden') : true;
+            
+            if (typeof openProjectVideo === 'function' && document.getElementById('videoModal') && isLoaderHidden) {
+              openProjectVideo(videoPath);
+              clearInterval(interval);
+            } else if (attempts > 50) {
+              clearInterval(interval);
+            }
+          }, 100);
+          return;
+        }
+      }
+      
       let projectId = '';
       if (hash.startsWith('#project-')) {
         projectId = hash.replace('#project-', '');
