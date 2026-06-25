@@ -6842,28 +6842,65 @@
       if (hash.startsWith('#video-')) {
         const videoName = hash.replace('#video-', '');
         let videoPath = '';
-        if (videoName === 'erpSaaS' || videoName === 'project11') {
-          videoPath = 'project-videos/project11-ERP%20SaaS.mp4';
-        } else if (videoName === 'eduPlatform' || videoName === 'project10') {
-          videoPath = 'project-videos/project10-EduPlatform.mp4';
-        } else if (videoName === 'aiExecutiveBoard' || videoName === 'project8') {
-          videoPath = 'project-videos/project8-AI-Executive-Board.mp4';
-        } else if (videoName === 'chat' || videoName === 'project1') {
-          videoPath = 'project-videos/project1-chat.mp4';
-        } else if (videoName === 'crypto' || videoName === 'project2') {
-          videoPath = 'project-videos/project2-crypto.mp4';
-        } else if (videoName === 'shop' || videoName === 'project3') {
-          videoPath = 'project-videos/project3-shop.mp4';
-        } else if (videoName === 'school' || videoName === 'project4') {
-          videoPath = 'project-videos/project4-school.mp4';
-        } else if (videoName === 'projects' || videoName === 'project5') {
-          videoPath = 'project-videos/project5-projects.mp4';
-        } else if (videoName === 'medAI' || videoName === 'project6') {
-          videoPath = 'project-videos/project6-medai-consult.mp4';
-        } else if (videoName === 'adminDashboard' || videoName === 'project7') {
-          videoPath = 'project-videos/project7-admin-dashboard.mp4';
-        } else if (videoName === 'ecommerce' || videoName === 'project9') {
-          videoPath = 'project-videos/project9-e-commerce-platform.mp4';
+        let isPresentation = false;
+        
+        switch (videoName) {
+          case 'chat':
+          case 'chatApp':
+          case 'project1':
+            videoPath = 'project-videos/project1-chat.mp4';
+            break;
+          case 'crypto':
+          case 'cryptoProject':
+          case 'project2':
+            videoPath = 'project-videos/project2-crypto.mp4';
+            break;
+          case 'shop':
+          case 'narStore':
+          case 'project3':
+            videoPath = 'project-videos/project3-shop.mp4';
+            break;
+          case 'school':
+          case 'schoolSystem':
+          case 'project4':
+            videoPath = 'project-videos/project4-school.mp4';
+            break;
+          case 'projects':
+          case 'pmpSystem':
+          case 'project5':
+            videoPath = 'project-videos/project5-projects.mp4';
+            break;
+          case 'medAI':
+          case 'medai':
+          case 'project6':
+            videoPath = 'project-videos/project6-medai-consult.mp4';
+            break;
+          case 'adminDashboard':
+          case 'project7':
+            videoPath = 'project-videos/project7-admin-dashboard.mp4';
+            break;
+          case 'aiExecutiveBoard':
+          case 'project8':
+            videoPath = 'project-videos/project8-AI-Executive-Board.mp4';
+            break;
+          case 'obsidian':
+          case 'obsidianStore':
+          case 'project9':
+            videoPath = 'project-videos/project9-e-commerce-platform.mp4';
+            break;
+          case 'eduPlatform':
+          case 'project10':
+            videoPath = 'project-videos/project10-EduPlatform.mp4';
+            break;
+          case 'erpSaaS':
+          case 'project11':
+            videoPath = 'project-videos/project11-ERP%20SaaS.mp4';
+            break;
+          case 'performanceSystem':
+          case 'projectPerformance':
+            videoPath = 'project-videos/EmployeesPerformanceReviwSystem(The%20Project%20Main).pptx';
+            isPresentation = true;
+            break;
         }
         
         if (videoPath) {
@@ -6873,10 +6910,18 @@
             const loader = document.getElementById('loader');
             const isLoaderHidden = loader ? loader.classList.contains('hidden') : true;
             
-            if (typeof openProjectVideo === 'function' && document.getElementById('videoModal') && isLoaderHidden) {
-              openProjectVideo(videoPath);
-              clearInterval(interval);
-            } else if (attempts > 50) {
+            if (isPresentation) {
+              if (typeof openPresentationModal === 'function' && document.getElementById('presentationModal') && isLoaderHidden) {
+                openPresentationModal(videoPath);
+                clearInterval(interval);
+              }
+            } else {
+              if (typeof openProjectVideo === 'function' && document.getElementById('videoModal') && isLoaderHidden) {
+                openProjectVideo(videoPath);
+                clearInterval(interval);
+              }
+            }
+            if (attempts > 50) {
               clearInterval(interval);
             }
           }, 100);
