@@ -13,10 +13,10 @@
   <meta property="og:title" content="حسن محمد بارفعه — Full Stack &amp; AI Developer" />
   <meta property="og:description"
     content="Full Stack Web Developer &amp; AI Developer | مطور ويب متكامل وذكاء اصطناعي" />
-  <meta property="og:url" content="https://www.onspace.ai" />
+  <meta property="og:url" content="https://hassany1010.github.io/MyBestProfile/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Hassan Barafah Portfolio" />
-  <meta property="og:image" content="https://cdn-ai.onspace.ai/onspace/project/screenshot/online/pre-site/9bhx8z.jpg" />
+  <meta property="og:image" content="https://hassany1010.github.io/MyBestProfile/myphoto.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <!-- Twitter Card -->
@@ -24,8 +24,8 @@
   <meta name="twitter:title" content="حسن محمد بارفعه — Full Stack &amp; AI Developer" />
   <meta name="twitter:description" content="Full Stack Web Developer &amp; AI Developer" />
   <meta name="twitter:image"
-    content="https://cdn-ai.onspace.ai/onspace/project/screenshot/online/pre-site/9bhx8z.jpg" />
-  <meta name="twitter:url" content="https://www.onspace.ai" />
+    content="https://hassany1010.github.io/MyBestProfile/myphoto.jpg" />
+  <meta name="twitter:url" content="https://hassany1010.github.io/MyBestProfile/" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -5422,6 +5422,29 @@
     function closeProjectModal() {
       document.getElementById('projectModal').classList.remove('open');
       document.body.style.overflow = '';
+
+      // Restore main page SEO metadata
+      const isEn = window.currentLang === 'en';
+      document.title = isEn 
+        ? 'Hassan Mohammed Barafah — Full Stack & AI Developer'
+        : 'حسن محمد بارفعه — Full Stack & AI Developer';
+      
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', document.title);
+      
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute('content', isEn 
+        ? 'Full Stack Web Developer & AI Developer | Graduate in IT with Honors GPA 3.8' 
+        : 'Full Stack Web Developer & AI Developer | خريج تكنولوجيا المعلومات بمرتبة الشرف GPA 3.8');
+        
+      const ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) ogUrl.setAttribute('content', 'https://hassany1010.github.io/MyBestProfile/');
+
+      const twTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twTitle) twTitle.setAttribute('content', document.title);
+      
+      const twDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twDesc) twDesc.setAttribute('content', isEn ? 'Full Stack Web Developer & AI Developer' : 'Full Stack Web Developer & AI Developer');
     }
 
     // Close modals on backdrop click
@@ -5709,6 +5732,25 @@
     function openProjectModal(id) {
       const p = projectsData[id];
       if (!p) return;
+
+      // Dynamic client-side SEO update
+      document.title = `${p.title} — Hassan Mohammed Barafah`;
+      
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.setAttribute('content', p.title);
+      
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute('content', p.concept);
+      
+      const ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) ogUrl.setAttribute('content', `${window.location.origin}${window.location.pathname}#project-${id}`);
+
+      const twTitle = document.querySelector('meta[name="twitter:title"]');
+      if (twTitle) twTitle.setAttribute('content', p.title);
+      
+      const twDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twDesc) twDesc.setAttribute('content', p.concept);
+
       const c = projectCaseStudies[id] || {
         role: 'Developer',
         timeline: 'Project build',
