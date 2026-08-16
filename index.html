@@ -3519,7 +3519,7 @@
       <!-- Filter Bar -->
       <div class="filter-bar" id="project-filter-bar" data-reveal="">
         <button class="filter-btn active" data-filter="all">
-          <span><span class="filter-count" id="cnt-all">10</span> الكل</span>
+          <span><span class="filter-count" id="cnt-all">11</span> الكل</span>
         </button>
         <button class="filter-btn" data-filter="react">
           <span><span class="filter-count" id="cnt-react">0</span> React / Next.js</span>
@@ -3669,6 +3669,62 @@
                 onmouseout="this.style.background=&#39;&#39;">
                 <i class="fas fa-play text-xs"></i> فيديو
               </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT: Webhook Automation Platform -->
+        <div class="project-card filter-visible" data-reveal="" style="transition-delay:0.07s;" data-category="react cli">
+          <div
+            style="background:linear-gradient(135deg,rgba(124,58,237,0.06),rgba(0,0,0,0));position:absolute;inset:0;pointer-events:none;"
+            class="card-glow"></div>
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1b0e33,#0d051c);">
+            <div
+              style="position:absolute;inset:0;opacity:0.07;background-image:radial-gradient(rgba(255,255,255,0.4) 1px,transparent 1px);background-size:24px 24px;">
+            </div>
+            <div
+              style="width:72px;height:72px;border-radius:20px;background:rgba(124,58,237,0.15);border:1px solid rgba(124,58,237,0.3);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;transition:transform 0.3s;">
+              <i class="fas fa-network-wired text-3xl text-violet-400"
+                style="filter:drop-shadow(0 0 12px rgba(124,58,237,0.5));"></i>
+            </div>
+            <div class="thumb-overlay">
+              <button onclick="openProjectModal(&#39;webhookAutomation&#39;)"
+                class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-violet-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
+              <a href="https://webhook-auto-web.onrender.com/" target="_blank"
+                class="w-14 h-14 rounded-full bg-violet-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold text-slate-100 text-lg" style="font-family:&#39;Sora&#39;,sans-serif;">Webhook Automation Platform</h3>
+              <span
+                style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.3);border-radius:999px;padding:2px 10px;color:#a78bfa;">Multi-Tenant SaaS</span>
+            </div>
+            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة سحابية متقدمة من فئة المؤسسات لأتمتة معالجة وتدفق البيانات عبر الـ Webhooks والـ REST APIs بمحرك قواعد آمن وطوابير معالجة غير متزامنة.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tag-pill"
+                style="background:rgba(234,40,78,0.08);border-color:rgba(234,40,78,0.25);color:#f43f5e;">NestJS</span>
+              <span class="tag-pill"
+                style="background:rgba(0,0,0,0.3);border-color:rgba(255,255,255,0.15);color:#fff;">Next.js</span>
+              <span class="tag-pill"
+                style="background:rgba(49,120,198,0.08);border-color:rgba(49,120,198,0.25);color:#60a5fa;">TypeScript</span>
+              <span class="tag-pill"
+                style="background:rgba(234,88,12,0.08);border-color:rgba(234,88,12,0.25);color:#fb923c;">BullMQ / Redis</span>
+            </div>
+            <div class="flex gap-3">
+              <button onclick="openProjectModal(&#39;webhookAutomation&#39;)"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold btn-gradient text-white relative z-10 flex items-center justify-center gap-2">
+                <i class="fas fa-eye text-xs"></i> تفاصيل
+              </button>
+              <a href="https://webhook-auto-web.onrender.com/" target="_blank"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 glass"
+                style="border:1px solid rgba(124,58,237,0.3);color:#a78bfa;transition:all 0.3s;"
+                onmouseover="this.style.background=&#39;rgba(124,58,237,0.1)&#39;"
+                onmouseout="this.style.background=&#39;&#39;">
+                <i class="fas fa-external-link-alt text-xs"></i> معاينة
+              </a>
             </div>
           </div>
         </div>
@@ -5580,6 +5636,45 @@
           { n: 'Framer Motion', c: 'text-pink-400' }
         ]
       },
+      webhookAutomation: {
+        title: 'منصة أتمتة الـ Webhooks السحابية (Webhook Automation Platform)',
+        badge: 'Enterprise SaaS',
+        badgeColor: '#a78bfa',
+        bgColor: 'rgba(124,58,237,0.1)',
+        borderColor: 'rgba(124,58,237,0.3)',
+        icon: 'fa-network-wired',
+        iconColor: 'text-violet-400',
+        concept: 'منصة سحابية من فئة المؤسسات (Enterprise-Grade Multi-Tenant SaaS Platform) لأتمتة معالجة وتدفق البيانات عبر الـ Webhooks والـ REST APIs (شبيهة بأنظمة Zapier أو Make/Integromat ولكن مخصصة للـ Webhooks والمطورين والشركات).',
+        goal: 'تمكين المطورين والشركات من استقبال البيانات ومعالجتها وفق شروط ديناميكية وتنفيذ إجراءات متعددة تلقائياً بأمان عالٍ وموثوقية فائقة وعزل تام للبيانات دون فقدان أي حدث.',
+        features: [
+          'دعم تعدد المستأجرين والمنظمات (Multi-Tenancy & Organizations) بعزل صارم لكل البيانات والمستخدمين بناءً على organizationId',
+          'محرك تقييم القواعد الآمن (AST Sandboxed Rule Engine) لتقييم الشروط البرمجية بأمان كامل لمنع ثغرات حقن الأكواد وبدون استخدام eval()',
+          'معالجة غير متزامنة قوية (BullMQ & Background Workers) لتوزيع أحمال العمل، وإعادة المحاولة التلقائية (Retry Policies)، وإدارة طابور الرسائل الميتة (DLQ)',
+          'حماية متقدمة وأمان فائق (Enterprise Security) تشمل الحماية من هجمات SSRF، وتشفير المفاتيح والبيانات الحساسة بـ AES-256-GCM، والتحقق من التواقيع بـ HMAC-SHA256',
+          'لوحة تحكم تفاعلية وثنائية اللغة تدعم العربية (RTL) والإنجليزية (LTR) مع رسوم بيانية وتحليلات (Charts) وإحصائيات لأداء تدفق البيانات',
+          'سجلات تدقيق مفصلة خطوة بخطوة (Step-by-step Audit Logs) لمراجعة كل طلب ومعرفة المدخلات، المخرجات، وقت الاستجابة، وحالة كل خطوة بدقة',
+          'تنفيذ إجراءات متعددة تلقائياً (Actions) مثل إرسال طلبات HTTP/REST API لأنظمة أخرى، تنبيهات Telegram، وإشعارات البريد الإلكتروني (Email)'
+        ],
+        backend: [
+          { n: 'NestJS', c: 'text-red-400' },
+          { n: 'TypeScript', c: 'text-blue-400' },
+          { n: 'Prisma ORM', c: 'text-emerald-400' },
+          { n: 'BullMQ & Redis', c: 'text-orange-400' },
+          { n: 'Pino Logger', c: 'text-green-400' },
+          { n: 'OpenAPI / Swagger', c: 'text-cyan-400' },
+          { n: 'PostgreSQL', c: 'text-blue-300' },
+          { n: 'Docker & Nginx', c: 'text-purple-400' },
+          { n: 'Turborepo / pnpm', c: 'text-pink-400' }
+        ],
+        frontend: [
+          { n: 'Next.js (App Router)', c: 'text-white' },
+          { n: 'TypeScript', c: 'text-blue-500' },
+          { n: 'Tailwind CSS', c: 'text-cyan-400' },
+          { n: 'TanStack Query', c: 'text-red-400' },
+          { n: 'React Hook Form + Zod', c: 'text-yellow-400' },
+          { n: 'Lucide React & Recharts', c: 'text-emerald-400' }
+        ]
+      },
       yemenShopSaaS: {
         title: 'مشروع Yemen Shop SaaS (منصة المتاجر الإلكترونية متعددة المتاجر - Multi-Tenant E-commerce SaaS Platform)', badge: 'Multi-Tenant SaaS', badgeColor: '#38bdf8', bgColor: 'rgba(56,189,248,0.1)', borderColor: 'rgba(56,189,248,0.3)', icon: 'fa-store', iconColor: 'text-sky-400',
         concept: 'مشروع Yemen Shop SaaS (منصة المتاجر الإلكترونية متعددة المتاجر - Multi-Tenant E-commerce SaaS Platform) هو منصة برمجية كخدمة متكاملة تُتيح للتجار والأنشطة التجارية إنشاء وإدارة متاجرهم الإلكترونية الخاصة بسهولة تحت مظلة منصة موحدة.',
@@ -5722,6 +5817,14 @@
         challenge: 'عزل بيانات الشركات بالكامل في نموذج SaaS (Multi-Tenancy) برمجياً وقاعدة بيانات مع الحفاظ على الأداء العالي ودعم RTL والوضع الداكن بشكل تفاعلي بالكامل.',
         solution: 'استخدام Prisma ORM مع معرّف companyId لعزل البيانات، دمج Redis & BullMQ لإدارة طوابير المهام، وبناء واجهة RTL متجاوبة وعصرية باستخدام Tailwind CSS v4 و Next.js 16.',
         result: 'نظام متكامل لتخطيط موارد المؤسسات جاهز للنشر وقابل للتوسع يلبي احتياجات الشركات الصغيرة والمتوسطة بكفاءة وأمان.'
+      },
+      webhookAutomation: {
+        role: 'Full-stack Architect & Lead Developer',
+        timeline: 'Production SaaS Build',
+        service: 'web',
+        challenge: 'بناء منصة سحابية لمعالجة وتوجيه آلاف أحداث الـ Webhooks بشكل غير متزامن وآمن من هجمات SSRF وحقن الأكواد مع عزل صارم لبيانات كل منظمة ومراقبة لحظية للتدفقات.',
+        solution: 'تصميم معمارية معالجة موزعة باستخدام NestJS و BullMQ و Redis، وبناء AST Sandboxed Rule Engine آمن لتنفيذ الشروط، وتشفير البيانات بـ AES-256-GCM، وبناء لوحة تحكم تفاعلية وسريعة بـ Next.js و Tailwind تدعم RTL/LTR.',
+        result: 'منصة أتمتة مؤسسية موثوقة تضمن استقرار تدفق البيانات وعدم فقدان الأحداث وتسهيل ربط الخدمات والأنظمة المختلفة.'
       },
       yemenShopSaaS: {
         role: 'Full-stack Architect & Lead Developer',
@@ -6390,6 +6493,9 @@
         [`نظام متكامل لإدارة وتقييم أداء الموظفين، يربط الموارد البشرية والمديرين والموظفين في منصة واحدة شفافة.`, `A complete employee performance review system connecting HR, managers, and employees in one transparent platform.`],
         [`نظام تخطيط موارد المؤسسات السحابي (ERP SaaS)`, `Cloud ERP SaaS System (Multi-Tenant)`],
         [`نظام تخطيط موارد المؤسسات السحابي (ERP SaaS) متكامل للشركات الصغيرة والمتوسطة، يدعم RTL والوضع الداكن وعزل كامل للبيانات.`, `An integrated cloud ERP SaaS system for SMEs, supporting RTL, dark mode, and complete data isolation.`],
+        [`Webhook Automation Platform`, `Webhook Automation Platform`],
+        [`منصة أتمتة الـ Webhooks (SaaS)`, `Webhook Automation Platform (SaaS)`],
+        [`منصة سحابية متقدمة من فئة المؤسسات لأتمتة معالجة وتدفق البيانات عبر الـ Webhooks والـ REST APIs بمحرك قواعد آمن وطوابير معالجة غير متزامنة.`, `An enterprise-grade cloud platform for automating webhook and REST API workflows with a sandboxed rule engine and async processing queues.`],
         [`منصة دردشة فورية`, `Real-time Chat Platform`],
         [`تطبيق محادثة متكامل يحاكي واتساب، يدعم الرسائل الصوتية والتراسل اللحظي مع واجهة عصرية.`, `A WhatsApp-like chat app with voice messages, real-time messaging, and a modern interface.`],
         [`منصة العملات الرقمية`, `Crypto Platform`],
@@ -6624,6 +6730,20 @@
         [`عزل بيانات الشركات بالكامل في نموذج SaaS (Multi-Tenancy) برمجياً وقاعدة بيانات مع الحفاظ على الأداء العالي ودعم RTL والوضع الداكن بشكل تفاعلي بالكامل.`, `Fully isolating tenant data in a SaaS multi-tenant model at both the application and database levels while maintaining high performance, RTL support, and dark mode.`],
         [`استخدام Prisma ORM مع معرّف companyId لعزل البيانات، دمج Redis & BullMQ لإدارة طوابير المهام، وبناء واجهة RTL متجاوبة وعصرية باستخدام Tailwind CSS v4 و Next.js 16.`, `Using Prisma ORM with a companyId identifier for data isolation, integrating Redis & BullMQ for background tasks, and building a responsive, modern RTL interface with Tailwind CSS v4 and Next.js 16.`],
         [`نظام متكامل لتخطيط موارد المؤسسات جاهز للنشر وقابل للتوسع يلبي احتياجات الشركات الصغيرة والمتوسطة بكفاءة وأمان.`, `A complete, production-ready, and scalable ERP system that meets the needs of small and medium enterprises efficiently and securely.`],
+        [`منصة أتمتة الـ Webhooks السحابية (Webhook Automation Platform)`, `Webhook Automation Platform (Enterprise-Grade Multi-Tenant SaaS)`],
+        [`Enterprise SaaS`, `Enterprise SaaS`],
+        [`منصة سحابية من فئة المؤسسات (Enterprise-Grade Multi-Tenant SaaS Platform) لأتمتة معالجة وتدفق البيانات عبر الـ Webhooks والـ REST APIs (شبيهة بأنظمة Zapier أو Make/Integromat ولكن مخصصة للـ Webhooks والمطورين والشركات).`, `An enterprise-grade multi-tenant SaaS platform for automating data processing and workflows via Webhooks and REST APIs (similar to Zapier or Make, customized for webhooks, developers, and businesses).`],
+        [`تمكين المطورين والشركات من استقبال البيانات ومعالجتها وفق شروط ديناميكية وتنفيذ إجراءات متعددة تلقائياً بأمان عالٍ وموثوقية فائقة وعزل تام للبيانات دون فقدان أي حدث.`, `Empowering developers and businesses to receive, process, and route webhook events dynamically with automated multi-step actions, maximum security, and full data isolation without losing events.`],
+        [`دعم تعدد المستأجرين والمنظمات (Multi-Tenancy & Organizations) بعزل صارم لكل البيانات والمستخدمين بناءً على organizationId`, `Multi-tenancy and organization support with strict data and user isolation based on organizationId`],
+        [`محرك تقييم القواعد الآمن (AST Sandboxed Rule Engine) لتقييم الشروط البرمجية بأمان كامل لمنع ثغرات حقن الأكواد وبدون استخدام eval()`, `Secure AST Sandboxed Rule Engine to evaluate code conditions safely without code injection risks or eval()`],
+        [`معالجة غير متزامنة قوية (BullMQ & Background Workers) لتوزيع أحمال العمل، وإعادة المحاولة التلقائية (Retry Policies)، وإدارة طابور الرسائل الميتة (DLQ)`, `Robust async processing with BullMQ & Background Workers for load balancing, retry policies, and dead-letter queues (DLQ)`],
+        [`حماية متقدمة وأمان فائق (Enterprise Security) تشمل الحماية من هجمات SSRF، وتشفير المفاتيح والبيانات الحساسة بـ AES-256-GCM، والتحقق من التواقيع بـ HMAC-SHA256`, `Enterprise security including SSRF protection, sensitive key encryption via AES-256-GCM, and webhook signature verification via HMAC-SHA256`],
+        [`لوحة تحكم تفاعلية وثنائية اللغة تدعم العربية (RTL) والإنجليزية (LTR) مع رسوم بيانية وتحليلات (Charts) وإحصائيات لأداء تدفق البيانات`, `Interactive bilingual dashboard supporting Arabic (RTL) & English (LTR) with visual charts and pipeline performance metrics`],
+        [`سجلات تدقيق مفصلة خطوة بخطوة (Step-by-step Audit Logs) لمراجعة كل طلب ومعرفة المدخلات، المخرجات، وقت الاستجابة، وحالة كل خطوة بدقة`, `Step-by-step audit logs to inspect payloads, outputs, response times, and status for every execution step`],
+        [`تنفيذ إجراءات متعددة تلقائياً (Actions) مثل إرسال طلبات HTTP/REST API لأنظمة أخرى، تنبيهات Telegram، وإشعارات البريد الإلكتروني (Email)`, `Automated multi-action execution: HTTP/REST API requests, Telegram alerts/messages, and email notifications`],
+        [`بناء منصة سحابية لمعالجة وتوجيه آلاف أحداث الـ Webhooks بشكل غير متزامن وآمن من هجمات SSRF وحقن الأكواد مع عزل صارم لبيانات كل منظمة ومراقبة لحظية للتدفقات.`, `Building a cloud platform to handle and route thousands of webhook events asynchronously, securely protected from SSRF and injection attacks with strict tenant isolation and real-time monitoring.`],
+        [`تصميم معمارية معالجة موزعة باستخدام NestJS و BullMQ و Redis، وبناء AST Sandboxed Rule Engine آمن لتنفيذ الشروط، وتشفير البيانات بـ AES-256-GCM، وبناء لوحة تحكم تفاعلية وسريعة بـ Next.js و Tailwind تدعم RTL/LTR.`, `Designing a distributed processing architecture using NestJS, BullMQ, and Redis, building a secure AST Sandboxed Rule Engine, encrypting data with AES-256-GCM, and crafting a responsive bilingual Next.js dashboard.`],
+        [`منصة أتمتة مؤسسية موثوقة تضمن استقرار تدفق البيانات وعدم فقدان الأحداث وتسهيل ربط الخدمات والأنظمة المختلفة.`, `A reliable enterprise automation platform ensuring continuous data flow, zero event loss, and seamless integration between third-party systems.`],
         [`مشروع Yemen Shop SaaS (منصة المتاجر الإلكترونية متعددة المتاجر - Multi-Tenant E-commerce SaaS Platform)`, `Yemen Shop SaaS Project (Multi-Tenant E-commerce SaaS Platform)`],
         [`مشروع Yemen Shop SaaS`, `Yemen Shop SaaS Project`],
         [`منصة المتاجر الإلكترونية متعددة المتاجر (Multi-Tenant E-commerce SaaS) لتطوير وإدارة المتاجر الإلكترونية بمزايا متكاملة وعزل محكم.`, `Multi-tenant e-commerce SaaS platform allowing merchants to launch and manage online stores with complete features and data isolation.`],
@@ -7177,6 +7297,7 @@
         const keys = [
           'performanceSystem',
           'erpSaaS',
+          'webhookAutomation',
           'yemenShopSaaS',
           'darajatakAlayna',
           'aiExecutiveBoard',
