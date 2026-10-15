@@ -3519,7 +3519,7 @@
       <!-- Filter Bar -->
       <div class="filter-bar" id="project-filter-bar" data-reveal="">
         <button class="filter-btn active" data-filter="all">
-          <span><span class="filter-count" id="cnt-all">11</span> الكل</span>
+          <span><span class="filter-count" id="cnt-all">20</span> الكل</span>
         </button>
         <button class="filter-btn" data-filter="react">
           <span><span class="filter-count" id="cnt-react">0</span> React / Next.js</span>
@@ -3532,6 +3532,9 @@
         </button>
         <button class="filter-btn" data-filter="flutter">
           <span><span class="filter-count" id="cnt-flutter">0</span> Flutter</span>
+        </button>
+        <button class="filter-btn" data-filter="android">
+          <span><span class="filter-count" id="cnt-android">0</span> Android / Java</span>
         </button>
         <button class="filter-btn" data-filter="cli">
           <span><span class="filter-count" id="cnt-cli">0</span> CLI / DevOps</span>
@@ -3560,6 +3563,296 @@
 
       <!-- Projects Grid -->
       <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- PROJECT: AI StaffSync -->
+        <div class="project-card filter-visible" data-reveal="" data-category="ai flutter">
+          <div
+            style="background:linear-gradient(135deg,rgba(168,85,247,0.08),rgba(0,0,0,0));position:absolute;inset:0;pointer-events:none;"
+            class="card-glow"></div>
+          <div class="project-thumb" style="background:linear-gradient(135deg,#1f0a38,#0d041a);">
+            <div
+              style="position:absolute;inset:0;opacity:0.07;background-image:radial-gradient(rgba(255,255,255,0.4) 1px,transparent 1px);background-size:24px 24px;">
+            </div>
+            <div
+              style="width:76px;height:76px;border-radius:20px;background:rgba(168,85,247,0.15);border:1px solid rgba(168,85,247,0.35);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;overflow:hidden;box-shadow:0 0 20px rgba(168,85,247,0.25);">
+              <img src="https://play-lh.googleusercontent.com/x70rJUzl_0TXmDgDA80e54Xr8DF_SVJfolgZK6_sZ9mTev01_62NGW7RFcYgYYonurlEVhgFKg54JepFhV4B74Q=s0-br30" alt="AI StaffSync" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" loading="lazy" />
+              <div style="display:none;width:100%;height:100%;align-items:center;justify-content:center;">
+                <i class="fas fa-users-gear text-3xl text-purple-400" style="filter:drop-shadow(0 0 12px rgba(168,85,247,0.5));"></i>
+              </div>
+            </div>
+            <div class="thumb-overlay">
+              <button onclick="openProjectModal('staffSync')"
+                class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-purple-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
+              <a href="https://play.google.com/store/apps/details?id=com.thinknchange.staff_sync" target="_blank" rel="noopener noreferrer"
+                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform" title="عرض على Google Play">
+                <i class="fab fa-google-play"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold text-slate-100 text-lg" style="font-family:'Sora',sans-serif;">AI StaffSync</h3>
+              <span
+                style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.3);border-radius:999px;padding:2px 10px;color:#c084fc;">HR &amp; AI</span>
+            </div>
+            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">نظام ذكي متكامل لإدارة الموارد البشرية مع المساعد الذكي Synthia لأتمتة الحضور والإجازات ومتابعة الأداء وسير الموافقات الإدارية.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tag-pill"
+                style="background:rgba(64,208,253,0.08);border-color:rgba(64,208,253,0.25);color:#40D0FD;">Flutter</span>
+              <span class="tag-pill"
+                style="background:rgba(16,185,129,0.08);border-color:rgba(16,185,129,0.25);color:#34d399;">Spring Boot</span>
+              <span class="tag-pill"
+                style="background:rgba(0,117,143,0.1);border-color:rgba(0,117,143,0.3);color:#00b4d8;">PostgreSQL</span>
+              <span class="tag-pill"
+                style="background:rgba(168,85,247,0.1);border-color:rgba(168,85,247,0.3);color:#c084fc;">AI Synthia</span>
+            </div>
+            <div class="flex gap-3">
+              <button onclick="openProjectModal('staffSync')"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold btn-gradient text-white relative z-10 flex items-center justify-center gap-2">
+                <i class="fas fa-eye text-xs"></i> تفاصيل
+              </button>
+              <a href="https://play.google.com/store/apps/details?id=com.thinknchange.staff_sync" target="_blank" rel="noopener noreferrer"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 glass"
+                style="border:1px solid rgba(16,185,129,0.35);color:#34d399;transition:all 0.3s;"
+                onmouseover="this.style.background='rgba(16,185,129,0.12)'"
+                onmouseout="this.style.background=''">
+                <i class="fab fa-google-play text-xs"></i> عرض التطبيق
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT: DirectHire -->
+        <div class="project-card filter-visible" data-reveal="" style="transition-delay:0.05s;" data-category="ai flutter">
+          <div
+            style="background:linear-gradient(135deg,rgba(6,182,212,0.08),rgba(0,0,0,0));position:absolute;inset:0;pointer-events:none;"
+            class="card-glow"></div>
+          <div class="project-thumb" style="background:linear-gradient(135deg,#04232b,#021318);">
+            <div
+              style="position:absolute;inset:0;opacity:0.07;background-image:radial-gradient(rgba(255,255,255,0.4) 1px,transparent 1px);background-size:24px 24px;">
+            </div>
+            <div
+              style="width:76px;height:76px;border-radius:20px;background:rgba(6,182,212,0.15);border:1px solid rgba(6,182,212,0.35);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;overflow:hidden;box-shadow:0 0 20px rgba(6,182,212,0.25);">
+              <img src="https://play-lh.googleusercontent.com/Kawo37BQ-6x7txM1GfNQLB3GtGC01oYWxBWIwoFvZ9tqIPnNCw6y7j2juihWvUIHA9A_aFIL2eJkkJGa3G0OfQ=s0-br30" alt="DirectHire" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" loading="lazy" />
+              <div style="display:none;width:100%;height:100%;align-items:center;justify-content:center;">
+                <i class="fas fa-user-check text-3xl text-cyan-400" style="filter:drop-shadow(0 0 12px rgba(6,182,212,0.5));"></i>
+              </div>
+            </div>
+            <div class="thumb-overlay">
+              <button onclick="openProjectModal('directHire')"
+                class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-cyan-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
+              <a href="https://play.google.com/store/apps/details?id=com.directhire.app" target="_blank" rel="noopener noreferrer"
+                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform" title="عرض على Google Play">
+                <i class="fab fa-google-play"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold text-slate-100 text-lg" style="font-family:'Sora',sans-serif;">DirectHire — AI Matching</h3>
+              <span
+                style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.3);border-radius:999px;padding:2px 10px;color:#22d3ee;">Recruitment &amp; AI</span>
+            </div>
+            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">منصة توظيف ذكية تستخدم محرك مطابقة مدعوم بالذكاء الاصطناعي لربط الشركات بالمرشحين الأنسب وتقليل المقابلات غير الملائمة.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tag-pill"
+                style="background:rgba(64,208,253,0.08);border-color:rgba(64,208,253,0.25);color:#40D0FD;">Flutter</span>
+              <span class="tag-pill"
+                style="background:rgba(234,35,94,0.08);border-color:rgba(234,35,94,0.25);color:#ea2859;">NestJS</span>
+              <span class="tag-pill"
+                style="background:rgba(53,114,165,0.1);border-color:rgba(53,114,165,0.3);color:#60a5fa;">Python FastAPI</span>
+              <span class="tag-pill"
+                style="background:rgba(0,117,143,0.1);border-color:rgba(0,117,143,0.3);color:#00b4d8;">PostgreSQL</span>
+            </div>
+            <div class="flex gap-3">
+              <button onclick="openProjectModal('directHire')"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold btn-gradient text-white relative z-10 flex items-center justify-center gap-2">
+                <i class="fas fa-eye text-xs"></i> تفاصيل
+              </button>
+              <a href="https://play.google.com/store/apps/details?id=com.directhire.app" target="_blank" rel="noopener noreferrer"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 glass"
+                style="border:1px solid rgba(16,185,129,0.35);color:#34d399;transition:all 0.3s;"
+                onmouseover="this.style.background='rgba(16,185,129,0.12)'"
+                onmouseout="this.style.background=''">
+                <i class="fab fa-google-play text-xs"></i> عرض التطبيق
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT: Dafter -->
+        <div class="project-card filter-visible" data-reveal="" style="transition-delay:0.1s;" data-category="flutter">
+          <div
+            style="background:linear-gradient(135deg,rgba(16,185,129,0.08),rgba(0,0,0,0));position:absolute;inset:0;pointer-events:none;"
+            class="card-glow"></div>
+          <div class="project-thumb" style="background:linear-gradient(135deg,#052e16,#021a0c);">
+            <div
+              style="position:absolute;inset:0;opacity:0.07;background-image:radial-gradient(rgba(255,255,255,0.4) 1px,transparent 1px);background-size:24px 24px;">
+            </div>
+            <div
+              style="width:76px;height:76px;border-radius:20px;background:rgba(16,185,129,0.15);border:1px solid rgba(16,185,129,0.35);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;overflow:hidden;box-shadow:0 0 20px rgba(16,185,129,0.25);">
+              <img src="https://play-lh.googleusercontent.com/Z-Z2g9i2k525HVojZT_yMf4jR5OKo985NfpS67E54dw8GenSuwQ7tbokbT6orfqpXWD4nnaQSfy0G3jZh3sgZw=s0-br30" alt="دفتر" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" loading="lazy" />
+              <div style="display:none;width:100%;height:100%;align-items:center;justify-content:center;">
+                <i class="fas fa-book-bookmark text-3xl text-emerald-400" style="filter:drop-shadow(0 0 12px rgba(16,185,129,0.5));"></i>
+              </div>
+            </div>
+            <div class="thumb-overlay">
+              <button onclick="openProjectModal('dafterApp')"
+                class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-emerald-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
+              <a href="https://play.google.com/store/apps/details?id=net.dafter.app" target="_blank" rel="noopener noreferrer"
+                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform" title="عرض على Google Play">
+                <i class="fab fa-google-play"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold text-slate-100 text-lg" style="font-family:'Sora',sans-serif;">دفتر — محاسبة وديون وعملاء</h3>
+              <span
+                style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:999px;padding:2px 10px;color:#34d399;">Finance &amp; Accounting</span>
+            </div>
+            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">تطبيق محاسبي عربي متكامل لأصحاب المتاجر والمشاريع الصغيرة لإدارة الحسابات والديون دون إنترنت مع مزامنة سحابية وتقارير مالية.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tag-pill"
+                style="background:rgba(64,208,253,0.08);border-color:rgba(64,208,253,0.25);color:#40D0FD;">Flutter</span>
+              <span class="tag-pill"
+                style="background:rgba(0,59,143,0.1);border-color:rgba(0,59,143,0.3);color:#38bdf8;">SQLite Offline</span>
+              <span class="tag-pill"
+                style="background:rgba(16,185,129,0.08);border-color:rgba(16,185,129,0.25);color:#10b981;">Cloud Sync</span>
+              <span class="tag-pill"
+                style="background:rgba(239,68,68,0.08);border-color:rgba(239,68,68,0.25);color:#f87171;">PDF &amp; Excel</span>
+            </div>
+            <div class="flex gap-3">
+              <button onclick="openProjectModal('dafterApp')"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold btn-gradient text-white relative z-10 flex items-center justify-center gap-2">
+                <i class="fas fa-eye text-xs"></i> تفاصيل
+              </button>
+              <a href="https://play.google.com/store/apps/details?id=net.dafter.app" target="_blank" rel="noopener noreferrer"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 glass"
+                style="border:1px solid rgba(16,185,129,0.35);color:#34d399;transition:all 0.3s;"
+                onmouseover="this.style.background='rgba(16,185,129,0.12)'"
+                onmouseout="this.style.background=''">
+                <i class="fab fa-google-play text-xs"></i> عرض التطبيق
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT: Account Book -->
+        <div class="project-card filter-visible" data-reveal="" style="transition-delay:0.15s;" data-category="android">
+          <div
+            style="background:linear-gradient(135deg,rgba(245,158,11,0.08),rgba(0,0,0,0));position:absolute;inset:0;pointer-events:none;"
+            class="card-glow"></div>
+          <div class="project-thumb" style="background:linear-gradient(135deg,#381e02,#1a0d01);">
+            <div
+              style="position:absolute;inset:0;opacity:0.07;background-image:radial-gradient(rgba(255,255,255,0.4) 1px,transparent 1px);background-size:24px 24px;">
+            </div>
+            <div
+              style="width:76px;height:76px;border-radius:20px;background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.35);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;overflow:hidden;box-shadow:0 0 20px rgba(245,158,11,0.25);">
+              <img src="https://play-lh.googleusercontent.com/ABEpP0H089pMziCH4InHpmM4znya4zjh8v2UX8Yf8v-5m-NTu3XUc7OPgrrdxjzcGFQ8A3HDaHYp2liT1HQJ0CU=s0-br30" alt="دفتر الحسابات" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" loading="lazy" />
+              <div style="display:none;width:100%;height:100%;align-items:center;justify-content:center;">
+                <i class="fas fa-scale-balanced text-3xl text-amber-400" style="filter:drop-shadow(0 0 12px rgba(245,158,11,0.5));"></i>
+              </div>
+            </div>
+            <div class="thumb-overlay">
+              <button onclick="openProjectModal('accountBook')"
+                class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-amber-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
+              <a href="https://play.google.com/store/apps/details?id=account.book.app" target="_blank" rel="noopener noreferrer"
+                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform" title="عرض على Google Play">
+                <i class="fab fa-google-play"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold text-slate-100 text-lg" style="font-family:'Sora',sans-serif;">دفتر الحسابات</h3>
+              <span
+                style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);border-radius:999px;padding:2px 10px;color:#fbbf24;">Credit &amp; Ledger</span>
+            </div>
+            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">تطبيق أندرويد محاسبي لإدارة الحسابات المدينة والدائنة، ومراقبة الحدود الائتمانية للعملاء، ودعم العملات المتعددة دون خادم خارجي.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tag-pill"
+                style="background:rgba(234,88,12,0.08);border-color:rgba(234,88,12,0.25);color:#fb923c;">Java</span>
+              <span class="tag-pill"
+                style="background:rgba(34,197,94,0.08);border-color:rgba(34,197,94,0.25);color:#4ade80;">Android SDK</span>
+              <span class="tag-pill"
+                style="background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.25);color:#f59e0b;">SQLite / Room</span>
+              <span class="tag-pill"
+                style="background:rgba(56,189,248,0.08);border-color:rgba(56,189,248,0.25);color:#38bdf8;">Multi-Currency</span>
+            </div>
+            <div class="flex gap-3">
+              <button onclick="openProjectModal('accountBook')"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold btn-gradient text-white relative z-10 flex items-center justify-center gap-2">
+                <i class="fas fa-eye text-xs"></i> تفاصيل
+              </button>
+              <a href="https://play.google.com/store/apps/details?id=account.book.app" target="_blank" rel="noopener noreferrer"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 glass"
+                style="border:1px solid rgba(16,185,129,0.35);color:#34d399;transition:all 0.3s;"
+                onmouseover="this.style.background='rgba(16,185,129,0.12)'"
+                onmouseout="this.style.background=''">
+                <i class="fab fa-google-play text-xs"></i> عرض التطبيق
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT: 100 Learn -->
+        <div class="project-card filter-visible" data-reveal="" style="transition-delay:0.2s;" data-category="android">
+          <div
+            style="background:linear-gradient(135deg,rgba(56,189,248,0.08),rgba(0,0,0,0));position:absolute;inset:0;pointer-events:none;"
+            class="card-glow"></div>
+          <div class="project-thumb" style="background:linear-gradient(135deg,#03283b,#01141e);">
+            <div
+              style="position:absolute;inset:0;opacity:0.07;background-image:radial-gradient(rgba(255,255,255,0.4) 1px,transparent 1px);background-size:24px 24px;">
+            </div>
+            <div
+              style="width:76px;height:76px;border-radius:20px;background:rgba(56,189,248,0.15);border:1px solid rgba(56,189,248,0.35);display:flex;align-items:center;justify-content:center;position:relative;z-index:1;overflow:hidden;box-shadow:0 0 20px rgba(56,189,248,0.25);">
+              <img src="https://play-lh.googleusercontent.com/VOK2CMFADSKiJ7I9JzRf1jZLxngqTdi1Kwj7hWC-cVxL1DmD5glAdaD0DT6MsghHQ-kQKsedY6N5nh5-nFKjgQ=s0-br30" alt="100 Learn" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" loading="lazy" />
+              <div style="display:none;width:100%;height:100%;align-items:center;justify-content:center;">
+                <i class="fas fa-graduation-cap text-3xl text-sky-400" style="filter:drop-shadow(0 0 12px rgba(56,189,248,0.5));"></i>
+              </div>
+            </div>
+            <div class="thumb-overlay">
+              <button onclick="openProjectModal('hundredLearn')"
+                class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-sky-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
+              <a href="https://play.google.com/store/apps/details?id=com.wbgmcz.cngrlc" target="_blank" rel="noopener noreferrer"
+                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform" title="عرض على Google Play">
+                <i class="fab fa-google-play"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="font-bold text-slate-100 text-lg" style="font-family:'Sora',sans-serif;">100 Learn — Courses</h3>
+              <span
+                style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.3);border-radius:999px;padding:2px 10px;color:#38bdf8;">E-Learning</span>
+            </div>
+            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">تطبيق تعليمي يوفر دروساً ومواد دراسية منهجية وأنشطة تدريبية مكثفة لترسيخ المفاهيم ودعم استمرارية التعلم الذاتي.</p>
+            <div class="flex flex-wrap gap-2 mb-5">
+              <span class="tag-pill"
+                style="background:rgba(234,88,12,0.08);border-color:rgba(234,88,12,0.25);color:#fb923c;">Java</span>
+              <span class="tag-pill"
+                style="background:rgba(34,197,94,0.08);border-color:rgba(34,197,94,0.25);color:#4ade80;">Android SDK</span>
+              <span class="tag-pill"
+                style="background:rgba(56,189,248,0.08);border-color:rgba(56,189,248,0.25);color:#38bdf8;">XML Layouts</span>
+              <span class="tag-pill"
+                style="background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.25);color:#f59e0b;">SQLite</span>
+            </div>
+            <div class="flex gap-3">
+              <button onclick="openProjectModal('hundredLearn')"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold btn-gradient text-white relative z-10 flex items-center justify-center gap-2">
+                <i class="fas fa-eye text-xs"></i> تفاصيل
+              </button>
+              <a href="https://play.google.com/store/apps/details?id=com.wbgmcz.cngrlc" target="_blank" rel="noopener noreferrer"
+                class="flex-1 py-2 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 glass"
+                style="border:1px solid rgba(16,185,129,0.35);color:#34d399;transition:all 0.3s;"
+                onmouseover="this.style.background='rgba(16,185,129,0.12)'"
+                onmouseout="this.style.background=''">
+                <i class="fab fa-google-play text-xs"></i> عرض التطبيق
+              </a>
+            </div>
+          </div>
+        </div>
 
         <!-- PROJECT: Performance System -->
         <div class="project-card filter-visible" data-reveal="" data-category="laravel">
@@ -5584,6 +5877,171 @@
 
     /* ===================== PROJECT MODAL DATA ===================== */
     const projectsData = {
+      staffSync: {
+        title: 'AI StaffSync — نظام إدارة الموارد البشرية الذكي',
+        badge: 'HR & AI',
+        badgeColor: '#a855f7',
+        bgColor: 'rgba(168,85,247,0.1)',
+        borderColor: 'rgba(168,85,247,0.3)',
+        icon: 'fa-users-gear',
+        iconColor: 'text-purple-400',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.thinknchange.staff_sync',
+        concept: 'تطبيق متكامل لإدارة الموارد البشرية يساعد المؤسسات والشركات على تنظيم الحضور والانصراف، والإجازات، وتقييم الأداء، وسير الموافقات الإدارية. يتضمن مساعداً ذكياً مدعوماً بنماذج لغوية (LLM) باسم Synthia للإجابة عن استفسارات الموظفين، والمساعدة في إعداد طلبات الإجازات وتوجيه الإجراءات بدقة.',
+        goal: 'تحسين كفاءة العمليات الإدارية، تقليص الأعباء الروتينية على إدارات الموارد البشرية، وتوفير تجربة تواصل ذكية وشفافة بين الموظفين والإدارة.',
+        features: [
+          'إدارة ذكية للحضور والانصراف وفترات الراحة وجداول العمل',
+          'إدارة شاملة لطلبات الإجازات واحتساب الأرصدة وتدفق الموافقات',
+          'نظام تقييم الأداء المهني وملاحظات المديرين وسجلات الإنجاز',
+          'المساعد الذكي المخصص Synthia للرد الفوري على أسئلة HR وتوجيه الإجراءات',
+          'نظام إشعارات فورية متقدم ينبه المستخدمين بكل تحديث وموافقة',
+          'جاهزية للتكامل مع أنظمة الرواتب ومعالجة العمليات المالية',
+          'صلاحيات وصول دقيقة (RBAC) تفصل بين الموظفين، المديرين، ومسؤولي الموارد البشرية'
+        ],
+        backend: [
+          { n: 'Java', c: 'text-orange-400' },
+          { n: 'Spring Boot', c: 'text-emerald-400' },
+          { n: 'PostgreSQL', c: 'text-blue-400' },
+          { n: 'LLM API Integration', c: 'text-purple-400' },
+          { n: 'RESTful APIs', c: 'text-cyan-400' }
+        ],
+        frontend: [
+          { n: 'Flutter', c: 'text-cyan-400' },
+          { n: 'Dart', c: 'text-blue-400' },
+          { n: 'Cross-Platform (Android & iOS)', c: 'text-green-400' },
+          { n: 'Clean Architecture', c: 'text-yellow-400' }
+        ]
+      },
+      directHire: {
+        title: 'DirectHire — AI Job Matching',
+        badge: 'Recruitment & AI',
+        badgeColor: '#06b6d4',
+        bgColor: 'rgba(6,182,212,0.1)',
+        borderColor: 'rgba(6,182,212,0.3)',
+        icon: 'fa-user-check',
+        iconColor: 'text-cyan-400',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.directhire.app',
+        concept: 'منصة توظيف ذكية تعتمد على محرك مطابقة متقدم لتقريب المسافات بين أصحاب العمل والمرشحين المناسبين. تعمل على تحليل المهارات والمتطلبات وتضييق نطاق البحث إلى الفرص الأكثر توافقاً، مما يقلل المقابلات غير الملائمة، مع الالتزام بأن الذكاء الاصطناعي أداة تمكين والمطابقة، والقرار النهائي يبقى بشرياً.',
+        goal: 'تسريع عملية التوظيف واختصار الوقت والجهد على مسؤولي التوظيف والباحثين عن عمل من خلال ترشيحات وظيفية ذكية ومبنية على بيانات دقيقة.',
+        features: [
+          'مطابقة ذكية تعتمد على خوارزميات الذكاء الاصطناعي بين الوظائف والمرشحين',
+          'تحسين اكتشاف الفرص وتصفية المتقدمين غير المناسبين مسبقاً',
+          'لوحة تحكم تفاعلية لإدارة خط أنابيب التوظيف ومتابعة مراحل المقابلات',
+          'محرك ترشيحات يربط متطلبات الوظيفة مع المهارات الفعلية للمرشح',
+          'واجهة استخدام متعددة المنصات سريعة وسلسة للتقديم ومتابعة الطلبات',
+          'دعم مسؤولي التوظيف برؤى متوازنة لاتخاذ قرارات توظيف أكثر وعياً'
+        ],
+        backend: [
+          { n: 'Node.js', c: 'text-green-400' },
+          { n: 'NestJS', c: 'text-red-400' },
+          { n: 'Python', c: 'text-yellow-400' },
+          { n: 'FastAPI Matching Engine', c: 'text-cyan-400' },
+          { n: 'PostgreSQL', c: 'text-blue-400' }
+        ],
+        frontend: [
+          { n: 'Flutter', c: 'text-cyan-400' },
+          { n: 'Dart', c: 'text-blue-400' },
+          { n: 'Shared Codebase', c: 'text-pink-400' },
+          { n: 'Reactive State', c: 'text-emerald-400' }
+        ]
+      },
+      dafterApp: {
+        title: 'دفتر — محاسبة وديون وعملاء',
+        badge: 'Finance & Accounting',
+        badgeColor: '#10b981',
+        bgColor: 'rgba(16,185,129,0.1)',
+        borderColor: 'rgba(16,185,129,0.3)',
+        icon: 'fa-book-bookmark',
+        iconColor: 'text-emerald-400',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=net.dafter.app',
+        concept: 'تطبيق محاسبي عربي مصمم خصيصاً للتجار، أصحاب المحلات، الورش، والمشروعات الصغيرة لإدارة الحسابات اليومية والإيرادات والمصروفات والديون والعملاء. صُمم وفق نهج "العمل دون إنترنت أولاً" (Offline-First) مع إمكانية المزامنة السحابية والنسخ الاحتياطي وإصدار التقارير المالية.',
+        goal: 'تمكين أصحاب المشروعات الصغيرة من استبدال الدفاتر الورقية المعرضة للتلف والضياع بحل رقمي عربي سريع، منظم، وموثوق يعمل في جميع الظروف.',
+        features: [
+          'تسجيل الإيرادات والمصروفات اليومية ومتابعة حركة الصندوق والسيولة',
+          'إدارة كاملة لسجلات العملاء والمعاملات والديون ومواعيد الاستحقاق',
+          'العمل التام دون الحاجة إلى اتصال بالإنترنت وفق معمارية Offline-First',
+          'مزامنة سحابية آمنة ونسخ احتياطي لحماية البيانات واستعادتها بسهولة',
+          'إرسال تذكيرات سريعة ومباشرة للعملاء بالدفعات المستحقة عبر واتساب',
+          'تقارير دورية للأرباح والخسائر مع تصدير بصيغتي PDF و Excel للطباعة والمشاركة',
+          'إرفاق صور الفواتير والسندات مع كل معاملة لحفظ المستندات رقمياً',
+          'واجهة مستخدم عربية سهلة وبسيطة تناسب الاستخدام السريع داخل المتجر'
+        ],
+        backend: [
+          { n: 'SQLite (Local DB)', c: 'text-yellow-400' },
+          { n: 'PostgreSQL (Cloud)', c: 'text-blue-400' },
+          { n: 'RESTful API', c: 'text-orange-400' },
+          { n: 'Cloud Backup & Sync', c: 'text-emerald-400' }
+        ],
+        frontend: [
+          { n: 'Flutter', c: 'text-cyan-400' },
+          { n: 'Dart', c: 'text-blue-400' },
+          { n: 'PDF & Excel Generator', c: 'text-red-400' },
+          { n: 'Arabic RTL Layouts', c: 'text-green-400' }
+        ]
+      },
+      accountBook: {
+        title: 'دفتر الحسابات — إدارة الديون والائتمان',
+        badge: 'Credit & Ledger',
+        badgeColor: '#f59e0b',
+        bgColor: 'rgba(245,158,11,0.1)',
+        borderColor: 'rgba(245,158,11,0.3)',
+        icon: 'fa-scale-balanced',
+        iconColor: 'text-amber-400',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=account.book.app',
+        concept: 'تطبيق أندرويد محاسبي أصيل (Native Android) يركز على إدارة الحسابات المدينة والدائنة، وتسجيل الديون والمدفوعات، ومراقبة الأرصدة والحدود الائتمانية للعملاء، مع دعم العملات المتعددة وأسعار الصرف وتخزين البيانات محلياً على الجهاز دون خادم خارجي.',
+        goal: 'مساعدة التجار وأصحاب الأعمال على مراقبة سقوف الائتمان، تفادي تجاوز الحدود المالية المسموحة لكل عميل، والتعامل المالي بأكثر من عملة بأمان وخصوصية تامة.',
+        features: [
+          'إدارة متكاملة لبيانات العملاء (إضافة، تعديل، حذف، بحث فوري)',
+          'تسجيل دقيق للمعاملات المالية المدينة والدائنة ومتابعة الرصيد اللحظي',
+          'تحديد سقف ائتماني لكل عميل مع حساب فوري للمبلغ المتاح قبل تجاوزه',
+          'دعم التعامل بأكثر من عملة وإدارة أسعار الصرف وتحويل المبالغ بدقة',
+          'عرض سجل المعاملات التاريخي مرتباً زمنياً مع إمكانية التصفية المتقدمة',
+          'إنشاء تقارير محاسبية مفصلة بصيغة PDF قابلة للحفظ والطباعة والمشاركة',
+          'تخزين محلي متين للبيانات (Offline) يحفظ الخصوصية ولا يتطلب خادماً خارجياً'
+        ],
+        backend: [
+          { n: 'SQLite / Room', c: 'text-yellow-400' },
+          { n: 'Local Storage Engine', c: 'text-emerald-400' },
+          { n: 'Currency Conversion Logic', c: 'text-cyan-400' },
+          { n: 'PDF Generation Engine', c: 'text-red-400' }
+        ],
+        frontend: [
+          { n: 'Java', c: 'text-orange-400' },
+          { n: 'Android SDK', c: 'text-green-400' },
+          { n: 'XML Responsive Layouts', c: 'text-blue-400' },
+          { n: 'Native UI Components', c: 'text-purple-400' }
+        ]
+      },
+      hundredLearn: {
+        title: '100 Learn — All courses for 100',
+        badge: 'E-Learning',
+        badgeColor: '#38bdf8',
+        bgColor: 'rgba(56,189,248,0.1)',
+        borderColor: 'rgba(56,189,248,0.3)',
+        icon: 'fa-graduation-cap',
+        iconColor: 'text-sky-400',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.wbgmcz.cngrlc',
+        concept: 'تطبيق تعليمي على منصة أندرويد يوفر دروساً ومواد دراسية منظمة وأنشطة تدريبية مكثفة تساعد المتعلمين على استيعاب المفاهيم الأساسية، والمراجعة المنهجية، والمواظبة على الدراسة من خلال تجربة تعلم واضحة، مبسطة، وموجهة.',
+        goal: 'تسهيل وصول المتعلمين إلى المحتوى التدريبي المنظم، تحفيز عادات التعلم المستمر، وجعل فهم الموضوعات المعقدة سلساً وتدريجياً.',
+        features: [
+          'تنظيم منهجي شامل للدروس والمواد التدريبية وفق مسارات تعلم واضحة',
+          'أنشطة تدريبية وتطبيقية لترسيخ المفاهيم ومراجعة المعلومات',
+          'تيسير استيعاب الأساسيات عبر تقديم محتوى تعليمي مقسم ومبسط',
+          'متابعة تقدم المتعلم وتشجيع الاستمرارية في الدراسة الذاتية',
+          'تجربة مستخدم سريعة، انسيابية، وخالية من المشتتات على أجهزة أندرويد',
+          'حفظ إعدادات وسجلات التقدم محلياً لسهولة المتابعة في أي وقت'
+        ],
+        backend: [
+          { n: 'SQLite Storage', c: 'text-yellow-400' },
+          { n: 'Content Delivery Flow', c: 'text-cyan-400' },
+          { n: 'Clean Architecture Pattern', c: 'text-emerald-400' }
+        ],
+        frontend: [
+          { n: 'Java', c: 'text-orange-400' },
+          { n: 'Android SDK', c: 'text-green-400' },
+          { n: 'XML Layouts', c: 'text-blue-400' },
+          { n: 'Native Navigation', c: 'text-purple-400' }
+        ]
+      },
       firebaseEnvManager: {
         title: 'Firebase Multi-Env Manager v2.0.0', badge: 'CLI Tool', badgeColor: '#fb923c', bgColor: 'rgba(249,115,22,0.1)', borderColor: 'rgba(249,115,22,0.3)', icon: 'fa-layer-group', iconColor: 'text-orange-400',
         concept: 'Firebase Multi-Env Manager هو أداة سطر أوامر (CLI) مكتوبة بـ Dart، تعمل كـ "مدير عمليات" آلي لتبديل إعدادات Firebase بين بيئات التطوير والإنتاج بضغطة زر.',
@@ -5802,6 +6260,46 @@
     };
 
     const projectCaseStudies = {
+      staffSync: {
+        role: 'Mobile & AI Developer',
+        timeline: 'Production App (Google Play)',
+        service: 'ai',
+        challenge: 'رقمنة العمليات الإدارية للموارد البشرية وتوحيد الحضور والإجازات وسير الموافقات مع تقديم مساعد ذكي (Synthia) يقدم ردوداً متسقة وموثوقة ضمن الصلاحيات.',
+        solution: 'بناء تطبيق Flutter متعدد المنصات يرتبط بنظام Spring Boot وPostgreSQL مع دمج نموذج لغوي ذكي مخصص للإجابة عن استفسارات الموظفين وصياغة الطلبات آلياً.',
+        result: 'تطبيق منشور ومعتمد على متجر Google Play يختصر وقت المعاملات الإدارية ويوفر بيئة عمل ذكية وشفافة للشركات وفرق العمل.'
+      },
+      directHire: {
+        role: 'Full-Stack & Mobile Developer',
+        timeline: 'Production App (Google Play)',
+        service: 'ai',
+        challenge: 'تقليل هدر الوقت في المقابلات غير الملائمة للوظائف، وتصفية السير الذاتية الضخمة دون استبدال العامل البشري الحاسم في قرار التوظيف.',
+        solution: 'تطوير تطبيق Flutter متجاوب مرتبط بخدمات NestJS ومحرك مطابقة ذكي مبني بـ Python وFastAPI يحلل مواءمة المهارات ويوجه مسؤولي التوظيف للمرشحين الأنسب.',
+        result: 'منصة توظيف ذكية منشورة على Google Play تقدم مطابقة دقيقة وعادلة ترفع كفاءة التوظيف وتحسن تجربة الباحث عن العمل وصاحب المنشأة.'
+      },
+      dafterApp: {
+        role: 'Mobile Application Developer',
+        timeline: 'Production App (Google Play)',
+        service: 'web',
+        challenge: 'بناء نظام محاسبي خفيف وسريع لأصحاب المتاجر والمشاريع الصغيرة يعمل بكفاءة تامة بدون اتصال بالإنترنت، مع الحفاظ على دقة الحسابات وسهولة إرسال التذكيرات.',
+        solution: 'اعتماد معمارية Offline-First مع SQLite محلياً ومزامنة سحابية مع PostgreSQL، وتوفير أدوات توليد تقارير PDF/Excel وتذكيرات سريعة عبر واتساب.',
+        result: 'تطبيق مالي عربي معتمد على Google Play يساعد أصحاب المتاجر على استبدال الدفاتر الورقية ببيئة رقمية آمنة تضبط الأرباح والديون بدقة.'
+      },
+      accountBook: {
+        role: 'Native Android Developer',
+        timeline: 'Production App (Google Play)',
+        service: 'web',
+        challenge: 'إدارة الحسابات والديون المعقدة مع مراقبة السقف الائتماني لكل عميل ودعم فروقات العملات المتعددة وأسعار الصرف محلياً دون الحاجة لاتصال أو خوادم خارجية.',
+        solution: 'تطوير تطبيق Native Android بـ Java وAndroid SDK مع قاعدة بيانات SQLite/Room محلية ومكتبة متقدمة لتوليد كشوفات الحسابات PDF بدقة عالية.',
+        result: 'تطبيق أندرويد محاسبي منشور على Google Play يوفر حماية كاملة لخصوصية السجلات المالية ويساعد التجار على التحكم بحدود الائتمان وسداد الديون.'
+      },
+      hundredLearn: {
+        role: 'Android Application Developer',
+        timeline: 'Production App (Google Play)',
+        service: 'web',
+        challenge: 'تنسيق وتقديم محتوى تعليمي متدرج للمتعلمين على الهاتف في بيئة خالية من التشتيت وتدعم المراجعة المستمرة واستيعاب المفاهيم الأساسية.',
+        solution: 'بناء واجهات أندرويد أصيلة بـ Java وXML مع هيكلة مسارات الدروس والأنشطة التدريبية وتخزين التقدم محلياً لضمان تجربة تعلم سلسة ومستمرة.',
+        result: 'تطبيق تعليمي منشور على متجر Google Play يساعد الطلاب والدارسين على التعلم الذاتي المنظم ومراجعة المقررات بسهولة وسرعة.'
+      },
       performanceSystem: {
         role: 'Full-stack Developer',
         timeline: 'Graduation build',
@@ -6028,7 +6526,12 @@
     </div>
 
     <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;">
-      <button type="button" onclick="closeProjectModal(); prefillService('${c.service}')" class="btn-gradient" style="padding:11px 18px;border-radius:12px;color:white;font-family:'Cairo',sans-serif;font-weight:800;font-size:0.88rem;border:none;display:inline-flex;align-items:center;gap:8px;">
+      ${p.playStoreUrl ? `
+      <a href="${p.playStoreUrl}" target="_blank" rel="noopener noreferrer" class="btn-gradient" style="padding:11px 18px;border-radius:12px;color:white;font-family:'Cairo',sans-serif;font-weight:800;font-size:0.88rem;border:none;display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
+        <i class="fab fa-google-play text-sm"></i> عرض في Google Play
+      </a>
+      ` : ''}
+      <button type="button" onclick="closeProjectModal(); prefillService('${c.service}')" class="${p.playStoreUrl ? 'glass' : 'btn-gradient'}" style="padding:11px 18px;border-radius:12px;color:white;font-family:'Cairo',sans-serif;font-weight:800;font-size:0.88rem;border:${p.playStoreUrl ? '1px solid rgba(255,255,255,0.1)' : 'none'};display:inline-flex;align-items:center;gap:8px;cursor:pointer;">
         <i class="fas fa-paper-plane text-xs"></i> أريد مشروعاً مشابهاً
       </button>
       <a href="#contact" onclick="closeProjectModal()" style="padding:11px 18px;border-radius:12px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);color:#cbd5e1;font-family:'Cairo',sans-serif;font-weight:700;font-size:0.88rem;display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
@@ -6489,6 +6992,18 @@
         [`تفاصيل`, `Details`],
         [`عرض`, `Slides`],
         [`فيديو`, `Video`],
+        [`عرض التطبيق`, `View App`],
+        [`عرض في Google Play`, `View on Google Play`],
+        [`AI StaffSync`, `AI StaffSync`],
+        [`نظام ذكي متكامل لإدارة الموارد البشرية مع المساعد الذكي Synthia لأتمتة الحضور والإجازات ومتابعة الأداء وسير الموافقات الإدارية.`, `An integrated smart HR management platform with AI assistant Synthia for attendance, leaves, performance tracking, and approval workflows.`],
+        [`DirectHire — AI Matching`, `DirectHire — AI Matching`],
+        [`منصة توظيف ذكية تستخدم محرك مطابقة مدعوم بالذكاء الاصطناعي لربط الشركات بالمرشحين الأنسب وتقليل المقابلات غير الملائمة.`, `A smart recruitment platform using AI matching algorithms to connect companies with ideal candidates and reduce mismatch interviews.`],
+        [`دفتر — محاسبة وديون وعملاء`, `Dafter — Accounting, Debts & Clients`],
+        [`تطبيق محاسبي عربي متكامل لأصحاب المتاجر والمشاريع الصغيرة لإدارة الحسابات والديون دون إنترنت مع مزامنة سحابية وتقارير مالية.`, `An Arabic digital accounting app for retailers and small businesses to manage ledger, debts, and cash flow offline-first with cloud sync and reports.`],
+        [`دفتر الحسابات`, `Account Book — Credit & Ledger`],
+        [`تطبيق أندرويد محاسبي لإدارة الحسابات المدينة والدائنة، ومراقبة الحدود الائتمانية للعملاء، ودعم العملات المتعددة دون خادم خارجي.`, `A native Android ledger app for credit and debit management, client credit limits, multi-currency support, and offline financial records.`],
+        [`100 Learn — Courses`, `100 Learn — Courses`],
+        [`تطبيق تعليمي يوفر دروساً ومواد دراسية منهجية وأنشطة تدريبية مكثفة لترسيخ المفاهيم ودعم استمرارية التعلم الذاتي.`, `An interactive Android e-learning app delivering structured lessons, training activities, and milestone reviews to reinforce foundational concepts.`],
         [`نظام مراجعة أداء الموظفين`, `Employee Performance Review System`],
         [`نظام متكامل لإدارة وتقييم أداء الموظفين، يربط الموارد البشرية والمديرين والموظفين في منصة واحدة شفافة.`, `A complete employee performance review system connecting HR, managers, and employees in one transparent platform.`],
         [`نظام تخطيط موارد المؤسسات السحابي (ERP SaaS)`, `Cloud ERP SaaS System (Multi-Tenant)`],
@@ -7050,7 +7565,7 @@
 
     (function () {
       const SEARCH_STATE_KEY = 'hassan-portfolio-search';
-      const catCounts = { react: 0, laravel: 0, ai: 0, flutter: 0, cli: 0 };
+      const catCounts = { react: 0, laravel: 0, ai: 0, flutter: 0, cli: 0, android: 0 };
       const certCategoryCounts = { web: 0, ai: 0, cyber: 0, databases: 0, soft: 0, programming: 0 };
       const cards = Array.from(document.querySelectorAll('.project-card[data-category]'));
       const certItems = Array.from(document.querySelectorAll('#certifications .cert-item'));
@@ -7295,6 +7810,11 @@
       } else if (hash.startsWith('#Projects-')) {
         const projectNum = parseInt(hash.replace('#Projects-', ''), 10);
         const keys = [
+          'staffSync',
+          'directHire',
+          'dafterApp',
+          'accountBook',
+          'hundredLearn',
           'performanceSystem',
           'erpSaaS',
           'webhookAutomation',
