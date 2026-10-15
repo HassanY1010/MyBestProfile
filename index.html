@@ -2120,7 +2120,7 @@
 
   <!-- ============ MOBILE MENU ============ -->
   <div id="mobile-menu">
-    <button id="close-mobile-menu"
+    <button id="close-mobile-menu" aria-label="إغلاق القائمة الرئيسية" title="إغلاق القائمة"
       style="position:absolute;top:24px;left:24px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;color:white;font-size:1.2rem;">
       <i class="fas fa-times"></i>
     </button>
@@ -2169,7 +2169,7 @@
           class="hidden md:inline-flex items-center gap-2 px-5 py-2 rounded-full btn-gradient text-white text-sm font-semibold relative z-10">
           <i class="fas fa-paper-plane text-xs"></i> تواصل معي
         </a>
-        <button id="open-mobile-menu" class="md:hidden w-10 h-10 flex items-center justify-center rounded-xl glass"
+        <button id="open-mobile-menu" aria-label="فتح القائمة الرئيسية" title="فتح القائمة" class="md:hidden w-10 h-10 flex items-center justify-center rounded-xl glass"
           style="border:1px solid rgba(255,255,255,0.08);">
           <i class="fas fa-bars text-slate-300"></i>
         </button>
@@ -2250,25 +2250,16 @@
 
           <!-- Social + Stats -->
           <div class="flex flex-wrap items-center gap-6" data-reveal="" style="transition-delay:0.5s;">
-            <a href="https://github.com/HassanY1010" target="_blank"
-              class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-white transition-all hover:scale-110"
-              style="border:1px solid rgba(255,255,255,0.08);" title="GitHub">
+            <a href="https://github.com/HassanY1010" target="_blank" aria-label="حساب GitHub الشخصي" class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-white transition-all hover:scale-110" style="border:1px solid rgba(255,255,255,0.08);" title="GitHub">
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/hassan-mohammed-745a28412"
-              target="_blank"
-              class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-sky-400 transition-all hover:scale-110"
-              style="border:1px solid rgba(255,255,255,0.08);" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/hassan-mohammed-745a28412" target="_blank" aria-label="حساب LinkedIn الشخصي" class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-sky-400 transition-all hover:scale-110" style="border:1px solid rgba(255,255,255,0.08);" title="LinkedIn">
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="mailto:hassanmohammedbarafah836@gmail.com"
-              class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-pink-400 transition-all hover:scale-110"
-              style="border:1px solid rgba(255,255,255,0.08);">
+            <a href="mailto:hassanmohammedbarafah836@gmail.com" aria-label="إرسال بريد إلكتروني" title="البريد الإلكتروني" class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-pink-400 transition-all hover:scale-110" style="border:1px solid rgba(255,255,255,0.08);">
               <i class="fas fa-envelope"></i>
             </a>
-            <a href="https://wa.me/967776461892" target="_blank"
-              class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-green-400 transition-all hover:scale-110"
-              style="border:1px solid rgba(255,255,255,0.08);">
+            <a href="https://wa.me/967776461892" target="_blank" aria-label="تواصل عبر واتساب" title="واتساب" class="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-green-400 transition-all hover:scale-110" style="border:1px solid rgba(255,255,255,0.08);">
               <i class="fab fa-whatsapp"></i>
             </a>
             <div style="width:1px;height:28px;background:rgba(255,255,255,0.08);"></div>
@@ -2342,7 +2333,7 @@
       <!-- Scroll indicator -->
       <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
         <div
-          style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;letter-spacing:3px;color:rgba(148,163,184,0.4);text-transform:uppercase;">
+          style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;letter-spacing:3px;color:#94a3b8;text-transform:uppercase;">
           SCROLL</div>
         <div
           style="width:1px;height:40px;background:linear-gradient(180deg,rgba(168,85,247,0.6),transparent);animation:scrollPulse 2s ease infinite;">
@@ -2537,7 +2528,7 @@
 
           <!-- Summary -->
           <div
-            style="font-family:&#39;Cairo&#39;,sans-serif;font-size:0.9rem;color:rgba(148,163,184,0.8);line-height:1.8;">
+            style="font-family:&#39;Cairo&#39;,sans-serif;font-size:0.9rem;color:rgba(226,232,240,0.9);line-height:1.8;">
             أتخصص في بناء تجارب رقمية متكاملة تجمع بين <span class="text-violet-400 font-semibold">واجهات أمامية
               مبهرة</span>، وأنظمة خلفية موثوقة، وتطبيقات مدعومة بـ<span class="text-pink-400 font-semibold">الذكاء
               الاصطناعي</span>.
@@ -2552,7 +2543,7 @@
           </div>
           <h3 class="text-lg font-bold mb-6 text-slate-100" style="font-family:&#39;Cairo&#39;,sans-serif;">ملخص احترافي
           </h3>
-          <p style="font-family:&#39;Cairo&#39;,sans-serif;font-size:0.9rem;color:rgba(148,163,184,0.8);line-height:2;"
+          <p style="font-family:&#39;Cairo&#39;,sans-serif;font-size:0.9rem;color:rgba(226,232,240,0.9);line-height:2;"
             class="mb-6">
             مطوّر <span class="text-violet-400 font-semibold">Full-Stack</span> متكامل، أبني منتجات ويب رقمية عالية
             الجودة من الصفر وحتى الإطلاق — من أنظمة الذكاء الاصطناعي إلى منصات التجارة الإلكترونية والرعاية الصحية
@@ -2656,9 +2647,9 @@
           style="width:36px;height:36px;border-radius:10px;background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
           <i class="fas fa-code text-cyan-400 text-sm"></i>
         </div>
-        <h4 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">تطوير الواجهات
-          الأمامية</h4>
-        <p class="text-slate-500 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">React.js,
+        <h3 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">تطوير الواجهات
+          الأمامية</h3>
+        <p class="text-slate-300 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">React.js,
           Next.js, Tailwind CSS مع أفضل معايير UI/UX</p>
       </div>
       <div class="glass-card rounded-xl p-5" style="border-color:rgba(124,58,237,0.15);">
@@ -2666,9 +2657,9 @@
           style="width:36px;height:36px;border-radius:10px;background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
           <i class="fas fa-server text-violet-400 text-sm"></i>
         </div>
-        <h4 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">تطوير الأنظمة
-          الخلفية</h4>
-        <p class="text-slate-500 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">Node.js,
+        <h3 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">تطوير الأنظمة
+          الخلفية</h3>
+        <p class="text-slate-300 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">Node.js,
           Express, Laravel مع MySQL وMongoDB</p>
       </div>
       <div class="glass-card rounded-xl p-5" style="border-color:rgba(236,72,153,0.15);">
@@ -2676,9 +2667,9 @@
           style="width:36px;height:36px;border-radius:10px;background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
           <i class="fas fa-brain text-pink-400 text-sm"></i>
         </div>
-        <h4 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">دمج الذكاء
-          الاصطناعي</h4>
-        <p class="text-slate-500 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">OpenAI GPT,
+        <h3 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">دمج الذكاء
+          الاصطناعي</h3>
+        <p class="text-slate-300 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">OpenAI GPT,
           Chatbots, ML Models في تطبيقات الويب</p>
       </div>
       <div class="glass-card rounded-xl p-5" style="border-color:rgba(245,158,11,0.15);">
@@ -2686,9 +2677,9 @@
           style="width:36px;height:36px;border-radius:10px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
           <i class="fas fa-cloud text-amber-400 text-sm"></i>
         </div>
-        <h4 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">النشر السحابي
-        </h4>
-        <p class="text-slate-500 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">AWS, Vercel,
+        <h3 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">النشر السحابي
+        </h3>
+        <p class="text-slate-300 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">AWS, Vercel,
           Netlify مع CI/CD وDocker</p>
       </div>
       <div class="glass-card rounded-xl p-5" style="border-color:rgba(16,185,129,0.15);">
@@ -2696,9 +2687,9 @@
           style="width:36px;height:36px;border-radius:10px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
           <i class="fas fa-users text-emerald-400 text-sm"></i>
         </div>
-        <h4 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">تعاون مع
-          العملاء</h4>
-        <p class="text-slate-500 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">من التحليل
+        <h3 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">تعاون مع
+          العملاء</h3>
+        <p class="text-slate-300 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">من التحليل
           وصياغة المتطلبات إلى التسليم والصيانة</p>
       </div>
       <div class="glass-card rounded-xl p-5" style="border-color:rgba(99,102,241,0.15);">
@@ -2706,9 +2697,9 @@
           style="width:36px;height:36px;border-radius:10px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.3);display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
           <i class="fas fa-shield-alt text-indigo-400 text-sm"></i>
         </div>
-        <h4 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">أمان التطبيقات
-        </h4>
-        <p class="text-slate-500 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">JWT, RBAC,
+        <h3 class="font-bold text-slate-200 text-sm mb-2" style="font-family:&#39;Cairo&#39;,sans-serif;">أمان التطبيقات
+        </h3>
+        <p class="text-slate-300 text-xs leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">JWT, RBAC,
           OWASP, Secure APIs وبرمجة نظيفة</p>
       </div>
     </div>
@@ -2716,7 +2707,7 @@
     <!-- Tech Stack -->
     <div style="border-top:1px solid rgba(255,255,255,0.06);padding-top:24px;">
       <div
-        style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.4);letter-spacing:2px;margin-bottom:14px;">
+        style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:#94a3b8;letter-spacing:2px;margin-bottom:14px;">
         TECH STACK</div>
       <div class="flex flex-wrap gap-2">
         <span class="tag-pill"
@@ -2783,7 +2774,7 @@
       <!-- Tech Icons Grid -->
       <div class="mb-16" data-reveal="">
         <div
-          style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.4);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;text-align:center;">
+          style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:#94a3b8;letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;text-align:center;">
           Core Technologies</div>
         <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-3">
           <div class="tech-item"><i class="fab fa-react text-cyan-400"></i><span class="text-slate-400">React</span>
@@ -2979,7 +2970,7 @@
       <!-- Skills Progress Bars -->
       <div class="mt-16" data-reveal="">
         <div
-          style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:rgba(148,163,184,0.4);letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;text-align:center;">
+          style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:#94a3b8;letter-spacing:3px;text-transform:uppercase;margin-bottom:20px;text-align:center;">
           Skill Strength
         </div>
 
@@ -3101,7 +3092,7 @@
         <div
           style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;">
         </div>
-        <p class="text-slate-500 mt-6 text-sm max-w-2xl mx-auto" style="font-family:'Cairo',sans-serif;line-height:1.9;"
+        <p class="text-slate-300 mt-6 text-sm max-w-2xl mx-auto" style="font-family:'Cairo',sans-serif;line-height:1.9;"
           data-i18n="servicesIntro">
           حلول عملية لبناء منتجات ويب سريعة، لوحات تحكم واضحة، وتجارب ذكية تساعد مشروعك على النمو بثقة.
         </p>
@@ -3115,7 +3106,7 @@
           </div>
           <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;"
             data-i18n="serviceWebTitle">تطوير مواقع وتطبيقات ويب</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
             data-i18n="serviceWebDesc">واجهات احترافية وسريعة باستخدام React و Next.js و Tailwind مع تجربة مستخدم
             متجاوبة.</p>
           <button class="service-action" onclick="prefillService('web')" type="button"><i
@@ -3129,7 +3120,7 @@
           </div>
           <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;"
             data-i18n="serviceDashTitle">لوحات تحكم وأنظمة إدارية</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
             data-i18n="serviceDashDesc">بناء Dashboards لإدارة البيانات، المستخدمين، التقارير، الصلاحيات، وسير العمل
             اليومي.</p>
           <button class="service-action" onclick="prefillService('dashboard')" type="button"><i
@@ -3143,7 +3134,7 @@
           </div>
           <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;"
             data-i18n="serviceLaravelTitle">أنظمة Laravel وواجهات API</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
             data-i18n="serviceLaravelDesc">تطوير Back-end منظم وآمن مع قواعد بيانات، صلاحيات، مصادقة، وواجهات REST قابلة
             للتوسع.</p>
           <button class="service-action" onclick="prefillService('laravel')" type="button"><i
@@ -3157,7 +3148,7 @@
           </div>
           <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;"
             data-i18n="serviceAiTitle">دمج الذكاء الاصطناعي</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
             data-i18n="serviceAiDesc">إضافة مساعدين ذكيين، تحليل نصوص، توصيات، أو أتمتة قرارات داخل تطبيقات الويب.</p>
           <button class="service-action" onclick="prefillService('ai')" type="button"><i
               class="fas fa-arrow-left text-xs"></i><span data-i18n="serviceAction">اطلب هذه الخدمة</span></button>
@@ -3170,7 +3161,7 @@
           </div>
           <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;"
             data-i18n="serviceUiTitle">تحسين UI/UX وتجربة المستخدم</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
             data-i18n="serviceUiDesc">تحويل الواجهات المزدحمة إلى تجربة منظمة، جذابة، وسهلة الاستخدام على كل الشاشات.
           </p>
           <button class="service-action" onclick="prefillService('uiux')" type="button"><i
@@ -3184,7 +3175,7 @@
           </div>
           <h3 class="text-slate-100 font-bold text-lg mb-3" style="font-family:'Sora',sans-serif;"
             data-i18n="serviceSecureTitle">تحسين الأداء والأمان</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;"
             data-i18n="serviceSecureDesc">مراجعة سرعة الموقع، حماية النماذج، تنظيم الصلاحيات، وتحسين قابلية الصيانة.</p>
           <button class="service-action" onclick="prefillService('security')" type="button"><i
               class="fas fa-arrow-left text-xs"></i><span data-i18n="serviceAction">اطلب هذه الخدمة</span></button>
@@ -3205,7 +3196,7 @@
         <div
           style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;">
         </div>
-        <p class="text-slate-500 mt-6 text-sm max-w-2xl mx-auto"
+        <p class="text-slate-300 mt-6 text-sm max-w-2xl mx-auto"
           style="font-family:'Cairo',sans-serif;line-height:1.9;">
           أركز على بناء حلول مفهومة وسريعة وقابلة للتطوير، مع تجربة تواصل واضحة من أول رسالة حتى التسليم.
         </p>
@@ -3215,28 +3206,28 @@
         <article class="insight-card" data-reveal="">
           <div class="insight-icon"><i class="fas fa-bolt text-violet-400"></i></div>
           <h3 class="text-slate-100 font-bold mb-3" style="font-family:'Sora',sans-serif;">سرعة تنفيذ محسوبة</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">أقسم العمل إلى مراحل
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">أقسم العمل إلى مراحل
             واضحة حتى ترى تقدماً حقيقياً بدون انتظار طويل أو غموض.</p>
         </article>
         <article class="insight-card" data-reveal="" style="transition-delay:0.05s;">
           <div class="insight-icon" style="background:rgba(6,182,212,0.12);border-color:rgba(6,182,212,0.24);"><i
               class="fas fa-code-branch text-cyan-400"></i></div>
           <h3 class="text-slate-100 font-bold mb-3" style="font-family:'Sora',sans-serif;">كود منظم وقابل للصيانة</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">أبني البنية بشكل
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">أبني البنية بشكل
             مرتب، وأتجنب التعقيد غير الضروري حتى يسهل تطوير المشروع لاحقاً.</p>
         </article>
         <article class="insight-card" data-reveal="" style="transition-delay:0.1s;">
           <div class="insight-icon" style="background:rgba(236,72,153,0.12);border-color:rgba(236,72,153,0.24);"><i
               class="fas fa-wand-magic-sparkles text-pink-400"></i></div>
           <h3 class="text-slate-100 font-bold mb-3" style="font-family:'Sora',sans-serif;">اهتمام بتجربة المستخدم</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">لا أتعامل مع الواجهة
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">لا أتعامل مع الواجهة
             كزينة فقط، بل كمسار يساعد المستخدم على الفهم والإنجاز بسرعة.</p>
         </article>
         <article class="insight-card" data-reveal="" style="transition-delay:0.15s;">
           <div class="insight-icon" style="background:rgba(16,185,129,0.12);border-color:rgba(16,185,129,0.24);"><i
               class="fas fa-handshake text-emerald-400"></i></div>
           <h3 class="text-slate-100 font-bold mb-3" style="font-family:'Sora',sans-serif;">تواصل واضح وتسليم مرتب</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">أوضح ما سيتم عمله،
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">أوضح ما سيتم عمله،
             أشارك التحديثات المهمة، وأسلّم نتيجة قابلة للاستخدام لا مجرد ملفات.</p>
         </article>
       </div>
@@ -3252,7 +3243,7 @@
         <div data-reveal="">
           <div class="section-label mb-4">06 / AVAILABLE FOR</div>
           <h2 class="section-title text-gradient" style="font-family:'Sora',sans-serif;">متاح حالياً لـ</h2>
-          <p class="text-slate-500 mt-6 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">
+          <p class="text-slate-300 mt-6 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">
             هذه أكثر أنواع المشاريع التي أستطيع تنفيذها أو تطويرها بسرعة وبجودة عالية حالياً.
           </p>
         </div>
@@ -3261,7 +3252,7 @@
             <i class="fas fa-graduation-cap text-violet-400 mt-1"></i>
             <div>
               <h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">مشاريع تخرج</h3>
-              <p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">تحليل، تصميم،
+              <p class="text-slate-300 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">تحليل، تصميم،
                 تطوير، عرض تقديمي، وتجهيز شرح المشروع.</p>
             </div>
           </div>
@@ -3270,7 +3261,7 @@
             <div>
               <h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">مواقع شركات
                 وأعمال</h3>
-              <p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">صفحات تعريفية
+              <p class="text-slate-300 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">صفحات تعريفية
                 احترافية، خدمات، تواصل، وتحسين ظهور العلامة.</p>
             </div>
           </div>
@@ -3279,7 +3270,7 @@
             <div>
               <h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">أنظمة Laravel
               </h3>
-              <p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">لوحات تحكم،
+              <p class="text-slate-300 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">لوحات تحكم،
                 صلاحيات، قواعد بيانات، تقارير، وواجهات API.</p>
             </div>
           </div>
@@ -3287,7 +3278,7 @@
             <i class="fas fa-brain text-emerald-400 mt-1"></i>
             <div>
               <h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">تطبيقات AI</h3>
-              <p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">مساعدات ذكية،
+              <p class="text-slate-300 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">مساعدات ذكية،
                 تحليل نصوص، توصيات، وأتمتة داخل المنتجات.</p>
             </div>
           </div>
@@ -3295,7 +3286,7 @@
             <i class="fas fa-chart-pie text-pink-400 mt-1"></i>
             <div>
               <h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">لوحات تحكم</h3>
-              <p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">إحصائيات، إدارة
+              <p class="text-slate-300 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">إحصائيات، إدارة
                 مستخدمين، فلاتر، تقارير، وتجربة استخدام عملية.</p>
             </div>
           </div>
@@ -3304,7 +3295,7 @@
             <div>
               <h3 class="text-slate-100 font-bold text-sm mb-1" style="font-family:'Cairo',sans-serif;">تحسين مشاريع
                 موجودة</h3>
-              <p class="text-slate-500 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">إصلاح مشاكل،
+              <p class="text-slate-300 text-xs leading-relaxed" style="font-family:'Cairo',sans-serif;">إصلاح مشاكل،
                 تحسين واجهة، رفع أداء، وتنظيم الكود.</p>
             </div>
           </div>
@@ -3324,7 +3315,7 @@
         <div
           style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;">
         </div>
-        <p class="text-slate-500 mt-6 text-sm max-w-2xl mx-auto"
+        <p class="text-slate-300 mt-6 text-sm max-w-2xl mx-auto"
           style="font-family:'Cairo',sans-serif;line-height:1.9;">
           مسار واضح يقلل المفاجآت، ويجعل كل مرحلة قابلة للمراجعة قبل الانتقال للمرحلة التالية.
         </p>
@@ -3333,31 +3324,31 @@
         <article class="process-step" data-reveal="">
           <span class="process-step-num">01</span>
           <h3 class="text-slate-100 font-bold mb-2" style="font-family:'Cairo',sans-serif;">تحليل المتطلبات</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">نفهم الهدف، الجمهور،
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">نفهم الهدف، الجمهور،
             الصفحات، الصلاحيات، والمخرجات المطلوبة.</p>
         </article>
         <article class="process-step" data-reveal="" style="transition-delay:0.05s;">
           <span class="process-step-num">02</span>
           <h3 class="text-slate-100 font-bold mb-2" style="font-family:'Cairo',sans-serif;">تصميم التجربة</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">نرتب الواجهة
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">نرتب الواجهة
             والمسارات المهمة حتى تكون التجربة واضحة للمستخدم.</p>
         </article>
         <article class="process-step" data-reveal="" style="transition-delay:0.1s;">
           <span class="process-step-num">03</span>
           <h3 class="text-slate-100 font-bold mb-2" style="font-family:'Cairo',sans-serif;">التطوير</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">تنفيذ الواجهة
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">تنفيذ الواجهة
             والمنطق وقاعدة البيانات مع المحافظة على بنية قابلة للتوسع.</p>
         </article>
         <article class="process-step" data-reveal="" style="transition-delay:0.15s;">
           <span class="process-step-num">04</span>
           <h3 class="text-slate-100 font-bold mb-2" style="font-family:'Cairo',sans-serif;">الاختبار والتحسين</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">مراجعة التجاوب،
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">مراجعة التجاوب،
             الأخطاء، السرعة، وحالات الاستخدام الأساسية.</p>
         </article>
         <article class="process-step" data-reveal="" style="transition-delay:0.2s;">
           <span class="process-step-num">05</span>
           <h3 class="text-slate-100 font-bold mb-2" style="font-family:'Cairo',sans-serif;">التسليم والدعم</h3>
-          <p class="text-slate-500 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">تسليم الملفات والشرح
+          <p class="text-slate-300 text-sm leading-relaxed" style="font-family:'Cairo',sans-serif;">تسليم الملفات والشرح
             اللازم، مع إمكانية متابعة التحسينات بعد الإطلاق.</p>
         </article>
       </div>
@@ -3379,7 +3370,7 @@
         <div
           style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;">
         </div>
-        <p class="text-slate-500 mt-6 text-sm max-w-xl mx-auto" style="font-family:'Cairo',sans-serif;line-height:1.8;">
+        <p class="text-slate-300 mt-6 text-sm max-w-xl mx-auto" style="font-family:'Cairo',sans-serif;line-height:1.8;">
           شهادات مختصرة عن تجربة العمل وتحقيق النتائج.
         </p>
       </div>
@@ -3512,7 +3503,7 @@
         <div
           style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;">
         </div>
-        <p class="text-slate-500 mt-6 text-sm max-w-xl mx-auto" style="font-family:&#39;Cairo&#39;,sans-serif;">مجموعة
+        <p class="text-slate-300 mt-6 text-sm max-w-xl mx-auto" style="font-family:&#39;Cairo&#39;,sans-serif;">مجموعة
           من أبرز المشاريع التي طورتها — كل مشروع يمثل تحدياً تقنياً حقيقياً وحلاً مبتكراً.</p>
       </div>
 
@@ -3583,8 +3574,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal('staffSync')"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-purple-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <a href="https://play.google.com/store/apps/details?id=com.thinknchange.staff_sync" target="_blank" rel="noopener noreferrer"
-                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform" title="عرض على Google Play">
+              <a href="https://play.google.com/store/apps/details?id=com.thinknchange.staff_sync" target="_blank" rel="noopener noreferrer" aria-label="عرض وتحميل التطبيق من متجر Google Play" title="عرض على Google Play" class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fab fa-google-play"></i>
               </a>
             </div>
@@ -3595,7 +3585,7 @@
               <span
                 style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.3);border-radius:999px;padding:2px 10px;color:#c084fc;">HR &amp; AI</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">نظام ذكي متكامل لإدارة الموارد البشرية مع المساعد الذكي Synthia لأتمتة الحضور والإجازات ومتابعة الأداء وسير الموافقات الإدارية.</p>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">نظام ذكي متكامل لإدارة الموارد البشرية مع المساعد الذكي Synthia لأتمتة الحضور والإجازات ومتابعة الأداء وسير الموافقات الإدارية.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
                 style="background:rgba(64,208,253,0.08);border-color:rgba(64,208,253,0.25);color:#40D0FD;">Flutter</span>
@@ -3641,8 +3631,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal('directHire')"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-cyan-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <a href="https://play.google.com/store/apps/details?id=com.directhire.app" target="_blank" rel="noopener noreferrer"
-                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform" title="عرض على Google Play">
+              <a href="https://play.google.com/store/apps/details?id=com.directhire.app" target="_blank" rel="noopener noreferrer" aria-label="عرض وتحميل التطبيق من متجر Google Play" title="عرض على Google Play" class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fab fa-google-play"></i>
               </a>
             </div>
@@ -3653,7 +3642,7 @@
               <span
                 style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.3);border-radius:999px;padding:2px 10px;color:#22d3ee;">Recruitment &amp; AI</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">منصة توظيف ذكية تستخدم محرك مطابقة مدعوم بالذكاء الاصطناعي لربط الشركات بالمرشحين الأنسب وتقليل المقابلات غير الملائمة.</p>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">منصة توظيف ذكية تستخدم محرك مطابقة مدعوم بالذكاء الاصطناعي لربط الشركات بالمرشحين الأنسب وتقليل المقابلات غير الملائمة.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
                 style="background:rgba(64,208,253,0.08);border-color:rgba(64,208,253,0.25);color:#40D0FD;">Flutter</span>
@@ -3699,8 +3688,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal('dafterApp')"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-emerald-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <a href="https://play.google.com/store/apps/details?id=net.dafter.app" target="_blank" rel="noopener noreferrer"
-                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform" title="عرض على Google Play">
+              <a href="https://play.google.com/store/apps/details?id=net.dafter.app" target="_blank" rel="noopener noreferrer" aria-label="عرض وتحميل التطبيق من متجر Google Play" title="عرض على Google Play" class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fab fa-google-play"></i>
               </a>
             </div>
@@ -3711,7 +3699,7 @@
               <span
                 style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:999px;padding:2px 10px;color:#34d399;">Finance &amp; Accounting</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">تطبيق محاسبي عربي متكامل لأصحاب المتاجر والمشاريع الصغيرة لإدارة الحسابات والديون دون إنترنت مع مزامنة سحابية وتقارير مالية.</p>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">تطبيق محاسبي عربي متكامل لأصحاب المتاجر والمشاريع الصغيرة لإدارة الحسابات والديون دون إنترنت مع مزامنة سحابية وتقارير مالية.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
                 style="background:rgba(64,208,253,0.08);border-color:rgba(64,208,253,0.25);color:#40D0FD;">Flutter</span>
@@ -3757,8 +3745,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal('accountBook')"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-amber-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <a href="https://play.google.com/store/apps/details?id=account.book.app" target="_blank" rel="noopener noreferrer"
-                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform" title="عرض على Google Play">
+              <a href="https://play.google.com/store/apps/details?id=account.book.app" target="_blank" rel="noopener noreferrer" aria-label="عرض وتحميل التطبيق من متجر Google Play" title="عرض على Google Play" class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fab fa-google-play"></i>
               </a>
             </div>
@@ -3769,7 +3756,7 @@
               <span
                 style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);border-radius:999px;padding:2px 10px;color:#fbbf24;">Credit &amp; Ledger</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">تطبيق أندرويد محاسبي لإدارة الحسابات المدينة والدائنة، ومراقبة الحدود الائتمانية للعملاء، ودعم العملات المتعددة دون خادم خارجي.</p>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">تطبيق أندرويد محاسبي لإدارة الحسابات المدينة والدائنة، ومراقبة الحدود الائتمانية للعملاء، ودعم العملات المتعددة دون خادم خارجي.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
                 style="background:rgba(234,88,12,0.08);border-color:rgba(234,88,12,0.25);color:#fb923c;">Java</span>
@@ -3815,8 +3802,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal('hundredLearn')"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-sky-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <a href="https://play.google.com/store/apps/details?id=com.wbgmcz.cngrlc" target="_blank" rel="noopener noreferrer"
-                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform" title="عرض على Google Play">
+              <a href="https://play.google.com/store/apps/details?id=com.wbgmcz.cngrlc" target="_blank" rel="noopener noreferrer" aria-label="عرض وتحميل التطبيق من متجر Google Play" title="عرض على Google Play" class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fab fa-google-play"></i>
               </a>
             </div>
@@ -3827,7 +3813,7 @@
               <span
                 style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.3);border-radius:999px;padding:2px 10px;color:#38bdf8;">E-Learning</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">تطبيق تعليمي يوفر دروساً ومواد دراسية منهجية وأنشطة تدريبية مكثفة لترسيخ المفاهيم ودعم استمرارية التعلم الذاتي.</p>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">تطبيق تعليمي يوفر دروساً ومواد دراسية منهجية وأنشطة تدريبية مكثفة لترسيخ المفاهيم ودعم استمرارية التعلم الذاتي.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
                 style="background:rgba(234,88,12,0.08);border-color:rgba(234,88,12,0.25);color:#fb923c;">Java</span>
@@ -3873,6 +3859,8 @@
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-amber-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
               <button
                 onclick="openPresentationModal(&#39;project-videos/EmployeesPerformanceReviwSystem(The%20Project%20Main).pptx&#39;)"
+                aria-label="عرض العرض التقديمي للمشروع"
+                title="عرض العرض التقديمي"
                 class="w-14 h-14 rounded-full bg-amber-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-file-powerpoint"></i>
               </button>
@@ -3885,7 +3873,7 @@
               <span
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);border-radius:999px;padding:2px 10px;color:#fbbf24;">Graduation</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">نظام
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">نظام
               متكامل لإدارة وتقييم أداء الموظفين، يربط الموارد البشرية والمديرين والموظفين في منصة واحدة شفافة.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
@@ -3929,8 +3917,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;erpSaaS&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-emerald-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <button onclick="openProjectVideo(&#39;project-videos/project11-ERP%20SaaS.mp4&#39;)"
-                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <button onclick="openProjectVideo(&#39;project-videos/project11-ERP%20SaaS.mp4&#39;)" aria-label="مشاهدة فيديو استعراض المشروع" title="مشاهدة الفيديو" class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -3941,7 +3928,7 @@
               <span
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:999px;padding:2px 10px;color:#10b981;">SaaS / ERP</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">نظام تخطيط موارد المؤسسات السحابي (ERP SaaS) متكامل للشركات الصغيرة والمتوسطة، يدعم RTL والوضع الداكن وعزل كامل للبيانات.</p>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">نظام تخطيط موارد المؤسسات السحابي (ERP SaaS) متكامل للشركات الصغيرة والمتوسطة، يدعم RTL والوضع الداكن وعزل كامل للبيانات.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
                 style="background:rgba(0,0,0,0.3);border-color:rgba(255,255,255,0.15);color:#fff;">Next.js 16</span>
@@ -3983,8 +3970,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;webhookAutomation&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-violet-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <a href="https://webhook-auto-web.onrender.com/" target="_blank"
-                class="w-14 h-14 rounded-full bg-violet-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <a href="https://webhook-auto-web.onrender.com/" target="_blank" aria-label="زيارة موقع منصة Webhook Automation المباشر" title="زيارة الموقع المباشر" class="w-14 h-14 rounded-full bg-violet-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -3995,7 +3981,7 @@
               <span
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.3);border-radius:999px;padding:2px 10px;color:#a78bfa;">Multi-Tenant SaaS</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة سحابية متقدمة من فئة المؤسسات لأتمتة معالجة وتدفق البيانات عبر الـ Webhooks والـ REST APIs بمحرك قواعد آمن وطوابير معالجة غير متزامنة.</p>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة سحابية متقدمة من فئة المؤسسات لأتمتة معالجة وتدفق البيانات عبر الـ Webhooks والـ REST APIs بمحرك قواعد آمن وطوابير معالجة غير متزامنة.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
                 style="background:rgba(234,40,78,0.08);border-color:rgba(234,40,78,0.25);color:#f43f5e;">NestJS</span>
@@ -4039,8 +4025,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;yemenShopSaaS&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-sky-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <a href="https://yemen-shop.onrender.com/" target="_blank"
-                class="w-14 h-14 rounded-full bg-sky-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <a href="https://yemen-shop.onrender.com/" target="_blank" aria-label="زيارة موقع منصة Yemen Shop المباشر" title="زيارة الموقع المباشر" class="w-14 h-14 rounded-full bg-sky-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -4051,7 +4036,7 @@
               <span
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.3);border-radius:999px;padding:2px 10px;color:#38bdf8;">Multi-Tenant SaaS</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة المتاجر الإلكترونية متعددة المتاجر (Multi-Tenant E-commerce SaaS) لتطوير وإدارة المتاجر الإلكترونية بمزايا متكاملة وعزل محكم.</p>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة المتاجر الإلكترونية متعددة المتاجر (Multi-Tenant E-commerce SaaS) لتطوير وإدارة المتاجر الإلكترونية بمزايا متكاملة وعزل محكم.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
                 style="background:rgba(255,45,32,0.08);border-color:rgba(255,45,32,0.25);color:#f87171;">Laravel 11</span>
@@ -4092,8 +4077,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;darajatakAlayna&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-orange-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <a href="https://darajatak-endana.onrender.com" target="_blank"
-                class="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <a href="https://darajatak-endana.onrender.com" target="_blank" aria-label="زيارة موقع منصة دراجتك علينا المباشر" title="زيارة الموقع المباشر" class="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -4104,7 +4088,7 @@
               <span
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.3);border-radius:999px;padding:2px 10px;color:#fb923c;">Full-Stack</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة إلكترونية لعرض وتسويق الدراجات النارية في اليمن مع لوحة تحكم إدارية كاملة.</p>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة إلكترونية لعرض وتسويق الدراجات النارية في اليمن مع لوحة تحكم إدارية كاملة.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
                 style="background:rgba(56,189,248,0.08);border-color:rgba(56,189,248,0.25);color:#38bdf8;">Node.js</span>
@@ -4148,8 +4132,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;aiExecutiveBoard&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-emerald-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <button onclick="openProjectVideo(&#39;project-videos/project8-AI-Executive-Board.mp4&#39;)"
-                class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <button onclick="openProjectVideo(&#39;project-videos/project8-AI-Executive-Board.mp4&#39;)" aria-label="مشاهدة فيديو استعراض المشروع" title="مشاهدة الفيديو" class="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -4163,7 +4146,7 @@
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:999px;padding:2px 10px;color:#34d399;">Advanced
                 AI</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة
               استشارية متقدّمة تعتمد على الذكاء الاصطناعي لمحاكاة مجلس إدارة لمساعدة رواد الأعمال.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
@@ -4207,8 +4190,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;obsidianStore&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-pink-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <button onclick="openProjectVideo(&#39;project-videos/project9-e-commerce-platform.mp4&#39;)"
-                class="w-14 h-14 rounded-full bg-pink-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <button onclick="openProjectVideo(&#39;project-videos/project9-e-commerce-platform.mp4&#39;)" aria-label="مشاهدة فيديو استعراض المشروع" title="مشاهدة الفيديو" class="w-14 h-14 rounded-full bg-pink-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -4220,7 +4202,7 @@
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.3);border-radius:999px;padding:2px 10px;color:#f472b6;">Luxury
                 E-commerce</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة
               متجر إلكتروني فاخر تركز على تقديم منتجات عالية الجودة وذات قيمة عالية مع تجربة تسوق فريدة.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
@@ -4263,8 +4245,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal('eduPlatform')"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-indigo-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <button onclick="openProjectVideo('project-videos/project10-EduPlatform.mp4')"
-                class="w-14 h-14 rounded-full bg-indigo-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <button onclick="openProjectVideo('project-videos/project10-EduPlatform.mp4')" aria-label="مشاهدة فيديو استعراض المشروع" title="مشاهدة الفيديو" class="w-14 h-14 rounded-full bg-indigo-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -4275,7 +4256,7 @@
               <span
                 style="font-family:'JetBrains Mono',monospace;font-size:0.6rem;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.3);border-radius:999px;padding:2px 10px;color:#818cf8;">Smart LMS Platform</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">منصة تعليمية متكاملة (LMS) تجمع بين الذكاء الاصطناعي، التلعيب (Gamification)، لوحات تحكم للأدوار المختلفة، والشهادات التلقائية.</p>
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:'Cairo',sans-serif;">منصة تعليمية متكاملة (LMS) تجمع بين الذكاء الاصطناعي، التلعيب (Gamification)، لوحات تحكم للأدوار المختلفة، والشهادات التلقائية.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
                 style="background:rgba(0,0,0,0.3);border-color:rgba(255,255,255,0.15);color:#fff;">React 18</span>
@@ -4317,8 +4298,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;chatApp&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-violet-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <button onclick="openProjectVideo(&#39;project-videos/project1-chat.mp4&#39;)"
-                class="w-14 h-14 rounded-full bg-violet-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <button onclick="openProjectVideo(&#39;project-videos/project1-chat.mp4&#39;)" aria-label="مشاهدة فيديو استعراض المشروع" title="مشاهدة الفيديو" class="w-14 h-14 rounded-full bg-violet-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -4330,7 +4310,7 @@
               <span
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.3);border-radius:999px;padding:2px 10px;color:#c084fc;">Real-time</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">تطبيق
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">تطبيق
               محادثة متكامل يحاكي واتساب، يدعم الرسائل الصوتية والتراسل اللحظي مع واجهة عصرية.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
@@ -4374,8 +4354,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;firebaseEnvManager&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-orange-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <a href="https://pub.dev/packages/firebase_multi_env_manager" target="_blank"
-                class="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <a href="https://pub.dev/packages/firebase_multi_env_manager" target="_blank" aria-label="عرض حزمة Firebase Multi-Env Manager على Pub.dev" title="عرض الحزمة على Pub.dev" class="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-external-link-alt"></i>
               </a>
             </div>
@@ -4387,7 +4366,7 @@
               <span
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.3);border-radius:999px;padding:2px 10px;color:#fb923c;">v2.0.0</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">CLI
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">CLI
               tool بـ Dart لأتمتة إدارة بيئات Firebase المتعددة في مشاريع Flutter.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
@@ -4427,8 +4406,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;cryptoProject&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-cyan-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <button onclick="openProjectVideo(&#39;project-videos/project2-crypto.mp4&#39;)"
-                class="w-14 h-14 rounded-full bg-cyan-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <button onclick="openProjectVideo(&#39;project-videos/project2-crypto.mp4&#39;)" aria-label="مشاهدة فيديو استعراض المشروع" title="مشاهدة الفيديو" class="w-14 h-14 rounded-full bg-cyan-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -4441,7 +4419,7 @@
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.3);border-radius:999px;padding:2px 10px;color:#22d3ee;">Web3
                 UI</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">قالب
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">قالب
               واجهة أمامية احترافي لمنصات الكريبتو، بتصميم عصري مع Next.js 15.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
@@ -4481,8 +4459,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;schoolSystem&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-teal-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <button onclick="openProjectVideo(&#39;project-videos/project4-school.mp4&#39;)"
-                class="w-14 h-14 rounded-full bg-teal-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <button onclick="openProjectVideo(&#39;project-videos/project4-school.mp4&#39;)" aria-label="مشاهدة فيديو استعراض المشروع" title="مشاهدة الفيديو" class="w-14 h-14 rounded-full bg-teal-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -4494,7 +4471,7 @@
               <span
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(20,184,166,0.1);border:1px solid rgba(20,184,166,0.3);border-radius:999px;padding:2px 10px;color:#2dd4bf;">System</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">نظام
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">نظام
               متكامل لرقمنة المدارس، يربط الإدارة والمعلمين والطلاب وأولياء الأمور.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
@@ -4536,8 +4513,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;medAI&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-sky-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <button onclick="openProjectVideo(&#39;project-videos/project6-medai-consult.mp4&#39;)"
-                class="w-14 h-14 rounded-full bg-sky-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <button onclick="openProjectVideo(&#39;project-videos/project6-medai-consult.mp4&#39;)" aria-label="مشاهدة فيديو استعراض المشروع" title="مشاهدة الفيديو" class="w-14 h-14 rounded-full bg-sky-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -4550,7 +4526,7 @@
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(14,165,233,0.1);border:1px solid rgba(14,165,233,0.3);border-radius:999px;padding:2px 10px;color:#38bdf8;">AI
                 Health</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة
               استشارات طبية ذكية تعتمد على AI لتقديم نصائح صحية وتشخيص مبدئي.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
@@ -4592,8 +4568,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;pmpSystem&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-indigo-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <button onclick="openProjectVideo(&#39;project-videos/project5-projects.mp4&#39;)"
-                class="w-14 h-14 rounded-full bg-indigo-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <button onclick="openProjectVideo(&#39;project-videos/project5-projects.mp4&#39;)" aria-label="مشاهدة فيديو استعراض المشروع" title="مشاهدة الفيديو" class="w-14 h-14 rounded-full bg-indigo-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -4605,7 +4580,7 @@
               <span
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.3);border-radius:999px;padding:2px 10px;color:#818cf8;">PMP</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">منصة
               كـ Jira/Trello، تدعم Kanban والعمل الجماعي والتحليلات.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
@@ -4646,8 +4621,7 @@
             <div class="thumb-overlay">
               <button onclick="openProjectModal(&#39;narStore&#39;)"
                 class="w-14 h-14 rounded-full bg-white flex items-center justify-center text-red-600 hover:scale-110 transition-transform font-bold text-sm">تفاصيل</button>
-              <button onclick="openProjectVideo(&#39;project-videos/project3-shop.mp4&#39;)"
-                class="w-14 h-14 rounded-full bg-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
+              <button onclick="openProjectVideo(&#39;project-videos/project3-shop.mp4&#39;)" aria-label="مشاهدة فيديو استعراض المشروع" title="مشاهدة الفيديو" class="w-14 h-14 rounded-full bg-red-500 flex items-center justify-center text-white hover:scale-110 transition-transform">
                 <i class="fas fa-play"></i>
               </button>
             </div>
@@ -4659,7 +4633,7 @@
               <span
                 style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:999px;padding:2px 10px;color:#f87171;">E-Commerce</span>
             </div>
-            <p class="text-slate-500 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">متجر
+            <p class="text-slate-300 text-sm mb-5 leading-relaxed" style="font-family:&#39;Cairo&#39;,sans-serif;">متجر
               إلكتروني لبيع البطاقات الرقمية بتصميم عصري وتجربة شراء فورية.</p>
             <div class="flex flex-wrap gap-2 mb-5">
               <span class="tag-pill"
@@ -4708,19 +4682,19 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16" data-reveal="">
         <div class="stat-card">
           <div class="text-3xl font-black text-gradient mb-1" style="font-family:&#39;Sora&#39;;">1,530+</div>
-          <div class="text-slate-500 text-xs" style="font-family:&#39;JetBrains Mono&#39;,monospace;">ساعة تدريب</div>
+          <div class="text-slate-300 text-xs font-medium" style="font-family:&#39;JetBrains Mono&#39;,monospace;">ساعة تدريب</div>
         </div>
         <div class="stat-card">
           <div class="text-3xl font-black text-gradient mb-1" style="font-family:&#39;Sora&#39;;">9</div>
-          <div class="text-slate-500 text-xs" style="font-family:&#39;JetBrains Mono&#39;,monospace;">FreeCodeCamp</div>
+          <div class="text-slate-300 text-xs font-medium" style="font-family:&#39;JetBrains Mono&#39;,monospace;">FreeCodeCamp</div>
         </div>
         <div class="stat-card">
           <div class="text-3xl font-black text-gradient mb-1" style="font-family:&#39;Sora&#39;;">7</div>
-          <div class="text-slate-500 text-xs" style="font-family:&#39;JetBrains Mono&#39;,monospace;">EDRAAK</div>
+          <div class="text-slate-300 text-xs font-medium" style="font-family:&#39;JetBrains Mono&#39;,monospace;">EDRAAK</div>
         </div>
         <div class="stat-card">
           <div class="text-3xl font-black text-gradient mb-1" style="font-family:&#39;Sora&#39;;">9+</div>
-          <div class="text-slate-500 text-xs" style="font-family:&#39;JetBrains Mono&#39;,monospace;">شهادات أخرى</div>
+          <div class="text-slate-300 text-xs font-medium" style="font-family:&#39;JetBrains Mono&#39;,monospace;">شهادات أخرى</div>
         </div>
       </div>
 
@@ -4999,7 +4973,7 @@
               <div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">
                 Blog Website Design</div>
               <div
-                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">24
+                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:#94a3b8;">24
                 ساعة</div>
             </div>
             <div class="cert-item" data-cert-category="soft" onclick="openPDF(&#39;جميع الشهادات منصة ايفت.pdf&#39;)"
@@ -5007,7 +4981,7 @@
               <div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">
                 Computer Maintenance</div>
               <div
-                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">14
+                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:#94a3b8;">14
                 ساعة</div>
             </div>
             <div class="cert-item" data-cert-category="programming"
@@ -5015,7 +4989,7 @@
               <div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">
                 Smartphone Programming</div>
               <div
-                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">14
+                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:#94a3b8;">14
                 ساعة</div>
             </div>
             <div class="cert-item" data-cert-category="cyber" onclick="openPDF(&#39;جميع الشهادات منصة ايفت.pdf&#39;)"
@@ -5023,7 +4997,7 @@
               <div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">
                 Cyber Security Basics</div>
               <div
-                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">10
+                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:#94a3b8;">10
                 ساعات</div>
             </div>
             <div class="cert-item" data-cert-category="cyber" onclick="openPDF(&#39;شهادة الاختراق الاخلاقي.pdf&#39;)"
@@ -5031,7 +5005,7 @@
               <div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">
                 Penetration Testing w/ Metasploit</div>
               <div
-                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">10
+                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:#94a3b8;">10
                 ساعات</div>
             </div>
           </div>
@@ -5051,7 +5025,7 @@
               <div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">
                 Computer Network Principles</div>
               <div
-                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">3
+                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:#94a3b8;">3
                 ساعات</div>
             </div>
             <div class="cert-item" data-cert-category="programming"
@@ -5059,7 +5033,7 @@
               <div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">
                 Computational Thinking</div>
               <div
-                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">2
+                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:#94a3b8;">2
                 ساعة</div>
             </div>
           </div>
@@ -5079,7 +5053,7 @@
               <div class="text-sm font-semibold text-slate-300 mb-0.5" style="font-family:&#39;Cairo&#39;,sans-serif;">
                 Ethical Hacking</div>
               <div
-                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:rgba(148,163,184,0.4);">50
+                style="font-size:0.65rem;font-family:&#39;JetBrains Mono&#39;,monospace;color:#94a3b8;">50
                 ساعة</div>
             </div>
           </div>
@@ -5102,7 +5076,7 @@
         <div
           style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;">
         </div>
-        <p class="text-slate-500 mt-6 text-sm max-w-2xl mx-auto"
+        <p class="text-slate-300 mt-6 text-sm max-w-2xl mx-auto"
           style="font-family:'Cairo',sans-serif;line-height:1.9;">
           إجابات مختصرة على أكثر الأسئلة التي تساعدك قبل بدء المشروع.
         </p>
@@ -5176,7 +5150,7 @@
         <div
           style="width:60px;height:2px;background:linear-gradient(90deg,#7c3aed,#ec4899);margin:16px auto 0;border-radius:999px;">
         </div>
-        <p class="text-slate-500 mt-6 max-w-lg mx-auto"
+        <p class="text-slate-300 mt-6 max-w-lg mx-auto"
           style="font-family:&#39;Cairo&#39;,sans-serif;font-size:0.95rem;line-height:1.8;">
           أنا دائماً متحمس للعمل على <span class="text-violet-400 font-semibold">مشاريع جديدة ومثيرة</span>. إذا كان
           لديك فكرة تود تنفيذها، فلا تتردد في التواصل.
@@ -5232,7 +5206,7 @@
                 GITHUB</div>
               <div class="text-slate-200 text-sm font-medium">github.com/HassanY1010</div>
             </div>
-            <i class="fas fa-arrow-left text-slate-500 opacity-50 mr-auto"></i>
+            <i class="fas fa-arrow-left text-slate-400 mr-auto"></i>
           </a>
 
           <a href="https://www.linkedin.com/in/hassan-mohammed-745a28412" target="_blank"
@@ -5247,7 +5221,7 @@
                 LINKEDIN</div>
               <div class="text-slate-200 text-sm font-medium">Hassan Mohammed Barafah</div>
             </div>
-            <i class="fas fa-arrow-left text-slate-500 opacity-50 mr-auto"></i>
+            <i class="fas fa-arrow-left text-slate-400 mr-auto"></i>
           </a>
 
           <div class="contact-link">
@@ -5403,7 +5377,7 @@
                   style="display:block;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.78rem;color:rgba(148,163,184,0.65);margin-bottom:6px;">
                   <i class="fas fa-comment-dots text-xs ml-1" style="color:#a855f7;"></i> الرسالة
                   <span id="cf-msg-count"
-                    style="float:left;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;color:rgba(148,163,184,0.3);">0/500</span>
+                    style="float:left;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.6rem;color:#94a3b8;">0/500</span>
                 </label>
                 <textarea id="cf-message" rows="4" maxlength="500" placeholder="أخبرني عن مشروعك أو فكرتك..."
                   style="width:100%;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:11px 14px;color:#e2e8f0;font-family:&#39;Cairo&#39;,sans-serif;font-size:0.88rem;outline:none;resize:vertical;min-height:100px;"
@@ -5456,25 +5430,15 @@
           <span class="text-gradient font-bold">Hassan Barafah</span>
         </div>
         <div
-          style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:rgba(148,163,184,0.3);letter-spacing:1px;">
+          style="font-family:&#39;JetBrains Mono&#39;,monospace;font-size:0.65rem;color:#94a3b8;letter-spacing:1px;">
           © 2026 حسن محمد بارفعه · All rights reserved
         </div>
         <div class="flex items-center gap-4">
-          <a href="https://github.com/HassanY1010" target="_blank"
-            class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-500 hover:text-white transition-colors text-sm"
-            style="border:1px solid rgba(255,255,255,0.06);"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/hassan-mohammed-745a28412" target="_blank"
-            class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-500 hover:text-sky-400 transition-colors text-sm"
-            style="border:1px solid rgba(255,255,255,0.06);"><i class="fab fa-linkedin-in"></i></a>
-          <a href="mailto:hassanmohammedbarafah836@gmail.com"
-            class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-500 hover:text-pink-400 transition-colors text-sm"
-            style="border:1px solid rgba(255,255,255,0.06);"><i class="fas fa-envelope"></i></a>
-          <a href="https://wa.me/967776461892" target="_blank"
-            class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-500 hover:text-green-400 transition-colors text-sm"
-            style="border:1px solid rgba(255,255,255,0.06);"><i class="fab fa-whatsapp"></i></a>
-          <a href="hassan-mohammed-barafah.vcf" download
-            class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-500 hover:text-cyan-400 transition-colors text-sm"
-            style="border:1px solid rgba(255,255,255,0.06);"><i class="fas fa-address-card"></i></a>
+          <a href="https://github.com/HassanY1010" target="_blank" aria-label="حساب GitHub الشخصي" title="GitHub" class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-400 hover:text-white transition-colors text-sm" style="border:1px solid rgba(255,255,255,0.06);"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/hassan-mohammed-745a28412" target="_blank" aria-label="حساب LinkedIn الشخصي" title="LinkedIn" class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-400 hover:text-sky-400 transition-colors text-sm" style="border:1px solid rgba(255,255,255,0.06);"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:hassanmohammedbarafah836@gmail.com" aria-label="إرسال بريد إلكتروني" title="البريد الإلكتروني" class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-400 hover:text-pink-400 transition-colors text-sm" style="border:1px solid rgba(255,255,255,0.06);"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/967776461892" target="_blank" aria-label="تواصل عبر واتساب" title="واتساب" class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-400 hover:text-green-400 transition-colors text-sm" style="border:1px solid rgba(255,255,255,0.06);"><i class="fab fa-whatsapp"></i></a>
+          <a href="hassan-mohammed-barafah.vcf" download aria-label="تحميل بطاقة الاتصال الشخصية vCard" title="تحميل vCard" class="w-8 h-8 rounded-lg glass flex items-center justify-center text-slate-400 hover:text-cyan-400 transition-colors text-sm" style="border:1px solid rgba(255,255,255,0.06);"><i class="fas fa-address-card"></i></a>
         </div>
       </div>
     </div>
@@ -5485,7 +5449,7 @@
   <div id="pdfModal" class="modal-backdrop">
     <div
       style="width:90%;max-width:900px;height:85vh;background:#07070f;border-radius:20px;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,0.08);">
-      <button class="modal-close-btn" onclick="closePDF()"><i class="fas fa-times"></i></button>
+      <button class="modal-close-btn" aria-label="إغلاق النافذة" title="إغلاق" onclick="closePDF()"><i class="fas fa-times"></i></button>
       <iframe id="pdfFrame" src="about:blank" width="100%" height="100%" frameborder="0"></iframe>
     </div>
   </div>
@@ -5494,7 +5458,7 @@
   <div id="videoModal" class="modal-backdrop">
     <div
       style="width:90%;max-width:900px;aspect-ratio:16/9;background:#000;border-radius:20px;overflow:hidden;position:relative;border:1px solid rgba(255,255,255,0.08);">
-      <button class="modal-close-btn" onclick="closeProjectVideo()"><i class="fas fa-times"></i></button>
+      <button class="modal-close-btn" aria-label="إغلاق النافذة" title="إغلاق" onclick="closeProjectVideo()"><i class="fas fa-times"></i></button>
       <video id="projectVideoFrame" class="w-full h-full object-contain" controls="" controlslist="nodownload"></video>
     </div>
   </div>
@@ -5504,7 +5468,7 @@
     <div
       style="width:100%;max-width:900px;background:#07070f;border-radius:20px;border:1px solid rgba(255,255,255,0.08);position:relative;"
       id="projectModalInner">
-      <button class="modal-close-btn" onclick="closeProjectModal()"><i class="fas fa-times"></i></button>
+      <button class="modal-close-btn" aria-label="إغلاق النافذة" title="إغلاق" onclick="closeProjectModal()"><i class="fas fa-times"></i></button>
       <div id="projectModalContent" class="p-8" style="max-height:90vh;overflow-y:auto;"></div>
     </div>
   </div>
@@ -5513,14 +5477,14 @@
   <div id="presentationModal" class="modal-backdrop">
     <div
       style="width:90%;max-width:500px;background:#07070f;border-radius:20px;padding:40px;border:1px solid rgba(255,255,255,0.08);text-align:center;position:relative;">
-      <button class="modal-close-btn" onclick="closePresentationModal()"><i class="fas fa-times"></i></button>
+      <button class="modal-close-btn" aria-label="إغلاق النافذة" title="إغلاق" onclick="closePresentationModal()"><i class="fas fa-times"></i></button>
       <div
         style="width:64px;height:64px;border-radius:16px;background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
         <i class="fas fa-file-powerpoint text-2xl text-amber-400"></i>
       </div>
       <h3 class="text-xl font-bold text-slate-100 mb-3" style="font-family:&#39;Sora&#39;,sans-serif;">عرض تقديمي
         PowerPoint</h3>
-      <p class="text-slate-500 text-sm mb-8" style="font-family:&#39;Cairo&#39;,sans-serif;">لعرض العرض التقديمي، يرجى
+      <p class="text-slate-300 text-sm mb-8" style="font-family:'Cairo',sans-serif;">لعرض العرض التقديمي، يرجى
         تحميل الملف وفتحه في Microsoft PowerPoint.</p>
       <a id="pptxDownloadLink" href="#" download=""
         class="btn-gradient px-8 py-3 rounded-xl text-white font-semibold text-sm flex items-center justify-center gap-2 relative z-10 mx-auto"
@@ -6465,11 +6429,11 @@
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:20px;">
       <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px;">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;color:rgba(148,163,184,0.45);letter-spacing:1.5px;margin-bottom:6px;">ROLE</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;color:#94a3b8;letter-spacing:1.5px;margin-bottom:6px;font-weight:700;">ROLE</div>
         <div style="font-family:'Cairo',sans-serif;font-size:0.86rem;color:#e2e8f0;font-weight:700;">${c.role}</div>
       </div>
       <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:14px;">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;color:rgba(148,163,184,0.45);letter-spacing:1.5px;margin-bottom:6px;">TIMELINE</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;color:#94a3b8;letter-spacing:1.5px;margin-bottom:6px;font-weight:700;">TIMELINE</div>
         <div style="font-family:'Cairo',sans-serif;font-size:0.86rem;color:#e2e8f0;font-weight:700;">${c.timeline}</div>
       </div>
       <div style="background:${p.bgColor};border:1px solid ${p.borderColor};border-radius:12px;padding:14px;">
@@ -6500,26 +6464,26 @@
 
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;" class="sm:grid-cols-2">
       <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:20px;">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);letter-spacing:2px;margin-bottom:12px;">GOAL</div>
-        <p style="font-family:'Cairo',sans-serif;font-size:0.85rem;color:rgba(148,163,184,0.8);line-height:1.7;">${p.goal}</p>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:#cbd5e1;letter-spacing:2px;margin-bottom:12px;font-weight:700;">GOAL</div>
+        <p style="font-family:'Cairo',sans-serif;font-size:0.85rem;color:rgba(226,232,240,0.9);line-height:1.7;">${p.goal}</p>
       </div>
       <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:20px;">
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);letter-spacing:2px;margin-bottom:12px;">FEATURES</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:#cbd5e1;letter-spacing:2px;margin-bottom:12px;font-weight:700;">FEATURES</div>
         <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;">
-          ${p.features.map(f => `<li style="display:flex;align-items:flex-start;gap:8px;font-family:'Cairo',sans-serif;font-size:0.8rem;color:rgba(148,163,184,0.8);"><span style="color:#a855f7;margin-top:3px;flex-shrink:0;">◆</span>${f}</li>`).join('')}
+          ${p.features.map(f => `<li style="display:flex;align-items:flex-start;gap:8px;font-family:'Cairo',sans-serif;font-size:0.8rem;color:rgba(226,232,240,0.9);"><span style="color:#a855f7;margin-top:3px;flex-shrink:0;">◆</span>${f}</li>`).join('')}
         </ul>
       </div>
     </div>
 
     <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:20px;">
-      <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:rgba(148,163,184,0.5);letter-spacing:2px;margin-bottom:16px;">TECH STACK</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:#cbd5e1;letter-spacing:2px;margin-bottom:16px;font-weight:700;">TECH STACK</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div>
-          <div style="font-size:0.7rem;color:rgba(148,163,184,0.4);margin-bottom:10px;font-family:'JetBrains Mono',monospace;">Backend</div>
+          <div style="font-size:0.7rem;color:#94a3b8;margin-bottom:10px;font-family:'JetBrains Mono',monospace;font-weight:600;">Backend</div>
           <div style="display:flex;flex-wrap:wrap;gap:6px;">${p.backend.map(t => `<span style="padding:4px 10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:0.65rem;" class="${t.c}">${t.n}</span>`).join('')}</div>
         </div>
         <div>
-          <div style="font-size:0.7rem;color:rgba(148,163,184,0.4);margin-bottom:10px;font-family:'JetBrains Mono',monospace;">Frontend</div>
+          <div style="font-size:0.7rem;color:#94a3b8;margin-bottom:10px;font-family:'JetBrains Mono',monospace;font-weight:600;">Frontend</div>
           <div style="display:flex;flex-wrap:wrap;gap:6px;">${p.frontend.map(t => `<span style="padding:4px 10px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;font-family:'JetBrains Mono',monospace;font-size:0.65rem;" class="${t.c}">${t.n}</span>`).join('')}</div>
         </div>
       </div>
